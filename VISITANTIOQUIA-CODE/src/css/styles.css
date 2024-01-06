@@ -1,0 +1,29 @@
+/* INICIO PALETA DE COLORES */
+:root {
+  --Azul-Oscuro: #071526; /* Azul Oscuro*/
+  --Azul-Real: #223b59; /* Azul Real*/
+  --Azul-Acero: #516c8c; /* Azul Acero*/
+  --Azul-Polvo: #95a8bf; /* Azul Polvo*/
+  --Azul-Cielo: #c7daf2; /* Azul Cielo*/
+  --Gris-Plata: #ecf0f1; /* Gris Plata */
+}
+/* FIN PALETA DE COLORES */
+
+html {
+  margin: 0;
+  border: 0;
+  font-family: "MOMCAKE", sans-serif;
+  background-color: var(--Azul-Oscuro);
+}
+
+/* INICIO PRUEBA DE FUENTE  */
+/* DE LA LÍNEA 6 HASTA LA LÍNEA 11, SE CENTRA EL DIV CON LA CLASE pruebaFuente */
+.pruebaFuente {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ecf0f1;
+  text-align: center;
+}
+/* FIN PRUEBA DE FUENTE */

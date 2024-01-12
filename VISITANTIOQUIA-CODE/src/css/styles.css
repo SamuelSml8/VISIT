@@ -1,11 +1,10 @@
 /* INICIO PALETA DE COLORES */
 :root {
-  --Azul-Oscuro: #071526; /* Azul Oscuro*/
-  --Azul-Real: #223b59; /* Azul Real*/
-  --Azul-Acero: #516c8c; /* Azul Acero*/
-  --Azul-Polvo: #95a8bf; /* Azul Polvo*/
-  --Azul-Cielo: #c7daf2; /* Azul Cielo*/
-  --Gris-Plata: #ecf0f1; /* Gris Plata */
+  --Verde-puro: #60993E; /* Verde Puro*/
+  --Azure: #EDF7F6; /* Azure*/
+  --Azul-Cielo: #4A8FE7; /* Azul Cielo*/
+  --Morazul-Oscuro: #2E294E; /* Morazul*/
+  --Negro: #000000; /* Negro*/
 }
 /* FIN PALETA DE COLORES */
 
@@ -13,7 +12,7 @@ html {
   margin: 0;
   border: 0;
   font-family: "MOMCAKE", sans-serif;
-  background-color: var(--Azul-Oscuro);
+  background-color: var(--Morazul-Oscuro);
 }
 
 /* INICIO PRUEBA DE FUENTE  */

@@ -110,6 +110,25 @@ const db_places = [
   },
 ];
 
+const db_users = [
+  {
+    username: "admin",
+    password: "visit2024",
+    name: "",
+    age: "",
+    country: "",
+    email: "",
+  },
+  {
+    username: "",
+    password: "",
+    name: "",
+    age: "",
+    country: "",
+    email: "",
+  },
+];
+
 // BY: JULIÁN
 const db_towns = [
   {

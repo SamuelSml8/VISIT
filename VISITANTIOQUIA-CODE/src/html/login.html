@@ -1,78 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visit | Login</title>
     <link rel="stylesheet" href="/VISITANTIOQUIA-CODE/src/css/login.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <!-- LOS ESTILOS DE ESTE ARCHIVO SE ENCUENTRAN EN LA CARPETA CSS Y TIENE NOMBRE login.css -->
   </head>
   <body>
-    <!-- INICIO SECCIÓN CAMPOS DE LOGIN -->
-    <section class="login-field">
-      <!-- INICIO LOGO VISIT EN TONOS CLAROS Y TITULO -->
-      <img
-        src="/VISITANTIOQUIA-CODE/src/img//login/logo-login.png"
-        alt="logo-login"
-        class="logo-login"
-      />
-      <h1>SIGN IN TO VISIT</h1>
-      <!-- FIN LOGO VISIT EN TONOS CLAROS Y TITULO -->
-
-      <!-- INICIO CONTENEDOR DE LOS CAMPOS A LLENAR -->
-      <div class="login-container">
-        <div class="input-field">
-          <input type="text" class="input user" placeholder="Username" />
-        </div>
-        <div class="input-field">
-          <input type="password" class="input pass" placeholder="Password" />
-        </div>
-        <button type="submit"><strong> Login</strong></button>
-        <a class="forgot-pass" href="#">Forgot password?</a>
-      </div>
-      <!-- FIN CONTENEDOR DE LOS CAMPOS A LLENAR -->
-      <!-- INICIO A OTRAS OPCIÓN DE LOGUEO -->
-      <div class="sign-with">
-        <h2>Or sign in with</h2>
-        <hr />
-        <div class="redes-sociales">
-          <a href="https://www.facebook.com/login.php/" target="_blank">
-            <img
-              class="redes"
-              src="/VISITANTIOQUIA-CODE/src/img/login/facebook.png"
-              alt=""
-            />
-          </a>
-          <a
-            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=ASKXGp3kn2sFbWYXGsKqD3k7xFKnqKuU9ziunFI8HFLywof5LS-ieEcErqrZ5IAGl7m6LoNvdQGo1A&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1611165326%3A1705071773942694&theme=glif"
-            target="_blank"
-          >
-            <img
-              class="redes"
-              src="/VISITANTIOQUIA-CODE/src/img/login/google.png"
-              alt=""
-            />
-          </a>
-          <a href="https://appleid.apple.com/sign-in" target="_blank"
-            ><img
-              class="redes"
-              src="/VISITANTIOQUIA-CODE/src/img/login/apple.png"
-              alt=""
-            />
-          </a>
-        </div>
-      </div>
-      <!-- FIN A OTRAS OPCIÓN DE LOGUEO -->
+    <!-- INICIO LOGIN -->
+    <section>
+      <h2>SIGN IN TO VISIT</h2>
+      <form id="loginForm">
+        <input
+          type="text"
+          placeholder="Username"
+          id="username"
+          required
+          autofocus
+        />
+        <input type="password" placeholder="Password" id="password" required />
+        <input type="submit" value="Login" />
+      </form>
+      <p>Forgot your password? <a href="">Forgot my password</a></p>
+      <p>New to Visit? <a href="signup.html">Create account</a></p>
     </section>
-    <!-- FIN SECCIÓN CAMPOS DE LOGIN -->
-
-    <!-- INICIO FOOTER -->
-    <footer>
-      <img src="/VISITANTIOQUIA-CODE/src/img/login/footer.png" alt="" />
-    </footer>
-    <!-- FIN FOOTER -->
+    <!-- FIN LOGIN -->
+    <!-- INICIO SCRIPTS -->
+    <!-- Script principal del archivo se encuentra en la carpeta js y tiene nombre login.js -->
+    <script src="/VISITANTIOQUIA-CODE/src/js/login.js"></script>
+    <!-- FIN SCRIPTS -->
   </body>
 </html>

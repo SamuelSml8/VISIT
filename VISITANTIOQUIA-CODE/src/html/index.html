@@ -4,23 +4,331 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visit | Home</title>
-    <link rel="stylesheet" href="/VISITANTIOQUIA-CODE/src/css/styles.css" />
+    <link rel="stylesheet" href="/VISIT/VISITANTIOQUIA-CODE/src/css/styles.css" />
     <!-- LOS ESTILOS DE ESTE ARCHIVO SE ENCUENTRAN EN LA CARPETA CSS Y TIENE NOMBRE styles.css -->
   </head>
   <body>
+    <button id="logout">Logout</button>
 
-    <h1>Julio</h1>
+    <!-- NavBar -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link"><img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/navbar/logo.png" alt /></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars" style="color: #2e294e"></i>
+        </button>
 
-    <!-- INICIO SESIÓN HOME -->
-    <section>
-       <h2> HOME VISIT </h2>
-      <button id="logout">Logout</button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Hotels</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Food & Beer</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Events</a>
+          </li>
+
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Places</a>
+          </li>
+        </ul>
+        <input class="search-bar" type="text" placeholder="buscar..." />
+        <a href="/VISIT/VISITANTIOQUIA-CODE/src/html/login.html"><img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/navbar/user.png" alt
+            class="user-login" /></a>
+      </nav>
+    </header>
+    <!-- Section #1 informativa- pilot -->
+    <section id="home-page">
+      <div class="text-home">
+        <h1>¡Bienvenido a <span class="text-visit">VISIT!</span></h1>
+        <p>En Antioquia hay mucho que descubrir. No pierdas la oportunidad de
+          conocer este asombroso viaje por nuestra cultura.</p>
+      </div>
+      <div class="img">
+        <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/homepage/chivaHome.png" alt>
+      </div>
+
     </section>
-    <!-- FIN SESIÓN HOME -->
+    <!-- Sección principal -->
+    <section class="carrousel">
+      <div class="main-section">
+        <!-- Contenido de la sección -->
+        <div class="content">
+          <h1>Nombre del Pueblo</h1>
+          <p>Descripción del pueblo o destino.</p>
+        </div>
+
+        <!-- Carrusel de imágenes -->
+        <div id="carouselExampleControls" class="carousel-section">
+          <div class="carousel-inner">
+            <!-- Imágenes del carrusel -->
+            <div class="carousel-item active" data-description="Descripción 1"
+              data-title="Título 1">
+              <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/carrusel/elpeñol.jpg" alt="Imagen 1">
+            </div>
+            <div class="carousel-item" data-title="Título 2"
+              data-description="Descripción 2">
+              <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/carrusel/jardin.jpg" alt="Imagen 2">
+            </div>
+            <div class="carousel-item" data-title="Título 3"
+              data-description="Descripción 3">
+              <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/carrusel/medellin.jpg" alt="Imagen 3">
+            </div>
+            <div class="carousel-item" data-title="Título 4"
+              data-description="Descripción 4">
+              <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/carrusel/represa.jpg" alt="Imagen 3">
+            </div>
+            <div class="carousel-item" data-title="Título 5"
+              data-description="Descripción 5">
+              <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/carrusel/santafe.jpg" alt="Imagen 3">
+            </div>
+            <div class="carousel-item" data-title="Título 6"
+              data-description="Descripción 6">
+              <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/carrusel/venecia.jpg" alt="Imagen 3">
+            </div>
+            <!-- Puedes agregar más imágenes aquí -->
+          </div>
+          <!-- Botones de control del carrusel -->
+          <a class="carousel-control-prev" href="#carouselExampleControls"
+            role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls"
+            role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+    <section class="baner-info-1">
+      <div class="baner">
+        <h2>HOLA MUNDO</h2>
+      </div>
+    </section>
+    <!-- Carrusel de eventos -->
+    <section id="events">
+      <div class="container-carrousel-events" id="container-carrousel-events">
+        <!-- Agrega un identificador al contenedor del carrusel -->
+        <div class="carrousel-events" id="carrousel-events">
+          <!-- Repite estas tarjetas según sea necesario -->
+          <div class="card" onclick="moveToCenter(0)">
+            <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/eventos/colombiamoda.png" alt="Evento 1">
+            <div class="links">
+              <a href="#">Izquierda</a>
+              <a href="#">Derecha</a>
+            </div>
+          </div>
+
+          <div class="card" onclick="moveToCenter(1)">
+            <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/eventos/Danza.jpg" alt="Evento 2">
+            <div class="links">
+              <a href="#">Izquierda</a>
+              <a href="#">Derecha</a>
+            </div>
+          </div>
+
+          <div class="card" onclick="moveToCenter(2)">
+            <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/eventos/domingoDiferente.jpg" alt="Evento 3">
+            <div class="links">
+              <a href="#">Izquierda</a>
+              <a href="#">Derecha</a>
+            </div>
+          </div>
+
+          <div class="card" onclick="moveToCenter(3)">
+            <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/eventos/elrosy.jpg" alt="Evento 4">
+            <div class="links">
+              <a href="#">Izquierda</a>
+              <a href="#">Derecha</a>
+            </div>
+          </div>
+
+          <div class="card" onclick="moveToCenter(4)">
+            <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/eventos/feria.jpg" alt="Evento 5">
+            <div class="links">
+              <a href="#">Izquierda</a>
+              <a href="#">Derecha</a>
+            </div>
+          </div>
+
+          <div class="card" onclick="moveToCenter(5)">
+            <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/eventos/musicOn.jpg" alt="Evento 6">
+            <div class="links">
+              <a href="#">Izquierda</a>
+              <a href="#">Derecha</a>
+            </div>
+          </div>
+
+          <!-- INICIO MÀS EVENTOS -->
+
+          <!-- <div class="card" onclick="moveToCenter(6)">
+            <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/eventos/" alt="Evento 7">
+            <div class="links">
+              <a href="#">Izquierda</a>
+              <a href="#">Derecha</a>
+            </div>
+          </div>
+
+          <div class="card" onclick="moveToCenter(7)">
+            <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/eventos/" alt="Evento 8">
+            <div class="links">
+              <a href="#">Izquierda</a>
+              <a href="#">Derecha</a>
+            </div>
+          </div>
+
+          <div class="card" onclick="moveToCenter(8)">
+            <img src="/images/eventos/CUADRADO-9.png" alt="Evento 9">
+            <div class="links">
+              <a href="#">Izquierda</a>
+              <a href="#">Derecha</a>
+            </div>
+          </div>
+
+          <div class="card" onclick="moveToCenter(9)">
+            <img src="/images/eventos/CUADRADO-10.png" alt="Evento 10">
+            <div class="links">
+              <a href="#">Izquierda</a>
+              <a href="#">Derecha</a>
+            </div>
+          </div> -->
+
+          <!-- FIN MÀS EVENTOS -->
+
+
+        </div>
+      </div>
+    </section>
 
     <!-- INICIO SCRIPTS -->
+    <!-- script carrusel backgroound -->
+    <script>
+      //carrousel 
+      // Obtener referencias a los elementos del carrusel
+      const carouselItems = document.querySelectorAll('.carousel-item');
+      const carouselInner = document.querySelector('.carousel-inner');
+      
+      // Manejar clic en los elementos del carrusel
+      carouselItems.forEach((item, index) => {
+          item.addEventListener('click', () => {
+              moveToIndex(index);
+          });
+      });
+      
+      // Manejar clic en la flecha izquierda
+      document.querySelector('.carousel-control-prev').addEventListener('click', () => {
+          const currentIndex = Array.from(carouselItems).findIndex(item => item.classList.contains('active'));
+          const newIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+          moveToIndex(newIndex);
+      });
+      
+      // Manejar clic en la flecha derecha
+      document.querySelector('.carousel-control-next').addEventListener('click', () => {
+          const currentIndex = Array.from(carouselItems).findIndex(item => item.classList.contains('active'));
+          const newIndex = (currentIndex + 1) % carouselItems.length;
+          moveToIndex(newIndex);
+      });
+      
+      // Función para mover el carrusel al ítem indicado
+      function moveToIndex(index) {
+          const translateValue = `-${index * (100 / carouselItems.length)}%`;
+          carouselInner.style.transform = `translateX(${translateValue})`;
+      
+          carouselItems.forEach((item) => item.classList.remove('active'));
+          carouselItems[index].classList.add('active');
+      
+          const title = carouselItems[index].dataset.title;
+          const description = carouselItems[index].dataset.description;
+      
+          const imgUrl = carouselItems[index].querySelector('img').src;
+          document.querySelector('.main-section').style.backgroundImage = `url(${imgUrl})`;
+      
+          document.querySelector('.content h1').textContent = title;
+          document.querySelector('.content p').textContent = description;
+      }
+      
+      //
+      
+      
+          </script>
+    <!-- script carrusel events -->
+    <script>
+      // Referencias a elementos del carrusel
+      const carrousel = document.getElementById('carrousel-events');
+      const container = document.getElementById('container-carrousel-events');
+      const cards = Array.from(document.querySelectorAll('.card'));
+      
+      // Agrega las tarjetas duplicadas al principio y al final
+      const duplicatedCards = cards.map((card, index) => card.cloneNode(true));
+      
+      carrousel.innerHTML = '';
+      duplicatedCards.forEach((card) => carrousel.appendChild(card));
+      
+      // Función para mover la card al centro
+      function moveToCenter(index) {
+        const cardWidth = cards[0].offsetWidth;
+        const displacement = (index - Math.floor(cards.length / 2)) * cardWidth;
+      
+        carrousel.style.transition = 'transform 0.5s ease-in-out';
+        carrousel.style.transform = `translateX(-${displacement}px)`;
+      
+        cards.forEach((card, i) => {
+          card.style.transition = 'transform 0.5s ease-in-out';
+          card.style.transform = i === index ? 'scale(1.2)' : 'scale(1)';
+        });
+      
+        // Restablece la posición después de la transición
+        setTimeout(() => {
+          carrousel.style.transition = 'none';
+          cards.forEach((card, i) => {
+            card.style.transition = 'none';
+            card.style.transform = i === index ? 'scale(1.2)' : 'scale(1)';
+          });
+      
+          // Mueve las tarjetas al principio o al final según sea necesario
+          if (index === 0) {
+            moveToBeginning();
+          } else if (index === cards.length - 1) {
+            moveToEnd();
+          }
+        }, 500);
+      }
+      
+      // Función para mover las tarjetas al principio
+      function moveToBeginning() {
+        const lastCard = duplicatedCards[duplicatedCards.length - 1];
+        carrousel.insertBefore(lastCard.cloneNode(true), carrousel.firstChild);
+        carrousel.removeChild(lastCard);
+        updateCardIndexes();
+        carrousel.style.transform = `translateX(-${cards[0].offsetWidth}px)`;
+      }
+      
+      // Función para mover las tarjetas al final
+      function moveToEnd() {
+        const firstCard = duplicatedCards[0];
+        carrousel.appendChild(firstCard.cloneNode(true));
+        carrousel.removeChild(firstCard);
+        updateCardIndexes();
+        carrousel.style.transform = `translateX(0)`;
+      }
+      
+      // Función para actualizar los índices de las tarjetas
+      function updateCardIndexes() {
+        cards.forEach((card, index) => {
+          card.dataset.index = index;
+        });
+      }
+      
+      // Inicializa el carrusel
+      moveToCenter(0);
+      
+        </script>
     <!-- Script principal del archivo se encuentra en la carpeta js y tiene nombre main.js -->
-    <script src="/VISITANTIOQUIA-CODE/src/js/main.js"></script>
+    <script src="/VISIT/VISITANTIOQUIA-CODE/src/js/main.js"></script>
     <!-- FIN SCRIPTS -->
   </body>
 </html>

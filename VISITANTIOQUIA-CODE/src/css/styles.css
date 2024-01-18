@@ -1,1 +1,408 @@
 /* ARCHIVO VINCULADO CON index.html */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/momcake");
+
+:root {
+    /* CSS HEX */
+    --space-cadet: #2e294eff;
+    --azure-web: #edf7f6ff;
+    --asparagus: #60993eff;
+    --chefchaouen-blue: #4a8fe7ff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 5rem auto;
+}
+
+/*nav bar styles*/
+.header {
+    height: 4.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    margin: 0 auto;
+
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 16px;
+    margin: 0 10px;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+    color: var(--space-cadet);
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom-color 0.3s;
+
+}
+
+.nav-menu-link:hover {
+    border-bottom-color: var(--asparagus);
+}
+
+.search-bar::placeholder {
+    color: var(--asparagus);
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.search-bar {
+    border: none;
+    border-bottom: 2px solid var(--asparagus);
+    outline: none;
+    width: 250px;
+}
+
+.search-bar::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+input:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.user-login {
+    height: 1.8rem;
+}
+
+/*Section #1 informativa- pilot*/
+#home-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.text-home {
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 5rem 0 0 8rem;
+    font-family: "Work Sans", sans-serif;
+
+
+}
+
+.text-home p {
+    margin: auto;
+    font-size: 2rem;
+    width: 30vw;
+    font-family: "Work Sans", sans-serif;
+}
+
+.text-visit {
+    color: var(--asparagus);
+    font-size: 7rem;
+    margin: 0 0 0 5rem;
+    font-family: 'MOMCAKE', sans-serif;
+
+
+}
+
+.img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.img img {
+    height: 400px;
+    margin: auto;
+
+}
+
+
+
+/*Styles carrousel */
+
+.main-section {
+    position: relative;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.content {
+    max-width: 50%;
+    padding: 0 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.carousel-section {
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    top: 15%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 20vw;
+    background-color: aqua;
+    margin: 8rem 0;
+
+}
+
+.carousel-item {
+    width: 30%;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    overflow: hidden;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.carousel-item:hover {
+    transform: scale(1.1);
+
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item.active img {
+    transform: scale(1.2);
+}
+
+/*Banner*/
+
+.baner-info-1 {
+    background-color: white;
+    width: 100%;
+    height: 300px;
+}
+
+.baner {
+    width: 70vw;
+    background-color: var(--space-cadet);
+    height: 100%;
+    margin: 4rem auto;
+}
+
+/*events*/
+#events {
+    margin: 4rem auto;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    background-image: url("/images/girasol.png");
+
+}
+
+.container-carrousel-events {
+    display: flex;
+    overflow: hidden;
+    background-color: aqua;
+    width: 80vw;
+    margin: auto;
+}
+
+.carrousel-events {
+    display: flex;
+    padding: 1rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    flex: 0 0 calc(20% - 20px);
+    /* Ajusta el ancho de cada tarjeta según sea necesario */
+    margin: 0 10px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    /* Ajusta la altura de la imagen según sea necesario */
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/*@media Responsive Design*/
+
+/* móvil*/
+@media only screen and (max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-menu {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .nav-menu-item {
+        margin: 5px 0;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    #home-page {
+        flex-direction: column;
+    }
+
+    .text-home {
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .text-home h1,
+    .text-home p {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 80%;
+    }
+
+    .img {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .carousel-section {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .carousel-inner {
+        height: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-item {
+        width: 80%;
+        max-width: 300px;
+        margin-right: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item.active img {
+        transform: scale(1.2);
+    }
+}

@@ -4,31 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visit | Login</title>
-    <link rel="stylesheet" href="/VISITANTIOQUIA-CODE/src/css/login.css" />
+    <link rel="stylesheet" href="/VISIT/VISITANTIOQUIA-CODE/src/css/login.css" />
     <!-- LOS ESTILOS DE ESTE ARCHIVO SE ENCUENTRAN EN LA CARPETA CSS Y TIENE NOMBRE login.css -->
   </head>
   <body>
     <!-- INICIO LOGIN -->
     <section>
+      <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/login/logo2.png" alt class="logo">
       <h2>SIGN IN TO VISIT</h2>
       <form id="loginForm">
-        <input
-          type="text"
-          placeholder="Username"
-          id="username"
-          required
-          autofocus
-        />
+        <input type="text" placeholder="Username" id="username" required
+          autofocus />
         <input type="password" placeholder="Password" id="password" required />
-        <input type="submit" value="Login" />
+        <!-- X -->
+        <button class="login">LOGIN</button>
+        <!-- X -->
+        <div class="links-form">
+          <a href="/VISIT/VISITANTIOQUIA-CODE/src/html/signup.html" class="create-account">Create Account</a>
+          <a href class="recovery-password">Forgot my password</a>
+        </div>
+
       </form>
-      <p>Forgot your password? <a href="">Forgot my password</a></p>
-      <p>New to Visit? <a href="signup.html">Create account</a></p>
+
+      <div class="social-media-login">
+        <a href class="social-login-item">
+          <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/login/facebook.png" alt>
+        </a>
+        <a href class="social-login-item">
+          <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/login/google.png" alt>
+
+        </a>
+        <a href class="social-login-item">
+          <img src="/VISIT/VISITANTIOQUIA-CODE/src/img/login/Apple.png" alt>
+
+        </a>
+      </div>
+
     </section>
     <!-- FIN LOGIN -->
     <!-- INICIO SCRIPTS -->
     <!-- Script principal del archivo se encuentra en la carpeta js y tiene nombre login.js -->
-    <script src="/VISITANTIOQUIA-CODE/src/js/login.js"></script>
+    <script src="/VISIT/VISITANTIOQUIA-CODE/src/js/login.js"></script>
     <!-- FIN SCRIPTS -->
   </body>
 </html>

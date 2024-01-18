@@ -23,5 +23,5 @@ signupForm.addEventListener(`submit`, (e) => {
   localStorage.setItem(`users`, JSON.stringify(Users));
   alert(`Registro exitoso`);
   //   REDIRECCIÓN A LOGIN
-  window.location.href = `/VISITANTIOQUIA-CODE/src/html/login.html`;
+  window.location.href = `/VISIT/VISITANTIOQUIA-CODE/src/html/login.html`;
 });

@@ -15,3 +15,7 @@ Julio: Crack, máquina y rey del front. Por favor organiza ese agregado para que
 16/01/2024
 
 Nuevo comienzo, se eliminó el anterior diseño del login para ser estructurado de una mejor manera, ahora está listo y funcional los HTML y JS correspondientes al LOGIN, funcionalidad de crear cuenta lista, login listo y ruta privada de home lista, queda pendiente la función de recuperar contraseña. Commit sin estilos, falta los estilos css basandonos en el login prediseñado en Figma.
+
+19/01/2024
+
+Implementación y ediciones básicas generales a los archivos de estilos.

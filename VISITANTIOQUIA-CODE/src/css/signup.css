@@ -22,7 +22,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+    overflow-y: hidden;
 }
 
 section {
@@ -32,18 +32,18 @@ section {
     flex-direction: column;
     align-content: center;
     margin: 2rem auto;
-    padding: 4rem;
+    padding: 1rem;
 
 
 }
 
 .logo {
-    height: 8rem;
+    height: 7rem;
     margin: auto;
 }
 
 h2 {
-    margin: 4rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     color: var(--azure-web);
     font-family: 'MOMCAKE', sans-serif;
     font-size: 2rem;
@@ -52,9 +52,9 @@ h2 {
 }
 
 #signupForm {
-    margin: 2rem auto;
+    margin: 1rem auto;
     background-color: white;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 15px;
 
 }
@@ -63,7 +63,7 @@ input {
     display: block;
     height: 2.5rem;
     width: 20rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
 
 
 }
@@ -72,15 +72,10 @@ input {
 #password, #name {
     border: none;
     outline: none;
-    background-color: var(--azure-web);
+    background-color: white;
     width: 20rem;
-    border-radius: 3px;
-    border: 1px solid gray;
-}
-
-#username,
-#password::placeholder {
-    color: black;
+    border-radius: 4px;
+    border: 1.8px solid rgb(188, 186, 186);
 }
 
 
@@ -132,7 +127,7 @@ input:focus {
 
 .social-media-login a img {
     width: 3rem;
-    margin: 2rem;
+    margin: 1rem;
     filter: drop-shadow(0px 6px 6px #000000);
 
 }

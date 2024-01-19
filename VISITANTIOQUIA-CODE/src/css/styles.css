@@ -121,11 +121,13 @@ input:focus {
     width: 100vw;
     height: 100vh;
     display: inline-block;
-     background-image: url("/VISIT/VISITANTIOQUIA-CODE/src/img/home/alone/montañas\ 1\(1\).jpg");
+    /* background-image: url("/VISIT/VISITANTIOQUIA-CODE/src/img/home/homepage/montaña2.png"); */
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
+    /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 .text-home {
@@ -263,9 +265,11 @@ input:focus {
 }
 
 .link-destino:hover {
-    background-color: white;
-    color: var(--asparagus);
-    border: 2px solid var(--asparagus);
+    background-color: var(--space-cadet);
+    color: white;
+    /* border: 2px solid var(--asparagus); */
+    transition: background-color 0.3s ease;
+
 }
 
 .card-destinos img {

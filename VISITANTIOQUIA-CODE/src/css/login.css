@@ -75,12 +75,7 @@ input {
     background-color: white;
     width: 20rem;
     border-radius: 4px;
-    border: 1.8px solid rgb(80, 80, 80);
-}
-
-#username,
-#password::placeholder {
-    color: black;
+    border: 1.8px solid rgb(188, 186, 186);
 }
 
 

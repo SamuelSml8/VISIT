@@ -252,13 +252,15 @@ input:focus {
 
 .titulo-destino {
     color: black;
-    text-align: left;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
 
 .description-destino {
     color: rgb(0, 0, 0, 60%);
-    text-align: left;
-    margin: 30px 0;
+    text-align: center;
+    margin: 10px 0 25px 0;
 }
 
 .link-destino {

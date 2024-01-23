@@ -19,3 +19,7 @@ Nuevo comienzo, se eliminó el anterior diseño del login para ser estructurado 
 19/01/2024
 
 Implementación y ediciones básicas generales a los archivos de estilos.
+
+23/01/2024
+
+Perfeccionamiento de las cards "destinos", textos centrados y margenes parametrizados.

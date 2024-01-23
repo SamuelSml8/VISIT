@@ -245,6 +245,11 @@ input:focus {
 
 }
 
+.card-destinos img:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
 .titulo-destino {
     color: black;
     text-align: left;
@@ -413,23 +418,23 @@ input:focus {
 }
 
 .slide {
-
     margin: 0 5px;
 }
 
 .name-hotel {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 1.25rem;
     text-align: left;
-    margin-top: 5px;
-
+    margin: .6rem 0;
+    font-weight: 600;
 }
 
 .price-hotel {
     color: black;
     font-weight: 600;
-
+    color: var(--asparagus);
+    margin: .6rem 0;
 
 }
 
@@ -442,8 +447,25 @@ input:focus {
     background-color: #60993e;
 }
 
+.hotel-link{
+    display: flex;
+    justify-content: space-between;
+}
 
-@keyframes scroll {
+.button-explore-hotels{
+    color: white;
+    background-color: var(--chefchaouen-blue);
+    border: none;
+    border-radius: 5px;
+    padding: .4rem;
+}
+
+.button-icon{
+    font-size: 1.5rem;
+}
+
+
+/* @keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -453,7 +475,7 @@ input:focus {
         -webkit-transform: translateX(calc(-200px * 7));
         transform: translateX(calc(-200px * 7));
     }
-}
+} */
 
 /*@media Responsive Design*/
 

@@ -25,4 +25,13 @@ Implementación y ediciones básicas generales a los archivos de estilos.
 Perfeccionamiento de las cards "destinos", textos centrados y margenes parametrizados.
 
 23/01/2024 2/2
+
 Solución a errores de maquetación, arreglo de estructura de código HTML, se agregó el nuevo icono de ventana visible para cualquier tema de navegador (blanco, oscuro etc). Creación del JSON pueblos de antioquia
+
+24 / 01 /2024
+
+Se convierte el antioquiaTowns.json a db.json general, montada en json-server con versión de Node JS 20.9.0
+Iniciar json server
+Paso 1: Abrir terminal: Ctrl + Shift + ñ
+Paso 2: entrar a la ubicación del db.json con ayuda del cd a través de la terminal
+Paso 3: Escribir el siguiente comando: json-server db.json -p 4002

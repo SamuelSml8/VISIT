@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "code": "05002",
+    "name": "Abejorral",
+    "population": 21468,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 2,
+    "code": "05004",
+    "name": "Abriaquí",
+    "population": 2855,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 3,
+    "code": "05021",
+    "name": "Alejandría",
+    "population": 4955,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 4,
+    "code": "05030",
+    "name": "Amagá",
+    "population": 32412,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 5,
+    "code": "05031",
+    "name": "Amalfi",
+    "population": 27846,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 6,
+    "code": "05034",
+    "name": "Andes",
+    "population": 46183,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 7,
+    "code": "05036",
+    "name": "Angelópolis",
+    "population": 6109,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 8,
+    "code": "05038",
+    "name": "Angostura",
+    "population": 12121,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 9,
+    "code": "05040",
+    "name": "Anorí",
+    "population": 19675,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 10,
+    "code": "05044",
+    "name": "Anzá",
+    "population": 7483,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 11,
+    "code": "05045",
+    "name": "Apartadó",
+    "population": 131422,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 12,
+    "code": "05051",
+    "name": "Arboletes",
+    "population": 32192,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 13,
+    "code": "05055",
+    "name": "Argelia",
+    "population": 8024,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 14,
+    "code": "05059",
+    "name": "Armenia",
+    "population": 5404,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 15,
+    "code": "05079",
+    "name": "Barbosa",
+    "population": 56103,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 16,
+    "code": "05088",
+    "name": "Bello",
+    "population": 566456,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 17,
+    "code": "05086",
+    "name": "Belmira",
+    "population": 6405,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 18,
+    "code": "05091",
+    "name": "Betania",
+    "population": 10892,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 19,
+    "code": "05093",
+    "name": "Betulia",
+    "population": 16604,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 20,
+    "code": "05107",
+    "name": "Briceño",
+    "population": 8523,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 21,
+    "code": "05113",
+    "name": "Buriticá",
+    "population": 10017,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 22,
+    "code": "05120",
+    "name": "Cáceres",
+    "population": 31160,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 23,
+    "code": "05125",
+    "name": "Caicedo",
+    "population": 8870,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 24,
+    "code": "05129",
+    "name": "Caldas",
+    "population": 86081,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 25,
+    "code": "05134",
+    "name": "Campamento",
+    "population": 9755,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 26,
+    "code": "05138",
+    "name": "Cañasgordas",
+    "population": 16371,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 27,
+    "code": "05142",
+    "name": "Caracolí",
+    "population": 4824,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 28,
+    "code": "05145",
+    "name": "Caramanta",
+    "population": 4951,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 29,
+    "code": "05147",
+    "name": "Carepa",
+    "population": 52184,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 30,
+    "code": "05148",
+    "name": "Carmen de viboral",
+    "population": 64265,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 31,
+    "code": "05150",
+    "name": "Carolina",
+    "population": 4219,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 32,
+    "code": "05154",
+    "name": "Caucasia",
+    "population": 97803,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 33,
+    "code": "05172",
+    "name": "Chigorodó",
+    "population": 62235,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 34,
+    "code": "05190",
+    "name": "Cisneros",
+    "population": 10422,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 35,
+    "code": "05101",
+    "name": "Ciudad Bolivar",
+    "population": 27711,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 36,
+    "code": "05197",
+    "name": "Cocorná",
+    "population": 16551,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 37,
+    "code": "05206",
+    "name": "Concepción",
+    "population": 5049,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 38,
+    "code": "05209",
+    "name": "Concordia",
+    "population": 22737,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 39,
+    "code": "05212",
+    "name": "Copacabana",
+    "population": 84209,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 40,
+    "code": "05234",
+    "name": "Dabeiba",
+    "population": 24586,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 41,
+    "code": "05237",
+    "name": "Donmatías",
+    "population": 20360,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 42,
+    "code": "05240",
+    "name": "Ebéjico",
+    "population": 12820,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 43,
+    "code": "05250",
+    "name": "El Bagre",
+    "population": 56306,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 44,
+    "code": "05264",
+    "name": "Entrerríos",
+    "population": 12062,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 45,
+    "code": "05266",
+    "name": "Envigado",
+    "population": 248304,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 46,
+    "code": "05282",
+    "name": "Fredonia",
+    "population": 25981,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 47,
+    "code": "05284",
+    "name": "Frontino",
+    "population": 21905,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 48,
+    "code": "05306",
+    "name": "Giraldo",
+    "population": 5963,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 49,
+    "code": "05308",
+    "name": "Girardota",
+    "population": 55902,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 50,
+    "code": "05310",
+    "name": "Gómez Plata",
+    "population": 10397,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 51,
+    "code": "05313",
+    "name": "Granada",
+    "population": 10785,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 52,
+    "code": "05315",
+    "name": "Guadalupe",
+    "population": 6966,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 53,
+    "code": "05318",
+    "name": "Guarne",
+    "population": 59710,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 54,
+    "code": "05321",
+    "name": "Guatapé",
+    "population": 9020,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 55,
+    "code": "05347",
+    "name": "Heliconia",
+    "population": 5716,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 56,
+    "code": "05353",
+    "name": "Hispania",
+    "population": 5846,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 57,
+    "code": "05360",
+    "name": "Itaguí",
+    "population": 299348,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 58,
+    "code": "05361",
+    "name": "Ituango",
+    "population": 28890,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 59,
+    "code": "05364",
+    "name": "Jardín",
+    "population": 15513,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 60,
+    "code": "05368",
+    "name": "Jericó",
+    "population": 14454,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 61,
+    "code": "05376",
+    "name": "La Ceja",
+    "population": 70387,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 62,
+    "code": "05380",
+    "name": "La Estrella",
+    "population": 77611,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 63,
+    "code": "05390",
+    "name": "La Pintada",
+    "population": 8614,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 64,
+    "code": "05400",
+    "name": "La Unión",
+    "population": 23072,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 65,
+    "code": "05411",
+    "name": "Liborina",
+    "population": 10649,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 66,
+    "code": "05425",
+    "name": "Maceo",
+    "population": 8707,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 67,
+    "code": "05440",
+    "name": "Marinilla",
+    "population": 69898,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 68,
+    "code": "05001",
+    "name": "Medellín",
+    "population": 2616335,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 69,
+    "code": "05467",
+    "name": "Montebello",
+    "population": 7035,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 70,
+    "code": "05475",
+    "name": "Murindó",
+    "population": 5300,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 71,
+    "code": "05480",
+    "name": "Mutatá",
+    "population": 15035,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 72,
+    "code": "05483",
+    "name": "Nariño",
+    "population": 10812,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 73,
+    "code": "05495",
+    "name": "Nechí",
+    "population": 27901,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 74,
+    "code": "05490",
+    "name": "Necoclí",
+    "population": 45530,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 75,
+    "code": "05501",
+    "name": "Olaya",
+    "population": 3327,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 76,
+    "code": "05541",
+    "name": "Peñol",
+    "population": 22592,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 77,
+    "code": "05543",
+    "name": "Peque",
+    "population": 8644,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 78,
+    "code": "05576",
+    "name": "Pueblorrico",
+    "population": 9198,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 79,
+    "code": "05579",
+    "name": "Puerto Berrio",
+    "population": 42203,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 80,
+    "code": "05585",
+    "name": "Puerto Nare",
+    "population": 15232,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 81,
+    "code": "05591",
+    "name": "Puerto Triunfo",
+    "population": 19554,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 82,
+    "code": "05604",
+    "name": "Remedios",
+    "population": 30501,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 83,
+    "code": "05607",
+    "name": "Retiro",
+    "population": 25431,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 84,
+    "code": "05615",
+    "name": "Rionegro",
+    "population": 146880,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 85,
+    "code": "05628",
+    "name": "Sabanalarga",
+    "population": 9668,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 86,
+    "code": "05631",
+    "name": "Sabaneta",
+    "population": 89647,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 87,
+    "code": "05642",
+    "name": "Salgar",
+    "population": 19314,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 88,
+    "code": "05647",
+    "name": "San Andrés de Cuerquía",
+    "population": 7649,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 89,
+    "code": "05649",
+    "name": "San Carlos",
+    "population": 16984,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 90,
+    "code": "05652",
+    "name": "San Francisco",
+    "population": 5996,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 91,
+    "code": "05656",
+    "name": "San Jerónimo",
+    "population": 16499,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 92,
+    "code": "05658",
+    "name": "San Jose de La Montaña",
+    "population": 3920,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 93,
+    "code": "05659",
+    "name": "San Juan de Urabá",
+    "population": 21707,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 94,
+    "code": "05660",
+    "name": "San Luis",
+    "population": 13791,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 95,
+    "code": "05664",
+    "name": "San Pedro de Los Milagros",
+    "population": 23573,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 96,
+    "code": "05665",
+    "name": "San Pedro de Urabá",
+    "population": 33180,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 97,
+    "code": "05667",
+    "name": "San Rafael",
+    "population": 16617,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 98,
+    "code": "05670",
+    "name": "San Roque",
+    "population": 22966,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 99,
+    "code": "05674",
+    "name": "San Vicente",
+    "population": 23546,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 100,
+    "code": "05679",
+    "name": "Santa Bárbara",
+    "population": 27862,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 101,
+    "code": "05686",
+    "name": "Santa Rosa de Osos",
+    "population": 39054,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 102,
+    "code": "05042",
+    "name": "Santafé de Antioquia",
+    "population": 28049,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 103,
+    "code": "05690",
+    "name": "Santo Domingo",
+    "population": 13075,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 104,
+    "code": "05697",
+    "name": "Santuario",
+    "population": 38711,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 105,
+    "code": "05736",
+    "name": "Segovia",
+    "population": 40922,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 106,
+    "code": "05756",
+    "name": "Sonsón",
+    "population": 38520,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 107,
+    "code": "05761",
+    "name": "Sopetrán",
+    "population": 16089,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 108,
+    "code": "05789",
+    "name": "Támesis",
+    "population": 17176,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 109,
+    "code": "05790",
+    "name": "Tarazá",
+    "population": 29082,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 110,
+    "code": "05792",
+    "name": "Tarso",
+    "population": 6555,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 111,
+    "code": "05809",
+    "name": "Titiribí",
+    "population": 11364,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 112,
+    "code": "05819",
+    "name": "Toledo",
+    "population": 5266,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 113,
+    "code": "05837",
+    "name": "Turbo",
+    "population": 134517,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 114,
+    "code": "05842",
+    "name": "Uramita",
+    "population": 7277,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 115,
+    "code": "05847",
+    "name": "Urrao",
+    "population": 32139,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 116,
+    "code": "05854",
+    "name": "Valdivia",
+    "population": 144722,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 117,
+    "code": "05856",
+    "name": "Valparaíso",
+    "population": 6916,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 118,
+    "code": "05858",
+    "name": "Vegachí",
+    "population": 12556,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 119,
+    "code": "05861",
+    "name": "Venecia",
+    "population": 12322,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 120,
+    "code": "05873",
+    "name": "Vigía del Fuerte",
+    "population": 9752,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 121,
+    "code": "05885",
+    "name": "Yalí",
+    "population": 8091,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 122,
+    "code": "05887",
+    "name": "Yarumal",
+    "population": 44457,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 123,
+    "code": "05890",
+    "name": "Yolombó",
+    "population": 24023,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 124,
+    "code": "05893",
+    "name": "Yondó",
+    "population": 20727,
+    "weather": "",
+    "imgUrl": ""
+  },
+  {
+    "id": 125,
+    "code": "05895",
+    "name": "Zaragoza",
+    "population": 26207,
+    "weather": "",
+    "imgUrl": ""
+  }
+]

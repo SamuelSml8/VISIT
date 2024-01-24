@@ -4,470 +4,441 @@
 @import url("https://fonts.cdnfonts.com/css/momcake");
 
 :root {
-    /* CSS HEX */
-    --space-cadet: #2e294eff;
-    --azure-web: #edf7f6ff;
-    --asparagus: #60993eff;
-    --chefchaouen-blue: #4a8fe7ff;
-
+  /* CSS HEX */
+  --space-cadet: #2e294eff;
+  --azure-web: #edf7f6ff;
+  --asparagus: #60993eff;
+  --chefchaouen-blue: #4a8fe7ff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f8f7f4;
+  background-color: #f8f7f4;
 }
 
 /*nav bar styles*/
 .header {
-    height: 4.5rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
-    background-color: white;
-    z-index: 1;
+  height: 4.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  z-index: 1;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-    margin: 0 auto;
-
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  margin: 0 auto;
 }
 
 .logo img {
-    height: 40px;
+  height: 40px;
 }
 
 .nav-link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .logo {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 40px;
-    line-height: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
 }
 
 .nav-menu {
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
 }
 
 .nav-menu-item {
-    font-size: 16px;
-    margin: 0 10px;
-    line-height: 70px;
-    text-transform: uppercase;
-    width: max-content;
+  font-size: 16px;
+  margin: 0 10px;
+  line-height: 70px;
+  text-transform: uppercase;
+  width: max-content;
 }
 
 .nav-menu-link {
-    padding: 8px 12px;
-    border-radius: 3px;
-    color: var(--space-cadet);
-    font-weight: 500;
-    font-family: "Work Sans", sans-serif;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    transition: border-bottom-color 0.3s;
-
+  padding: 8px 12px;
+  border-radius: 3px;
+  color: var(--space-cadet);
+  font-weight: 500;
+  font-family: "Work Sans", sans-serif;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.3s;
 }
 
 .nav-menu-link:hover {
-    border-bottom-color: var(--asparagus);
+  border-bottom-color: var(--asparagus);
 }
 
 .search-bar {
-    border: none;
-    border: 2px solid var(--asparagus);
-    border-radius: 5px;
-    outline: none;
-    width: 250px;
-    padding: .3rem;
+  border: none;
+  border: 2px solid var(--asparagus);
+  border-radius: 5px;
+  outline: none;
+  width: 250px;
+  padding: 0.3rem;
 }
 
 .search-bar::placeholder {
-    color: #999;
-    font-style: italic;
+  color: #999;
+  font-style: italic;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 .user-login {
-    height: 1.8rem;
+  height: 1.8rem;
 }
 
 .logout {
-    height: 24px;
+  height: 24px;
 }
 
 /*Section #1 informativa- pilot*/
 #home-page {
-    padding: 4rem;
-    width: 100vw;
-    height: 100vh;
-    display: inline-block;
-    /* background-image: url("/VISIT/VISITANTIOQUIA-CODE/src/img/home/homepage/montaña2.png"); */
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    /* background-color: rgba(255, 255, 255, 0.5); */
+  padding: 4rem;
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  /* background-image: url("/VISIT/VISITANTIOQUIA-CODE/src/img/home/homepage/montaña2.png"); */
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 .text-home {
-    width: 80vw;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    margin: 7rem auto;
+  width: 80vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  margin: 7rem auto;
 }
 
-
 .text-visit {
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    background-color: var(--asparagus);
-    padding: 8px;
-    border-radius: 20px;
-    margin: auto;
-    width: 60%;
-
-
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: var(--asparagus);
+  padding: 8px;
+  border-radius: 20px;
+  margin: auto;
+  width: 60%;
 }
 
 .big-title {
-    font-size: 4rem;
-    margin: 2rem 0 0 0;
-    text-align: center;
-    font-weight: 600;
-    color: var(--space-cadet);
-    font-family: 'Work Sans', sans-serif;
+  font-size: 4rem;
+  margin: 2rem 0 0 0;
+  text-align: center;
+  font-weight: 600;
+  color: var(--space-cadet);
+  font-family: "Work Sans", sans-serif;
 }
 
 .description-content {
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    color: var(--space-cadet);
-    text-align: center;
-    font-family: 'Work Sans', sans-serif;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: var(--space-cadet);
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
 }
 
 .get-started {
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--space-cadet);
-    color: white;
-    width: 150px;
-    height: 50px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    font-family: 'Work Sans', sans-serif;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--space-cadet);
+  color: white;
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .get-started:hover {
-    background-color: #60993e;
-
+  background-color: #60993e;
 }
-
 
 /*estilos para destinos*/
 .gallery-destinos {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 600px;
-    padding: 2rem;
-    /* background-image: url("/VISIT/VISITANTIOQUIA-CODE/src/img/home/alone/montañas\ 1\(1\).jpg");
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 600px;
+  padding: 2rem;
+  /* background-image: url("/VISIT/VISITANTIOQUIA-CODE/src/img/home/alone/montañas\ 1\(1\).jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center; */
-
-
 }
 
 .container-destinos {
-    width: 70vw;
-    margin: auto;
-    display: flex;
-    align-content: center;
-
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  align-content: center;
 }
 
 .destinos-grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0;
-    width: 70vw;
-    max-height: max-content;
-    margin: auto;
-    font-family: 'Work Sans', sans-serif;
-
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  width: 70vw;
+  max-height: max-content;
+  margin: auto;
+  font-family: "Work Sans", sans-serif;
 }
 
 .card-destinos {
-    padding: 2rem;
-    text-align: center;
-    color: white;
-    width: 80%;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-
-
-
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
 }
 
-.card-destinos img:hover{
-    transform: scale(1.1);
-    transition: .3s;
+.card-destinos img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .titulo-destino {
-    color: black;
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 .description-destino {
-    color: rgb(0, 0, 0, 60%);
-    text-align: center;
-    margin: 10px 0 25px 0;
+  color: rgb(0, 0, 0, 60%);
+  text-align: center;
+  margin: 10px 0 25px 0;
 }
 
 .link-destino {
-    text-decoration: none;
-    background-color: var(--asparagus);
-    border-radius: 50px;
-    color: white;
-    padding: 1rem;
+  text-decoration: none;
+  background-color: var(--asparagus);
+  border-radius: 50px;
+  color: white;
+  padding: 1rem;
 }
 
 .link-destino:hover {
-    background-color: var(--space-cadet);
-    color: white;
-    /* border: 2px solid var(--asparagus); */
-    transition: background-color 0.3s ease;
-
+  background-color: var(--space-cadet);
+  color: white;
+  /* border: 2px solid var(--asparagus); */
+  transition: background-color 0.3s ease;
 }
 
 .card-destinos img {
-    width: 100%;
+  width: 100%;
 }
 
 /*styles baner experience*/
 
 .experience {
-    color: var(--asparagus);
-    margin: auto;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 3.5rem;
+  color: var(--asparagus);
+  margin: auto;
+  font-family: "Work Sans", sans-serif;
+  font-size: 3.5rem;
 }
 
 .mom-cake {
-    font-family: 'MOMCAKE', sans-serif;
-    font-size: 5rem;
-    color: var(--space-cadet);
+  font-family: "MOMCAKE", sans-serif;
+  font-size: 5rem;
+  color: var(--space-cadet);
 }
-
-
-
 
 /*Styles carrousel */
 .main-section {
-    position: relative;
-    margin: 4rem auto;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  position: relative;
+  margin: 4rem auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .content {
-    max-width: 50%;
-    padding: 0 20px;
-    text-align: left;
-    color: #fff;
+  max-width: 50%;
+  padding: 0 20px;
+  text-align: left;
+  color: #fff;
 }
 
 .carousel-section {
-    width: 40%;
-    height: 70%;
-    position: absolute;
-    right: 0;
-    top: 15%;
-    overflow: hidden;
+  width: 40%;
+  height: 70%;
+  position: absolute;
+  right: 0;
+  top: 15%;
+  overflow: hidden;
 }
 
 .carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    height: 20vw;
-    margin: 8rem 0;
-
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 20vw;
+  margin: 8rem 0;
 }
 
 .carousel-item {
-    width: 30%;
-    flex: 0 0 auto;
-    margin-right: px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-    border-radius: 7px;
+  width: 30%;
+  flex: 0 0 auto;
+  margin-right: px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 7px;
 }
 
 .carousel-item:hover {
-    transform: scale(1.1);
-
+  transform: scale(1.1);
 }
 
 .carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.1s ease-in-out;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.1s ease-in-out;
 }
 
 .carousel-item.active img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /*Banner*/
 
 .baner-info-1 {
-    width: 80vw;
-    height: 150px;
-    margin: auto;
-    /* background-color: var(--azure-web); */
-
+  width: 80vw;
+  height: 150px;
+  margin: auto;
+  /* background-color: var(--azure-web); */
 }
 
 .baner {
-    width: 80vw;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
+  width: 80vw;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
-
-
 
 /*estilos galeria infinita o recomendados*/
 
 .carrousel-1 {
-    width: 100%;
-
+  width: 100%;
 }
 
-
 .slider {
-    width: 80vw;
-    height: auto;
-    margin: 1rem auto auto auto;
-    overflow: hidden;
+  width: 80vw;
+  height: auto;
+  margin: 1rem auto auto auto;
+  overflow: hidden;
 }
 
 .slider .slide-track {
-    display: flex;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
-    width: calc(200px * 14);
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(200px * 14);
 }
 
 .slider .slide {
-    width: 200px;
-
+  width: 200px;
 }
 
 .slider .slide img {
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    display: block;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  display: block;
 }
 
 .slide {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 .name-hotel {
-    text-decoration: none;
-    color: black;
-    font-size: 1.25rem;
-    text-align: left;
-    margin: .6rem 0;
-    font-weight: 600;
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  text-align: left;
+  margin: 0.6rem 0;
+  font-weight: 600;
 }
 
 .price-hotel {
-    color: black;
-    font-weight: 600;
-    color: var(--asparagus);
-    margin: .6rem 0;
-
+  color: black;
+  font-weight: 600;
+  color: var(--asparagus);
+  margin: 0.6rem 0;
 }
 
 .view {
-    width: 60px;
-    border-radius: 5px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    background-color: #60993e;
+  width: 60px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: #60993e;
 }
 
-.hotel-link{
-    display: flex;
-    justify-content: space-between;
+.hotel-link {
+  display: flex;
+  justify-content: space-between;
 }
 
-.button-explore-hotels{
-    color: white;
-    background-color: var(--chefchaouen-blue);
-    border: none;
-    border-radius: 5px;
-    padding: .4rem;
+.button-explore-hotels {
+  color: white;
+  background-color: var(--chefchaouen-blue);
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem;
 }
 
-.button-icon{
-    font-size: 1.5rem;
+.button-icon {
+  font-size: 1.5rem;
 }
 
-
-/* @keyframes scroll {
+@keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -477,118 +448,117 @@ input:focus {
         -webkit-transform: translateX(calc(-200px * 7));
         transform: translateX(calc(-200px * 7));
     }
-} */
+}
 
 /*@media Responsive Design*/
 
 /* móvil*/
 
 @media only screen and (max-width: 767px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        margin: 0;
-        overflow-x: hidden;
-    }
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+  }
 
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
+  .logo {
+    padding: 10px;
+    text-align: center;
+  }
 
-    .logo {
-        padding: 10px;
-        text-align: center;
-    }
+  .nav-menu {
+    margin-right: 0;
+    margin-top: 10px;
+  }
 
-    .nav-menu {
-        margin-right: 0;
-        margin-top: 10px;
-    }
+  .nav-menu-item {
+    margin: 5px 0;
+  }
 
-    .nav-menu-item {
-        margin: 5px 0;
-    }
+  .search-bar {
+    width: 100%;
+  }
 
-    .search-bar {
-        width: 100%;
-    }
+  #home-page {
+    flex-direction: column;
+  }
 
-    #home-page {
-        flex-direction: column;
-    }
+  .text-home {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: "Work Sans", sans-serif;
+  }
 
-    .text-home {
-        width: 100%;
-        height: 50vh;
-        text-align: center;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        font-family: 'Work Sans', sans-serif;
-    }
+  .text-home h1,
+  .text-home p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+  }
 
-    .text-home h1,
-    .text-home p {
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 80%;
-    }
+  .img {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .img {
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .img img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
 
-    .img img {
-        max-height: 100%;
-        max-width: 100%;
-        object-fit: contain;
-    }
+  .carousel-section {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+  }
 
-    .carousel-section {
-        width: 100%;
-        height: 50vh;
-        position: relative;
-        overflow: hidden;
-    }
+  .carousel-inner {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .carousel-inner {
-        height: 100%;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .carousel-item {
+    width: 80%;
+    max-width: 300px;
+    margin-right: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
 
-    .carousel-item {
-        width: 80%;
-        max-width: 300px;
-        margin-right: 10px;
-        overflow: hidden;
-        cursor: pointer;
-        transition: transform 0.2s ease-in-out;
-    }
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
 
-    .carousel-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s ease-in-out;
-    }
-
-    .carousel-item.active img {
-        transform: scale(1.2);
-    }
+  .carousel-item.active img {
+    transform: scale(1.2);
+  }
 }

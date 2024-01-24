@@ -20,6 +20,9 @@ Nuevo comienzo, se eliminó el anterior diseño del login para ser estructurado 
 
 Implementación y ediciones básicas generales a los archivos de estilos.
 
-23/01/2024
+23/01/2024 1/2
 
 Perfeccionamiento de las cards "destinos", textos centrados y margenes parametrizados.
+
+23/01/2024 2/2
+Solución a errores de maquetación, arreglo de estructura de código HTML, se agregó el nuevo icono de ventana visible para cualquier tema de navegador (blanco, oscuro etc). Creación del JSON pueblos de antioquia

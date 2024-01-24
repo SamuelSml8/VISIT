@@ -1,169 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Visit | Medellin</title>
-        <link rel="stylesheet"
-            href="/VISIT/VISITANTIOQUIA-CODE/src/css/medellin.css">
-            <link rel="shortcut icon" href="/VISIT/VISITANTIOQUIA-CODE/src/img/iconVisit.svg" type="image/x-icon">
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit | Medellin</title>
+    <link
+      rel="stylesheet"
+      href="/VISIT/VISITANTIOQUIA-CODE/src/css/medellin.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="/VISIT/VISITANTIOQUIA-CODE/src/img/visitIcon.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a
+          href="/VISIT/VISITANTIOQUIA-CODE/src/html/index.html"
+          class="logo nav-link"
+          ><img
+            src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/navbar/logo.png"
+            alt
+        /></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars" style="color: #2e294e"></i>
+        </button>
 
-        <header class="header">
-            <nav class="nav">
-                <a href="/VISIT/VISITANTIOQUIA-CODE/src/html/index.html" class="logo nav-link"><img
-                        src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/navbar/logo.png"
-                        alt /></a>
-                <button class="nav-toggle" aria-label="Abrir menú">
-                    <i class="fa-solid fa-bars" style="color: #2e294e"></i>
-                </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Hotels</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Food & Beer</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Events</a>
+          </li>
 
-                <ul class="nav-menu">
-                    <li class="nav-menu-item">
-                        <a href="#" class="nav-menu-link nav-link">Hotels</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="#" class="nav-menu-link nav-link">Food &
-                            Beer</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="#" class="nav-menu-link nav-link">Events</a>
-                    </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Places</a>
+          </li>
+        </ul>
+        <input class="search-bar" type="text" placeholder="buscar..." />
+        <a href="/VISIT/VISITANTIOQUIA-CODE/src/html/login.html"
+          ><img
+            src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/navbar/user.png"
+            alt
+            class="user-login"
+        /></a>
+        <a href
+          ><img
+            src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/navbar/Recurso 1@3x.png"
+            alt
+            class="logout"
+        /></a>
+      </nav>
+    </header>
 
-                    <li class="nav-menu-item">
-                        <a href="#" class="nav-menu-link nav-link">Places</a>
-                    </li>
-                </ul>
-                <input class="search-bar" type="text" placeholder="buscar..." />
-                <a href="/VISIT/VISITANTIOQUIA-CODE/src/html/login.html"><img
-                        src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/navbar/user.png"
-                        alt
-                        class="user-login" /></a>
-                <a href><img
-                        src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/navbar/Recurso 1@3x.png"
-                        alt class="logout"></a>
-            </nav>
-        </header>
+    <section class="carrousel">
+      <div class="main-section">
+        <!-- Contenido de la sección -->
+        <div class="content">
+          <h1>Aqui te recomendamos lo mejor</h1>
+          <p>Descripción del pueblo o destino.</p>
+        </div>
 
-        <section class="carrousel">
-            <div class="main-section">
-                <!-- Contenido de la sección -->
-                <div class="content">
-                    <h1>Aqui te recomendamos lo mejor</h1>
-                    <p>Descripción del pueblo o destino.</p>
-                </div>
-
-                <!-- Carrusel de imágenes -->
-                <div id="carouselExampleControls" class="carousel-section">
-                    <div class="carousel-inner">
-                        <!-- Imágenes del carrusel -->
-                        <div class="carousel-item active">
-                            <img
-                                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/pueblos/medellin/medellinC1.jpg"
-                                alt="Imagen 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/pueblos/medellin/medellinC2.jpg"
-                                alt="Imagen 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/pueblos/medellin/medellinC3.jpg"
-                                alt="Imagen 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/pueblos/medellin/medellinC4.jpg"
-                                alt="Imagen 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/pueblos/medellin/medellinC5.jpg"
-                                alt="Imagen 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/carrusel/venecia.jpg"
-                                alt="Imagen 3">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img
-                                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/homepage/jardin3.jpg"
-                                alt="Imagen 3">
-                        </div>
-                        <!-- Puedes agregar más imágenes aquí -->
-                    </div>
-                    <!-- Botones de control del carrusel -->
-                    <a class="carousel-control-prev"
-                        href="#carouselExampleControls"
-                        role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon"
-                            aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next"
-                        href="#carouselExampleControls"
-                        role="button" data-slide="next">
-                        <span class="carousel-control-next-icon"
-                            aria-hidden="true"></span>
-                        <span class="sr-only">Siguiente</span>
-                    </a>
-                </div>
+        <!-- Carrusel de imágenes -->
+        <div id="carouselExampleControls" class="carousel-section">
+          <div class="carousel-inner">
+            <!-- Imágenes del carrusel -->
+            <div class="carousel-item active">
+              <img
+                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/pueblos/medellin/medellinC1.jpg"
+                alt="Imagen 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/pueblos/medellin/medellinC2.jpg"
+                alt="Imagen 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/pueblos/medellin/medellinC3.jpg"
+                alt="Imagen 3"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/pueblos/medellin/medellinC4.jpg"
+                alt="Imagen 3"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/pueblos/medellin/medellinC5.jpg"
+                alt="Imagen 3"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/carrusel/venecia.jpg"
+                alt="Imagen 3"
+              />
             </div>
 
-        </section>
+            <div class="carousel-item">
+              <img
+                src="/VISIT/VISITANTIOQUIA-CODE/src/img/home/homepage/jardin3.jpg"
+                alt="Imagen 3"
+              />
+            </div>
+            <!-- Puedes agregar más imágenes aquí -->
+          </div>
+          <!-- Botones de control del carrusel -->
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-        <script>
-            //carrousel 
-            // Obtener referencias a los elementos del carrusel
-            const carouselItems = document.querySelectorAll('.carousel-item');
-            const carouselInner = document.querySelector('.carousel-inner');
-            
-            // Manejar clic en los elementos del carrusel
-            carouselItems.forEach((item, index) => {
-                item.addEventListener('click', () => {
-                    moveToIndex(index);
-                });
-            });
-            
-            // Manejar clic en la flecha izquierda
-            document.querySelector('.carousel-control-prev').addEventListener('click', () => {
-                const currentIndex = Array.from(carouselItems).findIndex(item => item.classList.contains('active'));
-                const newIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-                moveToIndex(newIndex);
-            });
-            
-            // Manejar clic en la flecha derecha
-            document.querySelector('.carousel-control-next').addEventListener('click', () => {
-                const currentIndex = Array.from(carouselItems).findIndex(item => item.classList.contains('active'));
-                const newIndex = (currentIndex + 1) % carouselItems.length;
-                moveToIndex(newIndex);
-            });
-            
-            // Función para mover el carrusel al ítem indicado
-            function moveToIndex(index) {
-                const translateValue = `-${index * (100 / carouselItems.length)}%`;
-                carouselInner.style.transform = `translateX(${translateValue})`;
-            
-                carouselItems.forEach((item) => item.classList.remove('active'));
-                carouselItems[index].classList.add('active');
-            
-                const title = carouselItems[index].dataset.title;
-                const description = carouselItems[index].dataset.description;
-            
-                const imgUrl = carouselItems[index].querySelector('img').src;
-                document.querySelector('.main-section').style.backgroundImage = `url(${imgUrl})`;
-            
-                document.querySelector('.content h1').textContent = title;
-                document.querySelector('.content p').textContent = description;
-            }
-            
-            //
-            
-            
-                </script>
-    </body>
+    <script>
+      //carrousel
+      // Obtener referencias a los elementos del carrusel
+      const carouselItems = document.querySelectorAll(".carousel-item");
+      const carouselInner = document.querySelector(".carousel-inner");
+
+      // Manejar clic en los elementos del carrusel
+      carouselItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+          moveToIndex(index);
+        });
+      });
+
+      // Manejar clic en la flecha izquierda
+      document
+        .querySelector(".carousel-control-prev")
+        .addEventListener("click", () => {
+          const currentIndex = Array.from(carouselItems).findIndex((item) =>
+            item.classList.contains("active")
+          );
+          const newIndex =
+            (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+          moveToIndex(newIndex);
+        });
+
+      // Manejar clic en la flecha derecha
+      document
+        .querySelector(".carousel-control-next")
+        .addEventListener("click", () => {
+          const currentIndex = Array.from(carouselItems).findIndex((item) =>
+            item.classList.contains("active")
+          );
+          const newIndex = (currentIndex + 1) % carouselItems.length;
+          moveToIndex(newIndex);
+        });
+
+      // Función para mover el carrusel al ítem indicado
+      function moveToIndex(index) {
+        const translateValue = `-${index * (100 / carouselItems.length)}%`;
+        carouselInner.style.transform = `translateX(${translateValue})`;
+
+        carouselItems.forEach((item) => item.classList.remove("active"));
+        carouselItems[index].classList.add("active");
+
+        const title = carouselItems[index].dataset.title;
+        const description = carouselItems[index].dataset.description;
+
+        const imgUrl = carouselItems[index].querySelector("img").src;
+        document.querySelector(
+          ".main-section"
+        ).style.backgroundImage = `url(${imgUrl})`;
+
+        document.querySelector(".content h1").textContent = title;
+        document.querySelector(".content p").textContent = description;
+      }
+
+      //
+    </script>
+  </body>
 </html>

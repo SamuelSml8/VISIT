@@ -6,7 +6,8 @@
       "name": "Abejorral",
       "population": 21468,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 2,
@@ -14,7 +15,8 @@
       "name": "Abriaquí",
       "population": 2855,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 3,
@@ -22,7 +24,8 @@
       "name": "Alejandría",
       "population": 4955,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 4,
@@ -30,7 +33,8 @@
       "name": "Amagá",
       "population": 32412,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 5,
@@ -38,7 +42,8 @@
       "name": "Amalfi",
       "population": 27846,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 6,
@@ -46,7 +51,8 @@
       "name": "Andes",
       "population": 46183,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 7,
@@ -54,7 +60,8 @@
       "name": "Angelópolis",
       "population": 6109,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 8,
@@ -62,7 +69,8 @@
       "name": "Angostura",
       "population": 12121,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 9,
@@ -70,7 +78,8 @@
       "name": "Anorí",
       "population": 19675,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 10,
@@ -78,7 +87,8 @@
       "name": "Anzá",
       "population": 7483,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 11,
@@ -86,7 +96,8 @@
       "name": "Apartadó",
       "population": 131422,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 12,
@@ -94,7 +105,8 @@
       "name": "Arboletes",
       "population": 32192,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 13,
@@ -102,7 +114,8 @@
       "name": "Argelia",
       "population": 8024,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 14,
@@ -110,7 +123,8 @@
       "name": "Armenia",
       "population": 5404,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 15,
@@ -118,7 +132,8 @@
       "name": "Barbosa",
       "population": 56103,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 16,
@@ -126,7 +141,8 @@
       "name": "Bello",
       "population": 566456,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 17,
@@ -134,7 +150,8 @@
       "name": "Belmira",
       "population": 6405,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 18,
@@ -142,7 +159,8 @@
       "name": "Betania",
       "population": 10892,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 19,
@@ -150,7 +168,8 @@
       "name": "Betulia",
       "population": 16604,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 20,
@@ -158,7 +177,8 @@
       "name": "Briceño",
       "population": 8523,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 21,
@@ -166,7 +186,8 @@
       "name": "Buriticá",
       "population": 10017,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 22,
@@ -174,7 +195,8 @@
       "name": "Cáceres",
       "population": 31160,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 23,
@@ -182,7 +204,8 @@
       "name": "Caicedo",
       "population": 8870,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 24,
@@ -190,7 +213,8 @@
       "name": "Caldas",
       "population": 86081,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 25,
@@ -198,7 +222,8 @@
       "name": "Campamento",
       "population": 9755,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 26,
@@ -206,7 +231,8 @@
       "name": "Cañasgordas",
       "population": 16371,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 27,
@@ -214,7 +240,8 @@
       "name": "Caracolí",
       "population": 4824,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 28,
@@ -222,7 +249,8 @@
       "name": "Caramanta",
       "population": 4951,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 29,
@@ -230,7 +258,8 @@
       "name": "Carepa",
       "population": 52184,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 30,
@@ -238,7 +267,8 @@
       "name": "Carmen de viboral",
       "population": 64265,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 31,
@@ -246,7 +276,8 @@
       "name": "Carolina",
       "population": 4219,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 32,
@@ -254,7 +285,8 @@
       "name": "Caucasia",
       "population": 97803,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 33,
@@ -262,7 +294,8 @@
       "name": "Chigorodó",
       "population": 62235,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 34,
@@ -270,7 +303,8 @@
       "name": "Cisneros",
       "population": 10422,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 35,
@@ -278,7 +312,8 @@
       "name": "Ciudad Bolivar",
       "population": 27711,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 36,
@@ -286,7 +321,8 @@
       "name": "Cocorná",
       "population": 16551,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 37,
@@ -294,7 +330,8 @@
       "name": "Concepción",
       "population": 5049,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 38,
@@ -302,7 +339,8 @@
       "name": "Concordia",
       "population": 22737,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 39,
@@ -310,7 +348,8 @@
       "name": "Copacabana",
       "population": 84209,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 40,
@@ -318,7 +357,8 @@
       "name": "Dabeiba",
       "population": 24586,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 41,
@@ -326,7 +366,8 @@
       "name": "Donmatías",
       "population": 20360,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 42,
@@ -334,7 +375,8 @@
       "name": "Ebéjico",
       "population": 12820,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 43,
@@ -342,7 +384,8 @@
       "name": "El Bagre",
       "population": 56306,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 44,
@@ -350,7 +393,8 @@
       "name": "Entrerríos",
       "population": 12062,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 45,
@@ -358,7 +402,8 @@
       "name": "Envigado",
       "population": 248304,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 46,
@@ -366,7 +411,8 @@
       "name": "Fredonia",
       "population": 25981,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 47,
@@ -374,7 +420,8 @@
       "name": "Frontino",
       "population": 21905,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 48,
@@ -382,7 +429,8 @@
       "name": "Giraldo",
       "population": 5963,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 49,
@@ -390,7 +438,8 @@
       "name": "Girardota",
       "population": 55902,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 50,
@@ -398,7 +447,8 @@
       "name": "Gómez Plata",
       "population": 10397,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 51,
@@ -406,7 +456,8 @@
       "name": "Granada",
       "population": 10785,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 52,
@@ -414,7 +465,8 @@
       "name": "Guadalupe",
       "population": 6966,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 53,
@@ -422,7 +474,8 @@
       "name": "Guarne",
       "population": 59710,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 54,
@@ -430,7 +483,8 @@
       "name": "Guatapé",
       "population": 9020,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 55,
@@ -438,7 +492,8 @@
       "name": "Heliconia",
       "population": 5716,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 56,
@@ -446,7 +501,8 @@
       "name": "Hispania",
       "population": 5846,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 57,
@@ -454,7 +510,8 @@
       "name": "Itaguí",
       "population": 299348,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 58,
@@ -462,7 +519,8 @@
       "name": "Ituango",
       "population": 28890,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 59,
@@ -470,7 +528,8 @@
       "name": "Jardín",
       "population": 15513,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 60,
@@ -478,7 +537,8 @@
       "name": "Jericó",
       "population": 14454,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 61,
@@ -486,7 +546,8 @@
       "name": "La Ceja",
       "population": 70387,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 62,
@@ -494,7 +555,8 @@
       "name": "La Estrella",
       "population": 77611,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 63,
@@ -502,7 +564,8 @@
       "name": "La Pintada",
       "population": 8614,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 64,
@@ -510,7 +573,8 @@
       "name": "La Unión",
       "population": 23072,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 65,
@@ -518,7 +582,8 @@
       "name": "Liborina",
       "population": 10649,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 66,
@@ -526,7 +591,8 @@
       "name": "Maceo",
       "population": 8707,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 67,
@@ -534,7 +600,8 @@
       "name": "Marinilla",
       "population": 69898,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 68,
@@ -542,7 +609,8 @@
       "name": "Medellín",
       "population": 2616335,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 69,
@@ -550,7 +618,8 @@
       "name": "Montebello",
       "population": 7035,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 70,
@@ -558,7 +627,8 @@
       "name": "Murindó",
       "population": 5300,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 71,
@@ -566,7 +636,8 @@
       "name": "Mutatá",
       "population": 15035,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 72,
@@ -574,7 +645,8 @@
       "name": "Nariño",
       "population": 10812,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 73,
@@ -582,7 +654,8 @@
       "name": "Nechí",
       "population": 27901,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 74,
@@ -590,7 +663,8 @@
       "name": "Necoclí",
       "population": 45530,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 75,
@@ -598,7 +672,8 @@
       "name": "Olaya",
       "population": 3327,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 76,
@@ -606,7 +681,8 @@
       "name": "Peñol",
       "population": 22592,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 77,
@@ -614,7 +690,8 @@
       "name": "Peque",
       "population": 8644,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 78,
@@ -622,7 +699,8 @@
       "name": "Pueblorrico",
       "population": 9198,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 79,
@@ -630,7 +708,8 @@
       "name": "Puerto Berrio",
       "population": 42203,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 80,
@@ -638,7 +717,8 @@
       "name": "Puerto Nare",
       "population": 15232,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 81,
@@ -646,7 +726,8 @@
       "name": "Puerto Triunfo",
       "population": 19554,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 82,
@@ -654,7 +735,8 @@
       "name": "Remedios",
       "population": 30501,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 83,
@@ -662,7 +744,8 @@
       "name": "Retiro",
       "population": 25431,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 84,
@@ -670,7 +753,8 @@
       "name": "Rionegro",
       "population": 146880,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 85,
@@ -678,7 +762,8 @@
       "name": "Sabanalarga",
       "population": 9668,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 86,
@@ -686,7 +771,8 @@
       "name": "Sabaneta",
       "population": 89647,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 87,
@@ -694,7 +780,8 @@
       "name": "Salgar",
       "population": 19314,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 88,
@@ -702,7 +789,8 @@
       "name": "San Andrés de Cuerquía",
       "population": 7649,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 89,
@@ -710,7 +798,8 @@
       "name": "San Carlos",
       "population": 16984,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 90,
@@ -718,7 +807,8 @@
       "name": "San Francisco",
       "population": 5996,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 91,
@@ -726,7 +816,8 @@
       "name": "San Jerónimo",
       "population": 16499,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 92,
@@ -734,7 +825,8 @@
       "name": "San Jose de La Montaña",
       "population": 3920,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 93,
@@ -742,7 +834,8 @@
       "name": "San Juan de Urabá",
       "population": 21707,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 94,
@@ -750,7 +843,8 @@
       "name": "San Luis",
       "population": 13791,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 95,
@@ -758,7 +852,8 @@
       "name": "San Pedro de Los Milagros",
       "population": 23573,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 96,
@@ -766,7 +861,8 @@
       "name": "San Pedro de Urabá",
       "population": 33180,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 97,
@@ -774,7 +870,8 @@
       "name": "San Rafael",
       "population": 16617,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 98,
@@ -782,7 +879,8 @@
       "name": "San Roque",
       "population": 22966,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 99,
@@ -790,7 +888,8 @@
       "name": "San Vicente",
       "population": 23546,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 100,
@@ -798,7 +897,8 @@
       "name": "Santa Bárbara",
       "population": 27862,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 101,
@@ -806,7 +906,8 @@
       "name": "Santa Rosa de Osos",
       "population": 39054,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 102,
@@ -814,7 +915,8 @@
       "name": "Santafé de Antioquia",
       "population": 28049,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 103,
@@ -822,7 +924,8 @@
       "name": "Santo Domingo",
       "population": 13075,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 104,
@@ -830,7 +933,8 @@
       "name": "Santuario",
       "population": 38711,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 105,
@@ -838,7 +942,8 @@
       "name": "Segovia",
       "population": 40922,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 106,
@@ -846,7 +951,8 @@
       "name": "Sonsón",
       "population": 38520,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 107,
@@ -854,7 +960,8 @@
       "name": "Sopetrán",
       "population": 16089,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 108,
@@ -862,7 +969,8 @@
       "name": "Támesis",
       "population": 17176,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 109,
@@ -870,7 +978,8 @@
       "name": "Tarazá",
       "population": 29082,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 110,
@@ -878,7 +987,8 @@
       "name": "Tarso",
       "population": 6555,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 111,
@@ -886,7 +996,8 @@
       "name": "Titiribí",
       "population": 11364,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 112,
@@ -894,7 +1005,8 @@
       "name": "Toledo",
       "population": 5266,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 113,
@@ -902,7 +1014,8 @@
       "name": "Turbo",
       "population": 134517,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 114,
@@ -910,7 +1023,8 @@
       "name": "Uramita",
       "population": 7277,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 115,
@@ -918,7 +1032,8 @@
       "name": "Urrao",
       "population": 32139,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 116,
@@ -926,7 +1041,8 @@
       "name": "Valdivia",
       "population": 144722,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 117,
@@ -934,7 +1050,8 @@
       "name": "Valparaíso",
       "population": 6916,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 118,
@@ -942,7 +1059,8 @@
       "name": "Vegachí",
       "population": 12556,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 119,
@@ -950,7 +1068,8 @@
       "name": "Venecia",
       "population": 12322,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 120,
@@ -958,7 +1077,8 @@
       "name": "Vigía del Fuerte",
       "population": 9752,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 121,
@@ -966,7 +1086,8 @@
       "name": "Yalí",
       "population": 8091,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 122,
@@ -974,7 +1095,8 @@
       "name": "Yarumal",
       "population": 44457,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 123,
@@ -982,7 +1104,8 @@
       "name": "Yolombó",
       "population": 24023,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 124,
@@ -990,7 +1113,8 @@
       "name": "Yondó",
       "population": 20727,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     },
     {
       "id_town": 125,
@@ -998,7 +1122,8 @@
       "name": "Zaragoza",
       "population": 26207,
       "weather": "",
-      "imgUrl": ""
+      "imgUrl": "",
+      "description": ""
     }
   ],
   "hotels": [
@@ -1007,13 +1132,14 @@
       "hotel_name": "Art",
       "address": "Cra. 41 #9-31, El Poblado, Medellín, Antioquia",
       "avg_price": 407560,
-      "pool": true,
-      "jacuzzi": true,
-      "gym": true,
+      "pool": false,
+      "jacuzzi": false,
+      "gym": false,
       "restaurant": true,
       "wifi": true,
       "bar": true,
-      "img_hotel":"../img/home/hotels/art.jpg"
+      "pet_friendly": true,
+      "img_hotel": "../img/home/hotels/art.jpg"
     },
     {
       "id_hotel": "2",
@@ -1026,20 +1152,22 @@
       "restaurant": true,
       "wifi": true,
       "bar": true,
-      "img_hotel":"../img/home/hotels/charlee.jpg"
+      "pet_friendly": false,
+      "img_hotel": "../img/home/hotels/charlee.jpg"
     },
     {
       "id_hotel": "3",
       "hotel_name": "Click clack",
       "address": "Cra. 37 #10A 29, El Poblado, Medelllín, Antioquia",
       "avg_price": 669410,
-      "pool": true,
-      "jacuzzi": true,
+      "pool": false,
+      "jacuzzi": false,
       "gym": true,
       "restaurant": true,
       "wifi": true,
       "bar": true,
-      "img_hotel":"../img/home/hotels/click.jpg"
+      "pet_friendly": true,
+      "img_hotel": "../img/home/hotels/click.jpg"
     },
     {
       "id_hotel": "4",
@@ -1052,46 +1180,50 @@
       "restaurant": true,
       "wifi": true,
       "bar": true,
-      "img_hotel":"../img/home/hotels/dannCarlton.jpg"
+      "pet_friendly": false,
+      "img_hotel": "../img/home/hotels/dannCarlton.jpg"
     },
     {
       "id_hotel": "5",
       "hotel_name": "Dix",
       "address": "Cl 10 #41-21, El Poblado, Medellín, Antioquia",
       "avg_price": 241176,
-      "pool": true,
+      "pool": false,
       "jacuzzi": true,
-      "gym": true,
+      "gym": false,
       "restaurant": true,
       "wifi": true,
-      "bar": true,
-      "img_hotel":"../img/home/hotels/dix.jpg"
+      "bar": false,
+      "pet_friendly": true,
+      "img_hotel": "../img/home/hotels/dix.jpg"
     },
     {
       "id_hotel": "6",
       "hotel_name": "Gran Hotel",
       "address": "Cl. 54 #45-92, La Candelaria, Medellín, Antioquia",
       "avg_price": 204255,
-      "pool": true,
-      "jacuzzi": true,
-      "gym": true,
+      "pool": false,
+      "jacuzzi": false,
+      "gym": false,
       "restaurant": true,
       "wifi": true,
-      "bar": true,
-      "img_hotel":"../img/home/hotels/granHotel.jpg"
+      "bar": false,
+      "pet_friendly": false,
+      "img_hotel": "../img/home/hotels/granHotel.jpg"
     },
     {
       "id_hotel": "7",
       "hotel_name": "Holiday",
       "address": "Cra. 43A #1 sur - 150, El Poblado, Medellín, Antioquia",
       "avg_price": 549250,
-      "pool": true,
-      "jacuzzi": true,
+      "pool": false,
+      "jacuzzi": false,
       "gym": true,
       "restaurant": true,
       "wifi": true,
       "bar": true,
-      "img_hotel":"../img/home/hotels/holiday.jpg"
+      "pet_friendly": false,
+      "img_hotel": "../img/home/hotels/holiday.jpg"
     },
     {
       "id_hotel": "8",
@@ -1099,38 +1231,41 @@
       "address": "Calle 16, Variante #28-51, Las Palmas, Medellin, Antioquia",
       "avg_price": 605469,
       "pool": true,
-      "jacuzzi": true,
+      "jacuzzi": false,
       "gym": true,
       "restaurant": true,
       "wifi": true,
       "bar": true,
-      "img_hotel":"../img/home/hotels/intercontinental.jpg"
+      "pet_friendly": false,
+      "img_hotel": "../img/home/hotels/intercontinental.jpg"
     },
     {
       "id_hotel": "9",
       "hotel_name": "Park 10",
       "address": "Cra 36b #11-12 Sector El Poblado, Medellín, Antioquia",
       "avg_price": 388587,
-      "pool": true,
+      "pool": false,
       "jacuzzi": true,
       "gym": true,
       "restaurant": true,
       "wifi": true,
       "bar": true,
-      "img_hotel":"../img/home/hotels/park.jpg"
+      "pet_friendly": false,
+      "img_hotel": "../img/home/hotels/park.jpg"
     },
     {
       "id_hotel": "10",
       "hotel_name": "Poblado plaza",
       "address": "Cra. 43a # 4 sur 75, El Poblado, Medellín, Antioquia",
       "avg_price": 963719,
-      "pool": true,
+      "pool": false,
       "jacuzzi": true,
-      "gym": true,
+      "gym": false,
       "restaurant": true,
       "wifi": true,
-      "bar": true,
-      "img_hotel":"../img/home/hotels/pobladoPlaza.jpg"
+      "bar": false,
+      "pet_friendly": true,
+      "img_hotel": "../img/home/hotels/pobladoPlaza.jpg"
     },
     {
       "id_hotel": "11",
@@ -1138,25 +1273,27 @@
       "address": "Cra. 42A # 1-15, El Poblado, Medellín, Antioquia",
       "avg_price": 321464,
       "pool": true,
-      "jacuzzi": true,
+      "jacuzzi": false,
       "gym": true,
       "restaurant": true,
       "wifi": true,
       "bar": true,
-      "img_hotel":"../img/home/hotels/sanFernandoPlaza"
+      "pet_friendly": false,
+      "img_hotel": "../img/home/hotels/sanFernandoPlaza"
     },
     {
       "id_hotel": "12",
       "hotel_name": "Selina",
       "address": "Cra. 32d #9 - 17, El Poblado, Medellín, Antioquia",
       "avg_price": 201332,
-      "pool": true,
-      "jacuzzi": true,
-      "gym": true,
+      "pool": false,
+      "jacuzzi": false,
+      "gym": false,
       "restaurant": true,
       "wifi": true,
       "bar": true,
-      "img_hotel":"../img/home/hotels/selina.jpg"
+      "pet_friendly": true,
+      "img_hotel": "../img/home/hotels/selina.jpg"
     },
     {
       "id_hotel": "13",
@@ -1168,21 +1305,23 @@
       "gym": true,
       "restaurant": true,
       "wifi": true,
-      "bar": true,
-      "img_hotel":"../img/home/hotels/sheraton.jpg"
+      "bar": false,
+      "pet_friendly": false,
+      "img_hotel": "../img/home/hotels/sheraton.jpg"
     },
     {
       "id_hotel": "14",
       "hotel_name": "Terra",
       "address": "Calle 35 No 64A-92, Conquistadores, Medellín, Antioquia",
       "avg_price": 208984,
-      "pool": true,
-      "jacuzzi": true,
-      "gym": true,
+      "pool": false,
+      "jacuzzi": false,
+      "gym": false,
       "restaurant": true,
       "wifi": true,
-      "bar": true,
-      "img_hotel":"../img/home/hotels/terra.jpg"
+      "bar": false,
+      "pet_friendly": true,
+      "img_hotel": "../img/home/hotels/terra.jpg"
     }
   ]
 }

@@ -35,3 +35,7 @@ Iniciar json server
 Paso 1: Abrir terminal: Ctrl + Shift + ñ
 Paso 2: entrar a la ubicación del db.json con ayuda del cd a través de la terminal
 Paso 3: Escribir el siguiente comando: json-server db.json -p 4002
+
+25 / 01 / 2024
+
+Creación JSON de hoteles, con información almacenada de cada hotel. Se agregó un background a la sección de hoteles con iconos y demás.

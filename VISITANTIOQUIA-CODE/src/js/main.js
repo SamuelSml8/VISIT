@@ -26,29 +26,6 @@ carouselItems.forEach((item, index) => {
   });
 });
 
-// Manejar clic en la flecha izquierda
-document
-  .querySelector(".carousel-control-prev")
-  .addEventListener("click", () => {
-    const currentIndex = Array.from(carouselItems).findIndex((item) =>
-      item.classList.contains("active")
-    );
-    const newIndex =
-      (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-    moveToIndex(newIndex);
-  });
-
-// Manejar clic en la flecha derecha
-document
-  .querySelector(".carousel-control-next")
-  .addEventListener("click", () => {
-    const currentIndex = Array.from(carouselItems).findIndex((item) =>
-      item.classList.contains("active")
-    );
-    const newIndex = (currentIndex + 1) % carouselItems.length;
-    moveToIndex(newIndex);
-  });
-
 // Función para mover el carrusel al ítem indicado
 function moveToIndex(index) {
   const translateValue = `-${index * (100 / carouselItems.length)}%`;
@@ -69,17 +46,6 @@ function moveToIndex(index) {
   document.querySelector(".content p").textContent = description;
 }
 
-// Referencias a elementos del carrusel
-const carrousel = document.getElementById("carrousel-events");
-const container = document.getElementById("container-carrousel-events");
-const cards = Array.from(document.querySelectorAll(".card"));
-
-// Agrega las tarjetas duplicadas al principio y al final
-const duplicatedCards = cards.map((card, index) => card.cloneNode(true));
-
-carrousel.innerHTML = "";
-duplicatedCards.forEach((card) => carrousel.appendChild(card));
-
 // Función para mover la card al centro
 function moveToCenter(index) {
   const cardWidth = cards[0].offsetWidth;
@@ -92,23 +58,22 @@ function moveToCenter(index) {
     card.style.transition = "transform 0.5s ease-in-out";
     card.style.transform = i === index ? "scale(1.2)" : "scale(1)";
   });
-
+}
   // Restablece la posición después de la transición
-  setTimeout(() => {
-    carrousel.style.transition = "none";
-    cards.forEach((card, i) => {
-      card.style.transition = "none";
-      card.style.transform = i === index ? "scale(1.2)" : "scale(1)";
-    });
+  // setTimeout(() => {
+  //   carrousel.style.transition = "none";
+  //   cards.forEach((card, i) => {
+  //     card.style.transition = "none";
+  //     card.style.transform = i === index ? "scale(1.2)" : "scale(1)";
+  //   });
 
     // Mueve las tarjetas al principio o al final según sea necesario
-    if (index === 0) {
-      moveToBeginning();
-    } else if (index === cards.length - 1) {
-      moveToEnd();
-    }
-  }, 500);
-}
+  //   if (index === 0) {
+  //     moveToBeginning();
+  //   } else if (index === cards.length - 1) {
+  //     moveToEnd();
+  //   }
+  // }, 500);
 
 // Función para mover las tarjetas al principio
 function moveToBeginning() {
@@ -136,7 +101,7 @@ function updateCardIndexes() {
 }
 
 // Inicializa el carrusel
-moveToCenter(0);
+// moveToCenter(0);
 
 document.addEventListener("DOMContentLoaded", function () {
   const slider = document.querySelector(".destinos-grid");
@@ -160,4 +125,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Automatic sliding every 3 seconds (adjust as needed)
   setInterval(nextSlide, 3000);
+
 });
+
+const urlHotels = 'http://localhost:4002/hotels';
+
+async function hotelsCardsRecomended() {
+  const response = await fetch(urlHotels);
+  const hoteles = await response.json();
+  console.log(hoteles);
+  if(hoteles && hoteles.length > 0){
+      hoteles.forEach((hotel) => {
+    const hotelCards = document.querySelector('.slide-track');
+    const { hotel_name, avg_price, img_hotel } = hotel;
+    hotelCards.innerHTML += `
+    <div class="slide">
+    <img
+      src="${img_hotel}"
+      alt="Hotel image"
+    />
+    <a href class="name-hotel">${hotel_name}</a>
+    <p class="price-hotel">$${avg_price}</p>
+    <div class="hotel-link">
+      <button href="#" class="button-explore-hotels">Explore</button>
+      <i class="ri-price-tag-3-line button-icon"></i>
+      <i class="ri-heart-line button-icon"></i>
+    </div>
+  </div>
+    `;
+  });
+  }else{
+    console.log(error)
+  }
+
+}
+hotelsCardsRecomended()

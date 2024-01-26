@@ -45,6 +45,11 @@ body {
   height: 40px;
 }
 
+/* .logo img:hover{
+  opacity: 1;
+  transform: rotate(360deg);
+} */
+
 .nav-link {
   color: white;
   text-decoration: none;

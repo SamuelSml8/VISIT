@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VISIT</title>
+    <!--***** REMIXI ICONS ***** By*JR*-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--***** SWIPER CSS ***** By*JR*-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!--***** STYLES CSS ***** By*JR*-->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!--***** START HEADER ***** By*JR*-->
+    <header class="header" id="header">
+      <nav class="nav-bar">
+        <a href="#" class="logo-nav">
+          <img
+            src="/VISIT/VISITANTIOQUIA-CODE/src/img/visitIcon.png"
+            alt
+            id="logo-nav"
+          />
+        </a>
+        <div class="menu-nav">
+          <ul class="list-nav">
+            <li class="item-nav">
+              <a
+                href="../foodDrink/foodDrink.html"
+                class="link-nav link-home-closed"
+              >
+                <i class="ri-home-fill"></i>
+                <span>HOME</span>
+              </a>
+            </li>
+
+            <li class="item-nav">
+              <a href="hotels.html" class="link-nav">
+                <i class="ri-hotel-line"></i>
+                <span>HOTELS</span>
+              </a>
+            </li>
+
+            <li class="item-nav">
+              <a href="foodDrink.html" class="link-nav">
+                <i class="ri-restaurant-line"></i>
+                <span>FOOD & DRINK</span>
+              </a>
+            </li>
+
+            <li class="item-nav">
+              <a href="../" class="link-nav">
+                <i class="ri-road-map-line"></i>
+                <span>PLACES</span>
+              </a>
+            </li>
+
+            <li class="item-nav">
+              <a href class="link-nav">
+                <i class="ri-calendar-event-line"></i>
+                <span>EVENTS</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="actions-nav">
+          <!--***** BUTTON SEARCH ***** By*JR*-->
+          <i class="ri-search-line" search-button id="search-button"></i>
+
+          <!--***** BUTTON LOGIN ***** By*JR*-->
+          <i class="ri-user-line login-button" id="login-button"></i>
+
+          <!--***** BUTTON THEME ***** By*JR*-->
+          <i class="ri-moon-line" theme-change id="theme-button"></i>
+
+          <!--***** BUTTON LANGUAGE ***** By*JR*-->
+          <i class="ri-english-input" language-button id="change-language"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--***** START SEARCH ***** By*JR*-->
+    <div class="search" id="search-content">
+      <form action class="form-search">
+        <i class="ri-search-line search-icon"></i>
+        <input
+          type="search"
+          placeholder="What are you lokking for?"
+          class="search-input"
+        />
+      </form>
+
+      <i class="ri-close-line search-close" id="search-close"></i>
+    </div>
+
+    <!--***** START LOGIN ***** By*JR*-->
+    <div class="login grid" id="login-content">
+      <form action class="login-form grid">
+        <h3 class="login-title">Log In</h3>
+
+        <div class="login-group grid">
+          <div>
+            <label for="login-email" class="login-label">Email</label>
+            <input
+              type="email"
+              placeholder="write your email"
+              id="login-email"
+              class="login-input"
+            />
+          </div>
+
+          <div>
+            <label for="login-password" class="login-label">Password</label>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="login-password"
+              class="login-input"
+            />
+          </div>
+        </div>
+
+        <div class="forgot">
+          <span class="login-signup">
+            You do not have an account ? <a href="#">Sign up</a>
+          </span>
+
+          <a href="#" class="login-forgot"> You forgot your password </a>
+
+          <button type="submit" class="login-button button">Log In</button>
+        </div>
+      </form>
+
+      <i class="ri-close-line login-close" id="login-close"></i>
+    </div>
+
+    <script>
+      // MENU ***** By*JR*
+      const searchButton = document.getElementById("search-button");
+      const searchClose = document.getElementById("search-close");
+      const searchContent = document.getElementById("search-content");
+
+      // SHOW MENU ***** By*JR*
+      if (searchButton) {
+        searchButton.addEventListener("click", () => {
+          searchContent.classList.add("show-search");
+        });
+      }
+
+      //  MENU HIDDEN ***** By*JR*
+      if (searchClose) {
+        searchClose.addEventListener("click", () => {
+          searchContent.classList.remove("show-search");
+        });
+      }
+    </script>
+
+    <!--***** LOGIN JS ***** By*JR*-->
+    <script>
+      // SHOW LOGIN ***** By*JR*
+      const loginButton = document.getElementById("login-button");
+      const loginClose = document.getElementById("login-close");
+      const loginContent = document.getElementById("login-content");
+
+      // SHOW LOGIN ***** By*JR*
+      if (loginButton) {
+        loginButton.addEventListener("click", () => {
+          loginContent.classList.add("show-login");
+        });
+      }
+
+      //  LOGIN HIDDEN ***** By*JR*
+      if (loginClose) {
+        loginClose.addEventListener("click", () => {
+          loginContent.classList.remove("show-login");
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--* START HEAD -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--***** START LINK REMIXI ICONS ***** -->
+    <title>VISIT</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
     />
-    <!--***** END LINK REMIXI ICONS ***** -->
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!--* START LINK SWIPER CSS -->
+    <!--***** SWIPER CSS ***** By*JR*-->
     <link
       href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
-    <!--* END LINK SWIPER CSS -->
 
-    <!--* START LINK STYLES CSS  -->
-    <link rel="stylesheet" href="../src/css/styles.css" />
-    <!--* END LINK STYLES CSS  -->
-
-    <!--* START LINK NAVBAR STYLES CSS-->
-    <link rel="stylesheet" href="../src/components/navbar/navbar.css">
-    <!--* END LINK NAVBAR STYLES CSS-->
-
-    <!--* START TITLE DOCUMENT-->
-    <title>GITHUB Home | Visit</title>
-    <!--* END TITLE DOCUMENT -->
-    <link
-      rel="shortcut icon"
-      href="../src/img/visitIcon.svg"
-      type="image/x-icon"
-    />
+    <!--***** STYLES CSS ***** By*JR*-->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <!--* END HEAD -->
-
-  <!--* START BODY -->
   <body>
-    <!--* START HEADER * -->
-    <header class="header" id="header"></header>
-    <!--* END HEADER * -->
+    <!--***** START HEADER ***** By*JR*-->
+    <header class="header" id="header">
+      <nav class="nav-bar">
+        <a href="#" class="logo-nav">
+          <img src="./img/logo.png" alt id="logo-nav" />
+        </a>
+        <div class="menu-nav">
+          <ul class="list-nav">
+            <li class="item-nav">
+              <a
+                href="../foodDrink/foodDrink.html"
+                class="link-nav link-home-closed"
+              >
+                <i class="ri-home-fill"></i>
+                <span>HOME</span>
+              </a>
+            </li>
 
-    <!--***** SEARCH ***** -->
+            <li class="item-nav">
+              <a href="hotels.html" class="link-nav">
+                <i class="ri-hotel-line"></i>
+                <span>HOTELS</span>
+              </a>
+            </li>
+
+            <li class="item-nav">
+              <a href="foodDrink.html" class="link-nav">
+                <i class="ri-restaurant-line"></i>
+                <span>FOOD & DRINK</span>
+              </a>
+            </li>
+
+            <li class="item-nav">
+              <a href="../" class="link-nav">
+                <i class="ri-road-map-line"></i>
+                <span>PLACES</span>
+              </a>
+            </li>
+
+            <li class="item-nav">
+              <a href class="link-nav">
+                <i class="ri-calendar-event-line"></i>
+                <span>EVENTS</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="actions-nav">
+          <!--***** BUTTON SEARCH ***** By*JR*-->
+          <i class="ri-search-line" search-button id="search-button"></i>
+
+          <!--***** BUTTON LOGIN ***** By*JR*-->
+          <i class="ri-user-line login-button" id="login-button"></i>
+
+          <!--***** BUTTON THEME ***** By*JR*-->
+          <i class="ri-moon-line" theme-change id="theme-button"></i>
+
+          <!--***** BUTTON LANGUAGE ***** By*JR*-->
+          <i class="ri-english-input" language-button id="change-language"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--***** START SEARCH ***** By*JR*-->
     <div class="search" id="search-content">
       <form action class="form-search">
         <i class="ri-search-line search-icon"></i>
@@ -63,7 +101,7 @@
       <i class="ri-close-line search-close" id="search-close"></i>
     </div>
 
-    <!--***** LOGIN ***** -->
+    <!--***** START LOGIN ***** By*JR*-->
     <div class="login grid" id="login-content">
       <form action class="login-form grid">
         <h3 class="login-title">Log In</h3>
@@ -90,7 +128,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="forgot">
           <span class="login-signup">
             You do not have an account ? <a href="#">Sign up</a>
           </span>
@@ -104,9 +142,8 @@
       <i class="ri-close-line login-close" id="login-close"></i>
     </div>
 
-    <!--***** MAIN ***** -->
+    <!--***** MAIN ***** By*JR*-->
     <main class="main">
-      <!--***** MAIN ***** -->
       <section class="home-section" id="home">
         <div class="grid-container container-home">
           <div class="data-home">
@@ -123,7 +160,307 @@
             <a href="" class="get-started">Get started</a>
           </div>
           <div class="img-data-home">
-            <img src="../src/img/home/homepage/turist.png" alt="" />
+            <img src="./img/chivaHome.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="carrousel-towns">
+        <div class="container-carrousel-towns">
+          <div class="content-text-towns">
+            <h2>TOP DESTINATIONS</h2>
+            <p>
+              We have the most up-to-date statistics, in order to choose between
+              the most convenient options for your destination.
+            </p>
+            <ul class="counter">
+              <li>
+                <h3><i class="ri-user-line"></i>1.3M+</h3>
+                <span>Visitors in 2023</span>
+              </li>
+
+              <li>
+                <h3><i class="ri-map-pin-line"></i>125</h3>
+                <span>Destinations</span>
+              </li>
+            </ul>
+            <button class="btn">
+              Go to Collections <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <!-- START TOWNS -->
+
+          <div class="swiper-towns mySwiper-towns">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/towns/1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/towns/2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/towns/3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/towns/4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/towns/5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/towns/6.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next-towns"></div>
+            <div class="swiper-button-prev-towns"></div>
+            <div class="swiper-pagination-towns"></div>
+          </div>
+
+          <!-- END TOWNS -->
+        </div>
+      </section>
+
+      <!--***** EXPERIENCE & CARRUSEL INFINITO ***** By*JR*-->
+      <div class="baner-hotels">
+        <h2 class="tittle-hotels-baner">Stay & Play Package</h2>
+        <p class="text-hotels-baner">
+          Stay and play at Kalahari Resorts & Conventions! Enjoy up to 15% off
+          our Best Available Rate, plus receive a $100 arcade card for each
+          night of your stay when you use promo code STAYNPLAY.
+        </p>
+
+        <button class="buton-ofers-hotels">Offerts</button>
+      </div>
+
+      <section class="carrusel-infinito">
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Chrlee</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Dann Carlton</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Gran Hotel</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Holiday Inn</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Itercontinental</a>
+
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Park</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Poblado Plaza</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel San Fernando</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Sheraton</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Art</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Click</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Dix</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Selina</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./img/hotels/charlee.jpg" alt />
+              <a href class="name-hotel">Hotel Terra</a>
+              <p class="price-hotel">$683.520</p>
+              <div class="hotel-link">
+                <div class="stars">
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                  <i class="ri-star-s-line checked"></i>
+                </div>
+
+                <a href="" class="link-explore-hotel">Explore</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -166,358 +503,62 @@
         </div>
       </div>
 
-      <section class="carrousel-towns">
-        <div class="container-carrousel-towns">
-          <div class="content-text-towns">
-            <h2>TOP DESTINATIONS</h2>
-            <p>
-              We have the most up-to-date statistics, in order to choose between
-              the most convenient options for your destination.
-            </p>
-            <ul class="counter">
-              <li>
-                <h3><i class="ri-user-line"></i>1.3M+</h3>
-                <span>visitors in 2023</span>
-              </li>
-              <li>
-                <h3><i class="ri-map-pin-line"></i>125</h3>
-                <span>Destinations</span>
-              </li>
-            </ul>
-            <button class="btn">
-              Go to Collections <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-          <!-- START TOWNS -->
+      <!--***** EVENTOS  ***** By*JR*-->
 
-          <div class="swiper-towns mySwiper-towns">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="../src/img/home/pueblos/1.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="../src/img/home/pueblos/2.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="../src/img/home/pueblos/3.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="../src/img/home/pueblos/4.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="../src/img/home/pueblos/5.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="../src/img/home/pueblos/6.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-button-next-towns"></div>
-            <div class="swiper-button-prev-towns"></div>
-            <div class="swiper-pagination-towns"></div>
-          </div>
-
-          <!-- END TOWNS -->
-        </div>
-      </section>
-
-      <!--***** EXPERIENCE & CARRUSEL INFINITO ***** -->
-      <div class="baner-hotels">
-        <h2 class="tittle-hotels-baner">Stay & Play Package</h2>
-        <p class="text-hotels-baner">
-          Stay and play at Kalahari Resorts & Conventions! Enjoy up to 15% off
-          our Best Available Rate, plus receive a $100 arcade card for each
-          night of your stay when you use promo code STAYNPLAY.
-        </p>
-
-        <button class="buton-ofers-hotels">Ofers</button>
-      </div>
-
-      <section class="carrusel-infinito">
-        <div class="slider">
-          <div class="slide-track">
-            <div class="slide">
-              <img src="/images/hotels/charlee.jpg" alt />
-              <a href class="name-hotel">Hotel Chrlee</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/dannCarlton.jpg" alt />
-              <a href class="name-hotel">Hotel Dann Carlton</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/granHotel.jpg" alt />
-              <a href class="name-hotel">Hotel Gran Hotel</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/holiday.jpg" alt />
-              <a href class="name-hotel">Hotel Holiday Inn</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/intercontinental.jpg" alt />
-              <a href class="name-hotel">Hotel Itercontinental</a>
-
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/park.jpg" alt />
-              <a href class="name-hotel">Hotel Park</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/pobladoPlaza.jpg" alt />
-              <a href class="name-hotel">Hotel Poblado Plaza</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-
-            <div class="slide">
-              <img src="/images/hotels/sanFernandoPlaza.jpg" alt />
-              <a href class="name-hotel">Hotel San Fernando</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/sheraton.jpg" alt />
-              <a href class="name-hotel">Hotel Sheraton</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/art.jpg" alt />
-              <a href class="name-hotel">Hotel Art</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/click.jpg" alt />
-              <a href class="name-hotel">Hotel Click</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/dix.jpg" alt />
-              <a href class="name-hotel">Hotel Dix</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/selina.jpg" alt />
-              <a href class="name-hotel">Hotel Selina</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/images/hotels/terra.jpg" alt />
-              <a href class="name-hotel">Hotel Terra</a>
-              <p class="price-hotel">$683.520</p>
-              <div class="hotel-link">
-                <div class="stars">
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                  <i class="ri-star-s-line checked"></i>
-                </div>
-
-                <a href="" class="link-explore-hotel">Explore</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="image-medellin"></section>
-
-      <!--***** EVENTOS  ***** -->
+      <h2 class="tittle-experience-visit">EXPERIENCIA VISIT</h2>
 
       <section class="events">
         <div class="swiper mySwiper">
-          <h2 class="tittle-experience-visit">EXPERIENCIA VISIT</h2>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img alt="asd" src="../src/img/home/eventos/colombiamoda.png" />
+              <img alt="asd" src="./img/eventos/domingoDiferente.jpg" />
             </div>
             <div class="swiper-slide">
-              <img alt="asd" src="../src/img/home/eventos/Danza.jpg" />
+              <img alt="asd" src="./img/eventos/colombiamoda.png" />
+            </div>
+            <div class="swiper-slide">
+              <img alt="asd" src="./img/eventos/musicOn.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img alt="asd" src="./img/eventos/expotatto.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img alt="asd" src="./img/eventos/core.jpg" />
             </div>
             <div class="swiper-slide">
               <img
                 alt="asd"
-                src="../src/img/home/eventos/domingoDiferente.jpg"
+                src="./img/eventos/Carl-Cox-–-GLOBAL-474-–-13-04-2012.jpeg"
               />
             </div>
             <div class="swiper-slide">
-              <img alt="asd" src="../src/img/home/eventos/elrosy.jpg" />
+              <img alt="asd" src="./img/eventos/domingoDiferente.jpg" />
             </div>
             <div class="swiper-slide">
-              <img alt="asd" src="../src/img/home/eventos/feria.jpg" />
+              <img alt="asd" src="./img/eventos/domingoDiferente.jpg" />
             </div>
             <div class="swiper-slide">
-              <img alt="asd" src="../src/img/home/eventos/musicOn.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img alt="asd" src="../src/img/home/eventos/tomorrow.png" />
+              <img alt="asd" src="./img/eventos/domingoDiferente.jpg" />
             </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </section>
 
-      <!--***** FOOTER  ***** -->
+      <!--***** FOOTER  ***** By*JR*-->
 
       <footer class="footer">
         <div class="container-footer">
           <div class="part-1-footer">
-            <div class="section-footer">
+            <div class="section-footer contact">
               <h3>CONTACT</h3>
-              <p>calle 29b</p>
-              <p>city medellin</p>
-              <p>cantioquia</p>
-              <p>zip code</p>
-              <p>phone number 4457923</p>
-              <p>mobile number 530232829</p>
+              <p>Cl. 16 #55-129, Guayabal</p>
+              <p>Medellín</p>
+              <p>Antioquia</p>
+              <p>30056778902</p>
             </div>
 
-            <div class="section-footer">
+            <div class="section-footer footer-display">
               <h3>MENU</h3>
               <a href="" class="link-item-footer">home</a>
               <a href="" class="link-item-footer">home</a>
@@ -527,9 +568,7 @@
               <a href="" class="link-item-footer">home</a>
             </div>
 
-            <img src="../src/img/logoFooter.png" alt="" class="logo-footer" />
-
-            <div class="section-footer">
+            <div class="section-footer footer-display">
               <h3>RECENT POST</h3>
               <a href="" class="link-item-footer">home</a>
               <a href="" class="link-item-footer">home</a>
@@ -539,21 +578,45 @@
               <a href="" class="link-item-footer">home</a>
             </div>
 
+            <div class="map-footer" style="width: 160%">
+              <iframe
+                width="50%"
+                height="50%"
+                frameborder="2"
+                scrolling="no"
+                margin="auto"
+                
+                
+                src="https://maps.google.com/maps?width=100%25&amp;height=800&amp;hl=es&amp;q=Riwi%20Medell%C3%ACn+(VISIT)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ><a href="https://www.gps.ie/car-satnav-gps/"
+                  >Car Navigation Systems</a
+                ></iframe
+              >
+            </div>
+
             <div class="section-footer">
-              <h3>FOLLOW US</h3>
-              <input type="text" placeholder="Email" class="input-footer" />
+              <h3 class="footer-display">FOLLOW US</h3>
+              <input
+                type="text"
+                placeholder="Email"
+                class="input-footer footer-display"
+              />
+              <img src="./img/logo.png" alt="" class="logo-footer" />
               <div class="link-social-footer">
-                <i class="ri-facebook-circle-fill"></i>
                 <i class="ri-instagram-fill"></i>
-                <i class="ri-mail-fill"></i>
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-google-fill"></i>
+                <i class="ri-github-fill"></i>
               </div>
+              <p class="copy-rights">
+                Copyright VISIT – 2021-2024. Todos los derechos reservados
+              </p>
             </div>
           </div>
         </div>
       </footer>
     </main>
 
-    <!--* START SCRIPT CARRUSEL TOWNS  -->
     <script type="module">
       var swiper = new Swiper(".mySwiper-towns", {
         effect: "flip",
@@ -567,55 +630,7 @@
         },
       });
     </script>
-    <!--* END SCRIPT CARRUSEL TOWNS  -->
-
-    <!--* START SCRIPT SEARCH JS  -->
-    <script>
-      // MENU *****
-      const searchButton = document.getElementById("search-button");
-      const searchClose = document.getElementById("search-close");
-      const searchContent = document.getElementById("search-content");
-
-      // SHOW MENU *****
-      if (searchButton) {
-        searchButton.addEventListener("click", () => {
-          searchContent.classList.add("show-search");
-        });
-      }
-
-      //  MENU HIDDEN *****
-      if (searchClose) {
-        searchClose.addEventListener("click", () => {
-          searchContent.classList.remove("show-search");
-        });
-      }
-    </script>
-    <!--* END SCRIPT SEARCH JS  -->
-
-    <!--* START SCRIPT LOGIN JS -->
-    <script>
-      // SHOW LOGIN *****
-      const loginButton = document.getElementById("login-button");
-      const loginClose = document.getElementById("login-close");
-      const loginContent = document.getElementById("login-content");
-
-      // SHOW LOGIN *****
-      if (loginButton) {
-        loginButton.addEventListener("click", () => {
-          loginContent.classList.add("show-login");
-        });
-      }
-
-      //  LOGIN HIDDEN *****
-      if (loginClose) {
-        loginClose.addEventListener("click", () => {
-          loginContent.classList.remove("show-login");
-        });
-      }
-    </script>
-    <!--* END SCRIPT LOGIN JS -->
-
-    <!--* START SCRIPT DE EVENTOS -->
+    <!-- swipper eventos -->
     <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
@@ -636,15 +651,14 @@
         },
       });
     </script>
-    <!--* END SCRIPT DE EVENTOS -->
 
-    <!--* START IMPORT SCRIPT SWIPER (REEMPLACE FOR NPM I IN NODEJS) -->
+    <!-- swipper animaciones -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!--* END IMPORT SCRIPT SWIPER (REEMPLACE FOR NPM I IN NODEJS) -->
-    <!--* START MAIN SCRIPT   -->
-    <script src="/js/main.js"></script>
-    <!--* END MAIN SCRIPT   -->
-    <script src="../src/components/navbar/navbar.js"></script>
+
+    <!-- main js -->
+
+    <!-- <script src="./js/design.js" type="module"></script> -->
+    <script src="./js/main.js"></script>
   </body>
-  <!--* END BODY -->
 </html>

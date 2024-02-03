@@ -1,8 +1,10 @@
+
+ 
  // MENU ***** By*JR*
  const searchButton = document.getElementById("search-button");
  const searchClose = document.getElementById("search-close");
  const searchContent = document.getElementById("search-content");
-
+const changeThemeBtn = document.querySelector(".change-theme")
  // SHOW MENU ***** By*JR*
  if (searchButton) {
    searchButton.addEventListener("click", () => {
@@ -71,4 +73,59 @@ async function hotelsCardsRecomended() {
   }
 
 }
+
+
+changeThemeBtn.addEventListener('click',  () => {
+
+ const html =  document.querySelector("html")
+  const isDark = html.getAttribute("data-theme")
+
+const sunBtn = document.querySelector("#light-btn")
+const moonBtn = document.querySelector("#dark-btn")
+moonBtn.classList.add("hidden")
+
+
+
+    if (isDark === "dark") {
+      html.setAttribute("data-theme", "light")
+      moonBtn.classList.remove("hidden")
+      sunBtn.classList.add("hidden")
+
+    }else{
+      html.setAttribute("data-theme", "dark")
+      moonBtn.classList.add("hidden")
+      sunBtn.classList.remove("hidden")
+    }
+})
+
 hotelsCardsRecomended()
+
+
+const options = {origin: "top",
+distance:"60px",
+duration:2500,
+delay: 500,
+
+}
+
+ScrollReveal().reveal('.home-section', options);
+
+ScrollReveal().reveal('.carrousel-towns', options);
+ScrollReveal().reveal('.baner-hotels', options);
+ScrollReveal().reveal('.carrusel-infinito', options);
+ScrollReveal().reveal('.baner-hotels', options);
+ScrollReveal().reveal('.container-items', options);
+ScrollReveal().reveal('.baner-hotels', options);
+ScrollReveal().reveal('.container-baner-services', options);
+ScrollReveal().reveal('.events', options);
+ScrollReveal().reveal('.baner-hotels', options);
+ScrollReveal().reveal('.food-drinks', options);
+
+
+
+
+
+
+
+
+

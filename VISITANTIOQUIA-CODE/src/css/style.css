@@ -6,7 +6,7 @@
 @import url("https://fonts.cdnfonts.com/css/momcake");
 
 /* ***** VAR CSS***** By*JR* */
-
+[data-theme="light"],
 :root {
   --header-height: 3.5rem;
 
@@ -29,6 +29,40 @@
   /***** Z-INDEX *****/
   --z-tooltip: 10;
   --z-fixed: 100;
+
+  body {
+    transition: background-color 0.4s;
+  }
+}
+
+[data-theme="dark"] {
+  :root {
+    --header-height: 3.5rem;
+
+    /***** COLORS *****/
+    --space-cadet: #2e294e;
+    --azure-web: #2e294e;
+    --asparagus: #60993e;
+    --chefchaouen-blue: #4a8fe7ff;
+    --body-color: ;
+
+    /***** FONT & TYPOGRAPHY *****/
+    --body-font: "Work Sans", sans-serif;
+    --visit-font: "MOMCAKE", sans-serif;
+
+    /***** FONT WEIGHT *****/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /***** Z-INDEX *****/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+
+  body {
+    background-color: rgb(24, 6, 6);
+  }
 }
 
 * {
@@ -39,10 +73,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  transition: background-color 0.4s;
 }
 
 ul {
@@ -71,12 +101,13 @@ a {
 /* ***** HEADER  STYLES NAV-BAR ***** By*JR* */
 
 .header {
+  z-index: var(--z-fixed);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: white;
-  z-index: var(--z-fixed);
+
   transition: box-shadow 0.4s, background-color 0.4s;
 }
 
@@ -111,6 +142,10 @@ a {
   color: var(--space-cadet);
   cursor: pointer;
   transition: color 0.4s;
+}
+
+.hidden{
+  display: none;
 }
 
 /* *****  SEARCH ***** By*JR* */
@@ -211,7 +246,7 @@ a {
   /* ***** HEADER ***** By*JR* */
 
   #logo-nav {
-    max-width: 48px;
+    max-width: 28px;
   }
 
   .header {
@@ -489,15 +524,17 @@ a {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: auto;
-    justify-content: center;
+    height: 70vh;
     margin: auto;
+    margin-top: 30px;
     padding: 8rem 0;
+    background-position: bottom;
+    position: relative;
   }
 
   .baner-services {
     width: 80vw;
-    height: max-content;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     margin: auto;
@@ -511,7 +548,7 @@ a {
   }
 
   .i-baner-services {
-    color: white;
+    color: var(--chefchaouen-blue);
     font-size: 2rem;
   }
 
@@ -520,7 +557,7 @@ a {
     font-weight: 600;
     margin: 2rem auto;
     text-align: center;
-    color: white;
+    color: var(--space-cadet);
     text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.6);
   }
 
@@ -561,7 +598,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-content: center;
- 
   }
 
   .content-text-towns h2 {
@@ -570,7 +606,7 @@ a {
     font-size: 4rem;
     line-height: 1.2;
     color: var(--space-cadet);
-    text-shadow: 0px 2px 2px rgba(0,0,0,0.48);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.48);
     font-family: "MOMCAKE", sans-serif;
   }
 
@@ -592,14 +628,10 @@ a {
     gap: 2em;
     color: var(--space-cadet);
     font-family: "Work Sans", sans-serif;
-    
   }
 
-  .counter h3{
-    
+  .counter h3 {
   }
-
-
 
   .content-text-towns .counter i {
     margin-right: 10px;
@@ -616,7 +648,7 @@ a {
   }
 
   .content-text-towns .btn {
-    background-color:var(--space-cadet);
+    background-color: var(--space-cadet);
     width: 50%;
     border: none;
     color: white;
@@ -626,7 +658,7 @@ a {
     display: inline-block;
     border-radius: 4px;
     transition: 0.3s ease-in;
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.49);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.49);
     font-family: "Work Sans", sans-serif;
   }
 
@@ -822,15 +854,17 @@ a {
   .events {
     width: 100%;
     height: auto;
+   
+
+
   }
 
   .tittle-experience-visit {
     text-align: center;
     font-size: 5rem;
     margin: 2rem 0;
-    color: white;
+    color: var(--space-cadet);
     font-family: "Work Sans", sans-serif;
-    background-color: var(--space-cadet);
   }
 
   .swiper {
@@ -838,13 +872,14 @@ a {
     padding-top: 50px;
     padding-bottom: 50px;
     background-image: url("/images/marca/PNG/girasol.png");
-
+  z-index: 1;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .swiper-slide {
+  
     background-position: center;
     background-size: cover;
     width: 300px;
@@ -854,6 +889,115 @@ a {
   .swiper-slide img {
     display: block;
     width: 100%;
+  }
+
+  /* Grid de cards Restaurant */
+  .food-drinks {
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-image: url("../img/megafono.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    justify-content: center;
+
+    .tittle-restaurants {
+      font-size: 3rem;
+    }
+
+    .grid-restaurants {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 20px;
+      height: 60%;
+      margin: 3rem;
+
+
+      .card-restaurant {
+        position: relative;
+        gap: 20px;
+      
+        .mask{
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.637) 0%, rgba(237, 247, 246, 0) 100%);
+        }
+
+
+        .heart-icons {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          cursor: pointer;
+
+          :nth-child(2) {
+            display: none;
+          }
+
+          i {
+            color: white;
+            font-size: 24px;
+          }
+
+         &:hover{
+          :nth-child(1) {
+            display: none;
+          }
+          :nth-child(2) {
+            display: block;
+          }
+         }
+
+
+        }
+      
+
+       
+
+        .item-body {
+          display: flex;
+          position: absolute;
+          bottom: 10px;
+          color: white;
+          left: 10%;
+          gap: 20px;
+          align-items: center;
+
+          div{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+        }
+      }
+
+      :nth-child(1) {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+
+
+
+    }
   }
 
   /*--***** FOOTER  ***** By*JR**/
@@ -942,7 +1086,7 @@ a {
   /* NAV-BAR STYLES */
 
   #logo-nav {
-    max-width: 38px;
+    max-width: 28px;
   }
 
   .header {
@@ -1181,18 +1325,19 @@ a {
 
   /* BANER SERVICES */
 
-  .container-baner-services {
-    background-color: var(--space-cadet);
-    display: flex;
-    flex-direction: column;
+  .container-items {
     width: 100vw;
-    height: 100vh;
-    justify-content: space-between;
-    margin: auto;
-    text-align: center;
-    padding: 2rem;
+    display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--space-cadet);
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+  }
+  .container-baner-services {
+    display: none !important;
   }
 
   .baner-services {
@@ -1534,10 +1679,12 @@ a {
   /* experiencia visit eventos */
 
   .tittle-experience-visit {
+    width: 90vw;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-family: var(--visit-font);
     color: var(--asparagus);
+    margin: auto;
   }
 
   .events {
@@ -1568,6 +1715,7 @@ a {
     background-size: cover;
     width: 300px;
     height: 300px;
+    margin: auto;
   }
 
   .swiper-slide img {
@@ -1575,36 +1723,155 @@ a {
     width: 100%;
   }
 
+  /* FOOD DRINKS */
+
+ 
+  .food-drinks {
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-image: url("../img/megafono.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    justify-content: center;
+
+    .tittle-restaurants {
+      font-size: 3rem;
+    }
+
+    .grid-restaurants {
+      width: 80%;
+      display: grid;
+      grid-template-columns:  1fr;
+      gap: 20px;
+      height: 60%;
+      margin: 3rem;
+
+
+      .card-restaurant {
+        position: relative;
+        gap: 20px;
+      
+        .mask{
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.637) 0%, rgba(237, 247, 246, 0) 100%);
+        }
+
+
+        .heart-icons {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          cursor: pointer;
+
+          :nth-child(2) {
+            display: none;
+          }
+
+          i {
+            color: white;
+            font-size: 24px;
+          }
+
+         &:hover{
+          :nth-child(1) {
+            display: none;
+          }
+          :nth-child(2) {
+            display: block;
+          }
+         }
+
+
+        }
+      
+
+       
+
+        .item-body {
+          display: flex;
+          position: absolute;
+          bottom: 10px;
+          color: white;
+          left: 10%;
+          gap: 20px;
+          align-items: center;
+
+          div{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+        }
+      }
+
+      
+
+
+
+    }
+  }
+
+
+
+
+  
   /* FOOTER */
 
   .footer {
     width: 100vw;
     height: auto;
     display: flex;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
-   text-align: center;
-   margin-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 4rem;
   }
 
   .footer-display {
     display: none;
   }
 
-  .logo-footer{
+  .contact-footer {
+    font-size: 2rem;
+    font-family: "Work Sans", sans-serif;
+    color: #2e294e;
+  }
+
+  .logo-footer {
     margin: auto;
     display: block;
     height: 25vh;
   }
 
-  
-  .map-footer{
-    width: 40vw;
+  .map-footer {
+    width: 50vw;
+    margin: auto;
+    display: flex;
   }
-  
 
-  .link-social-footer{
+  .map-footer iframe {
+    border: 5px solid var(--asparagus);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 1rem 0;
+  }
+
+  .link-social-footer {
     width: 100%;
     height: 100%;
     margin: 2rem 0 0 0;
@@ -1613,13 +1880,22 @@ a {
   .section-footer i {
     font-size: 2rem;
     color: var(--azure-web);
-    background-color:var(--space-cadet);
-    padding: .6rem;
+    background-color: var(--space-cadet);
+    padding: 0.6rem;
     border-radius: 50%;
-    margin: 0 1.5rem ;
+    margin: 0 1.5rem;
   }
 
-  .copy-rights{
+  .copy-rights {
     margin: 2rem 0 0 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.8rem;
+  }
+
+  .visit-name {
+    color: var(--asparagus);
+    font-family: "MOMCAKE", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 }

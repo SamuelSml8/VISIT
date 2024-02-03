@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +21,7 @@
 
     <!--***** STYLES CSS ***** By*JR*-->
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <!--***** START HEADER ***** By*JR*-->
@@ -79,7 +80,11 @@
           <i class="ri-user-line login-button" id="login-button"></i>
 
           <!--***** BUTTON THEME ***** By*JR*-->
-          <i class="ri-moon-line" theme-change id="theme-button"></i>
+          <div class="change-theme">
+
+            <i class="ri-moon-line" theme-change id="dark-btn"></i>
+            <i class="ri-sun-line hidden" id="light-btn"></i>
+          </div>
 
           <!--***** BUTTON LANGUAGE ***** By*JR*-->
           <i class="ri-english-input" language-button id="change-language"></i>
@@ -465,7 +470,8 @@
         </div>
       </section>
 
-      <div class="container-baner-services">
+
+      <div class="container-items">
         <h2 class="tittle-baner-services">WE OFFERT BEST SERVICES</h2>
 
         <div class="baner-services">
@@ -501,6 +507,12 @@
             </p>
           </div>
         </div>
+      </div>
+
+      
+      <div class="container-baner-services">
+      
+       
       </div>
 
       <!--***** EVENTOS  ***** By*JR*-->
@@ -543,6 +555,64 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
+
+       
+
+        
+      </section>
+
+       <!-- FOOD&DRINKS -->
+
+      <section class="food-drinks">
+
+        <h2 class="tittle-restaurants">FOOD & DRINK</h2>
+        <hr class="line-food">
+        <div class="grid-restaurants">
+
+        
+          <div class="card-restaurant" id="item-1">
+              <img src="./img/hotels/art.jpg" alt="rest">
+          </div>
+
+          <div class="card-restaurant" id="item-1">
+            <img src="./img/hotels/art.jpg" alt="rest">
+        </div>
+
+        <div class="card-restaurant" id="item-1">
+          <img src="./img/hotels/art.jpg" alt="rest">
+        </div>
+
+       <div class="card-restaurant" id="item-1">
+        <img src="./img/hotels/art.jpg" alt="rest">
+        </div>
+
+        <div class="card-restaurant" id="item-1">
+            <img src="./img/hotels/art.jpg" alt="rest">
+            <div class="mask"></div>
+
+            <div class="heart-icons">
+              <i class="ri-heart-line"></i>
+              <i class="ri-heart-fill"></i>
+            </div>
+
+            <div class="item-body">
+              <h3>Nombre del restaurante</h3>
+
+              <div>
+                <i class="ri-star-fill"></i>
+                4.9
+              </div>
+            </div>
+       </div>
+
+      <div class="card-restaurant" id="item-1">
+           <img src="./img/hotels/art.jpg" alt="rest">
+        </div>
+            
+            
+          </div>
+         
+        </div>
       </section>
 
       <!--***** FOOTER  ***** By*JR*-->
@@ -550,13 +620,15 @@
       <footer class="footer">
         <div class="container-footer">
           <div class="part-1-footer">
-            <div class="section-footer contact">
+            <div class="section-footer contact footer-display">
               <h3>CONTACT</h3>
               <p>Cl. 16 #55-129, Guayabal</p>
               <p>Medellín</p>
               <p>Antioquia</p>
               <p>30056778902</p>
             </div>
+
+            <h3 class="contact-footer">CONTACT</h3>
 
             <div class="section-footer footer-display">
               <h3>MENU</h3>
@@ -578,20 +650,15 @@
               <a href="" class="link-item-footer">home</a>
             </div>
 
-            <div class="map-footer" style="width: 160%">
-              <iframe
-                width="50%"
-                height="50%"
-                frameborder="2"
-                scrolling="no"
-                margin="auto"
-                
-                
-                src="https://maps.google.com/maps?width=100%25&amp;height=800&amp;hl=es&amp;q=Riwi%20Medell%C3%ACn+(VISIT)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                ><a href="https://www.gps.ie/car-satnav-gps/"
-                  >Car Navigation Systems</a
-                ></iframe
-              >
+            <div class="map-footer">
+              <div style="width: 160%">
+                <iframe
+                  src="https://maps.google.com/maps?width=100%25&amp;height=800&amp;hl=es&amp;q=Riwi%20Medell%C3%ACn+(VISIT)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  ><a href="https://www.gps.ie/car-satnav-gps/"
+                    >Car Navigation Systems</a
+                  ></iframe
+                >
+              </div>
             </div>
 
             <div class="section-footer">
@@ -601,15 +668,15 @@
                 placeholder="Email"
                 class="input-footer footer-display"
               />
-              <img src="./img/logo.png" alt="" class="logo-footer" />
+              <img src="./img/logo2.png" alt="" class="logo-footer" />
               <div class="link-social-footer">
                 <i class="ri-instagram-fill"></i>
                 <i class="ri-facebook-fill"></i>
                 <i class="ri-google-fill"></i>
-                <i class="ri-github-fill"></i>
               </div>
               <p class="copy-rights">
-                Copyright VISIT – 2021-2024. Todos los derechos reservados
+                CopyRight - <span class="visit-name">VISIT</span> - 2024. All
+                Right Reserved
               </p>
             </div>
           </div>
@@ -655,7 +722,7 @@
     <!-- swipper animaciones -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+   
     <!-- main js -->
 
     <!-- <script src="./js/design.js" type="module"></script> -->

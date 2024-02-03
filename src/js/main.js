@@ -1,6 +1,4 @@
-
- 
- // MENU ***** By*JR*
+// MENU ***** By*JR*
  const searchButton = document.getElementById("search-button");
  const searchClose = document.getElementById("search-close");
  const searchContent = document.getElementById("search-content");
@@ -21,28 +19,8 @@ const changeThemeBtn = document.querySelector(".change-theme")
 
 /*  ***** LOGIN JS ***** By*JR* */
 
-
-  // SHOW LOGIN ***** By*JR*
-  const loginButton = document.getElementById("login-button");
-  const loginClose = document.getElementById("login-close");
-  const loginContent = document.getElementById("login-content");
-
-  // SHOW LOGIN ***** By*JR*
-  if (loginButton) {
-    loginButton.addEventListener("click", () => {
-      loginContent.classList.add("show-login");
-    });
-  }
-
-  //  LOGIN HIDDEN ***** By*JR*
-  if (loginClose) {
-    loginClose.addEventListener("click", () => {
-      loginContent.classList.remove("show-login");
-    });
-  };
-
   // JSON ITERATOR
-const urlHotels = 'http://localhost:4002/hotels';
+const urlHotels = 'http://localhost:3000/hotels';
 
 async function hotelsCardsRecomended() {
   const response = await fetch(urlHotels);
@@ -73,8 +51,10 @@ async function hotelsCardsRecomended() {
   }
 
 }
+hotelsCardsRecomended()
 
 
+// MODO OSCURO
 changeThemeBtn.addEventListener('click',  () => {
 
  const html =  document.querySelector("html")
@@ -98,18 +78,15 @@ moonBtn.classList.add("hidden")
     }
 })
 
-hotelsCardsRecomended()
-
 
 const options = {origin: "top",
 distance:"60px",
 duration:2500,
-delay: 500,
+delay: 50,
 
 }
 
 ScrollReveal().reveal('.home-section', options);
-
 ScrollReveal().reveal('.carrousel-towns', options);
 ScrollReveal().reveal('.baner-hotels', options);
 ScrollReveal().reveal('.carrusel-infinito', options);
@@ -120,12 +97,3 @@ ScrollReveal().reveal('.container-baner-services', options);
 ScrollReveal().reveal('.events', options);
 ScrollReveal().reveal('.baner-hotels', options);
 ScrollReveal().reveal('.food-drinks', options);
-
-
-
-
-
-
-
-
-

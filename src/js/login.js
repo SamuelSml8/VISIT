@@ -1,20 +1,74 @@
-// Seleccionamos del login.html el elemento id LoginForm mediante querySelector para agregarle un evento tipo submit con una arrow function para guardar los valores ingresados en los input "username" y "password" en sus respectivas variables. Usamos localStorage para simular una base de datos, validamos que el usuario y la contraseña coincidan, de ser así salta una alerta al usuario dandole la bienvenida a VISIT, agregamos un usuario logueado al localStorage para permitirle pasar al home y lo redireccionamos al index.
+// SELECTORS
+const loginButton = document.getElementById("login-button");
+const loginClose = document.getElementById("login-close");
+const loginContent = document.getElementById("login-content");
 
-const loginForm = document.querySelector(`#loginForm`);
-loginForm.addEventListener(`submit`, (e) => {
-  e.preventDefault();
-  const username = document.querySelector(`#username`).value;
-  const password = document.querySelector(`#password`).value;
+// SHOW LOGIN
+if (loginButton) {
+  loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    loginContent.classList.add("show-login");
+  });
+}
 
-  const Users = JSON.parse(localStorage.getItem(`users`)) || [];
-  const validUser = Users.find(
-    (user) => user.username === username && user.password === password
-  );
-  if (!validUser) {
-    return alert(`Usuario o contraseña incorrecta`);
+//  LOGIN HIDDEN
+if (loginClose) {
+  loginClose.addEventListener("click", (e) => {
+    e.preventDefault();
+    loginContent.classList.remove("show-login");
+  });
+}
+
+// VALIDATION
+const urlUsers = "http://localhost:3000/users";
+
+// SELECTORS
+const loginForm = document.querySelector(".login-form");
+const emailInput = document.querySelector("#login-email");
+const passwordInput = document.querySelector("#login-password");
+
+loginForm.addEventListener("submit", loginValidation);
+
+async function getUsers() {
+  const response = await fetch(urlUsers);
+  const data = await response.json();
+  return data;
+}
+
+async function loginValidation() {
+  let isLogin = false;
+  let userName = '';
+  const users = await getUsers();
+  console.log(users);
+
+  users.forEach((user) => {
+    const {name} = user;
+    if (
+      emailInput.value === user.email &&
+      passwordInput.value === user.password
+    ) {
+      isLogin = true;
+      userName = name
+    }
+
+    if (emailInput.value == "" || passwordInput.value == "") {
+      isLogin = false;
+    }
+  });
+
+  if (isLogin) {
+    // alert(`WELCOME ${userName}`);
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "WELCOME TO VISIT",
+      text: `We will be your bestfriend, ${userName}.`,
+      showConfirmButton: false,
+      timer: 2500
+    });
   }
 
-  alert(`Bienvenido a Visit`);
-  localStorage.setItem(`login_success`, JSON.stringify(validUser));
-  window.location.href = `/VISIT/VISITANTIOQUIA-CODE/src/html/index.html`;
-});
+  if (!isLogin) {
+    alert("BAD");
+  }
+}

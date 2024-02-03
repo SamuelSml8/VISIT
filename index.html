@@ -5,6 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VISIT</title>
+
+  <!--  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!--***** SWIPER CSS ***** By*JR*-->
@@ -39,32 +45,36 @@
           </li>
 
           <li class="item-nav">
-            <a href="hotels.html" class="link-nav">
-              <i class="ri-hotel-line"></i>
-              <span>HOTELS</span>
-            </a>
-          </li>
-
-          <li class="item-nav">
-            <a href="foodDrink.html" class="link-nav">
-              <i class="ri-restaurant-line"></i>
-              <span data-i18n="food_drink">FOOD & DRINK</span>
-            </a>
-          </li>
-
-          <li class="item-nav">
             <a href="../" class="link-nav">
               <i class="ri-road-map-line"></i>
-              <span>PLACES</span>
+              <span>Places</span>
+            </a>
+          </li>
+
+          <li class="item-nav">
+            <a href="hotels.html" class="link-nav">
+              <i class="ri-hotel-line"></i>
+              <span>Hotels</span>
             </a>
           </li>
 
           <li class="item-nav">
             <a href class="link-nav">
               <i class="ri-calendar-event-line"></i>
-              <span>EVENTS</span>
+              <span>Events</span>
             </a>
           </li>
+
+          <li class="item-nav">
+            <a href="foodDrink.html" class="link-nav">
+              <i class="ri-restaurant-line"></i>
+              <span data-i18n="food_drink">Food & Drink</span>
+            </a>
+          </li>
+
+          
+
+         
         </ul>
       </div>
 
@@ -83,8 +93,21 @@
         </div>
 
         <!--***** BUTTON LANGUAGE ***** By*JR*-->
-        <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('es')"></i>
-        <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('en')" ></i>
+
+
+        <select title="Seleccione su país">
+          <option value="es">Es</option>
+          <option value="us">En</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        
+        
+        
+
+
+
+        <!-- <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('es')"></i>
+        <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('en')" ></i> -->
       </div>
     </nav>
   </header>
@@ -144,7 +167,7 @@
             "Discover the charm of our region, savor our cuisine, and enjoy
             the excitement of our events."
           </p>
-          <a href="" class="get-started">Get started</a>
+          <a href="" class="get-started">Get started <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="img-data-home">
           <img src="./img/chivaHome.png" alt="" />
@@ -175,7 +198,7 @@
             Go to Collections <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-        <!-- START TOWNS -->
+       
 
         <div class="swiper-towns mySwiper-towns">
           <div class="swiper-wrapper">
@@ -203,7 +226,6 @@
           <div class="swiper-pagination-towns"></div>
         </div>
 
-        <!-- END TOWNS -->
       </div>
     </section>
 
@@ -609,20 +631,12 @@
 
           <h3 class="contact-footer">CONTACT</h3>
 
-          <div class="section-footer footer-display">
-            <h3>MENU</h3>
-            <a href="" class="link-item-footer">home</a>
-            <a href="" class="link-item-footer">home</a>
-            <a href="" class="link-item-footer">home</a>
-            <a href="" class="link-item-footer">home</a>
-            <a href="" class="link-item-footer">home</a>
-            <a href="" class="link-item-footer">home</a>
-          </div>
+         
 
           <div class="section-footer footer-display">
             <h3>RECENT POST</h3>
-            <a href="" class="link-item-footer">home</a>
-            <a href="" class="link-item-footer">home</a>
+            <a href="" class="link-item-footer">Home</a>
+            <a href="" class="link-item-footer"></a>
             <a href="" class="link-item-footer">home</a>
             <a href="" class="link-item-footer">home</a>
             <a href="" class="link-item-footer">home</a>

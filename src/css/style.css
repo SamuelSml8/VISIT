@@ -61,7 +61,7 @@
   }
 
   body {
-    background-color: rgb(24, 6, 6);
+    background-color:var(--space-cadet);
   }
 }
 
@@ -106,7 +106,6 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white;
 
   transition: box-shadow 0.4s, background-color 0.4s;
 }
@@ -251,6 +250,11 @@ a {
 
   #logo-nav {
     max-width: 28px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #logo-nav:hover{
+    transform: rotate(-15deg);
   }
 
   .header {
@@ -293,7 +297,7 @@ a {
     border-bottom: 3px solid transparent;
     transition: border-bottom-color 0.3s;
     color: var(--space-cadet);
-    font-weight: 400;
+    font-weight: 500;
     font-family: "Work Sans", sans-serif;
     padding-bottom: 6px;
     font-size: 1.1rem;
@@ -313,6 +317,27 @@ a {
   .actions-nav i {
     color: var(--space-cadet);
     font-size: 1.3rem;
+  }
+
+  .actions-nav i:hover{
+    color: var(--asparagus);
+ 
+  
+  }
+
+  select{
+    background-color: var(--space-cadet);
+    color: var(--azure-web);
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: .2rem .5rem;
+  }
+
+  option{
+    font-size: 1rem;
+    color: var(--space-cadet);
   }
 
   /* LOG IN  */
@@ -380,7 +405,7 @@ a {
   }
 
   .button {
-    color: white;
+    color: var(--azure-web);
     background-color: var(--chefchaouen-blue);
     border: none;
     font-size: 1rem;
@@ -437,7 +462,7 @@ a {
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.35)
       ),
-      url(/VISIT/VISITANTIOQUIA-CODE/src/img/montaña2.png);
+      url(/public/img/montaña2.png);
   }
 
   .container-home {
@@ -450,7 +475,7 @@ a {
 
   .data-home {
     width: 60vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -464,12 +489,15 @@ a {
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 10px;
     width: 100%;
     padding: 1rem;
     background-color: var(--asparagus);
-    color: white;
+    color: var(--azure-web);
     text-align: center;
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
   }
 
   .big-title {
@@ -480,6 +508,7 @@ a {
     font-family: "Work Sans", sans-serif;
     opacity: 90%;
     margin: 1rem 0;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.6);
   }
   .description-content {
     font-size: 1.2rem;
@@ -491,21 +520,24 @@ a {
 
   .get-started {
     background-color: var(--space-cadet);
-    color: white;
+    color: var(--azure-web);
     padding: 1rem;
-    border-radius: 30px;
+    border-radius: 25px;
     font-weight: 600;
     width: 30%;
     text-align: center;
     margin: 1rem 0;
     font-family: "Work Sans", sans-serif;
+    transition: 0.7s ease-in;
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
   }
 
   .get-started:hover {
     background-color: var(--azure-web);
     color: var(--space-cadet);
-    border: 1px solid var(--space-cadet);
-    transition: 0.1s ease-in;
+    transition: 0.7s ease-in;
   }
 
   .img-data-home {
@@ -581,9 +613,11 @@ a {
 
   .carrousel-towns {
     min-height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  
   }
 
   .container-carrousel-towns {
@@ -596,12 +630,13 @@ a {
   }
 
   .content-text-towns {
-    width: 40%;
+    width: 50%;
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+   
   }
 
   .content-text-towns h2 {
@@ -634,8 +669,7 @@ a {
     font-family: "Work Sans", sans-serif;
   }
 
-  .counter h3 {
-  }
+ 
 
   .content-text-towns .counter i {
     margin-right: 10px;
@@ -657,11 +691,12 @@ a {
     border: none;
     color: white;
     padding: 12px 20px;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
     display: inline-block;
     border-radius: 4px;
-    transition: 0.3s ease-in;
+    transition: 0.7s ease-in;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.49);
     font-family: "Work Sans", sans-serif;
   }
@@ -671,17 +706,20 @@ a {
   }
 
   .content-text-towns .btn:hover {
-    background-color: #ae0a53;
+    background-color: var(--azure-web);
+    color: var(--space-cadet);
+    transition: 0.8s ease-in;
   }
 
   .swiper-towns {
     /* padding: 50px; */
 
-    width: 60%;
+    width: 50%;
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
+  
 
     .swiper-slide {
       margin-top: 20px;
@@ -718,8 +756,11 @@ a {
     width: 50%;
     margin: 1rem auto;
     font-size: 1.2rem;
+    font-family: var(--body-font);
+    color: var(--space-cadet);
+    opacity: 90%;
   }
-
+ 
   .buton-ofers-hotels {
     margin: 1rem auto;
     font-size: 1.3rem;
@@ -1066,6 +1107,29 @@ a {
   .copy-right {
     color: black;
     text-align: center;
+  }
+
+  
+  .footer-display {
+    display: none;
+  }
+
+  .footer-display-yes{
+    display: block;
+  }
+
+  .map-footer {
+    width: 50vw;
+    margin: auto;
+
+  }
+
+  .map-footer iframe {
+    border: 5px solid var(--asparagus);
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+    margin: 1rem 0;
   }
 }
 

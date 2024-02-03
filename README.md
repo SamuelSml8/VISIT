@@ -39,3 +39,5 @@ Paso 3: Escribir el siguiente comando: json-server db.json -p 4002
 25 / 01 / 2024
 
 Creación JSON de hoteles, con información almacenada de cada hotel. Se agregó un background a la sección de hoteles con iconos y demás.
+
+Prueba trabajo por ramas personales.

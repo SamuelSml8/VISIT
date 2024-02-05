@@ -264,7 +264,8 @@ a {
   }
 
   #logo-nav:hover{
-    transform: rotate(-15deg);
+    transform: rotate(-15deg) scale(1.1);
+
   }
 
   .header {
@@ -466,7 +467,8 @@ a {
   }
 
   .home-section {
-    width: 100%;
+    width: 100vw;
+    margin: auto;
     height: max-content;
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.5),
@@ -495,7 +497,7 @@ a {
   }
 
   .title-home {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
     text-decoration: none;
@@ -558,19 +560,19 @@ a {
   }
 
   .img-data-home img {
-    height: 400px;
+    height: 73vh;
   }
 
   /* **** CONTAINER BANER SERVICES ***** By*JR* */
 
   .container-baner-services {
-    background-image: url("/VISIT/VISITANTIOQUIA-CODE/src/img/medellin.png");
+    background-image: url("../../public/img/medellin.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 70vh;
+    height: 55vh;
     margin: auto;
     margin-top: 30px;
     padding: 8rem 0;
@@ -595,28 +597,28 @@ a {
 
   .i-baner-services {
     color: var(--chefchaouen-blue);
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .tittle-baner-services {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
-    margin: 2rem auto;
+    margin:  auto auto 5rem auto;
     text-align: center;
     color: var(--space-cadet);
-    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.6);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.48);
   }
 
   .item-tittle-services {
     color: var(--asparagus);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin: 0.5rem 0 0 0;
   }
 
   .text-baner-item-services {
-    color: var(--azure-web);
-    font-size: 1rem;
+    color: black;
+    font-size: 1.2rem;
   }
 
   /* ***** CARROUSEL TOWNS ***** By*JR* */
@@ -652,7 +654,7 @@ a {
   .content-text-towns h2 {
     letter-spacing: 0.8px;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 1.2;
     color: var(--space-cadet);
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.48);
@@ -746,6 +748,12 @@ a {
 
   /***** EXPERIENCE & CARRUSEL INFINITO ***** By*JR*/
 
+
+  .img-experiencia{
+   width: 60vw;
+    margin:  3rem auto;
+    display: flex;
+  }
   .baner-hotels {
     display: flex;
     flex-direction: column;
@@ -766,19 +774,34 @@ a {
     width: 50%;
     margin: 1rem auto;
     font-size: 1.2rem;
+    font-weight: 500;
     font-family: var(--body-font);
     color: var(--space-cadet);
     opacity: 90%;
   }
  
   .buton-ofers-hotels {
-    margin: 1rem auto;
-    font-size: 1.3rem;
-    font-weight: 500;
     background-color: var(--space-cadet);
     color: var(--azure-web);
-    padding: 1rem 2.8rem;
-    border-radius: 30px;
+    border: none;
+    padding: 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    width: 10%;
+    text-align: center;
+    margin: 1rem 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.2rem;
+    transition: 0.7s ease-in;
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+ 
+  }
+
+  .buton-ofers-hotels:hover{
+    background-color: var(--azure-web);
+    color: var(--space-cadet);
+    transition: 0.7s ease-in;
+
   }
 
   .hotel-link {
@@ -797,8 +820,11 @@ a {
 
   .carrusel-infinito {
     width: 100%;
-    height: 30rem;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    margin: 5rem 0 ;
+  
   }
   .slider {
     width: 80vw;
@@ -825,6 +851,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 15px;
+   
 
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
   }
@@ -860,37 +887,42 @@ a {
     font-weight: 600;
     font-size: 1rem;
     margin: 0 0 0 0.5rem;
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .hotel-link{
+
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
   }
 
   .link-explore-hotel {
     color: white;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     background-color: var(--chefchaouen-blue);
     padding: 0.4rem;
     border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: "Work Sans", sans-serif;
   }
 
   .stars {
     display: flex;
     justify-content: start;
     align-items: start;
-    margin: 0 0 0 0.5rem;
+    margin: 0 0 0 .5rem;
   }
 
   .stars i {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: gray;
   }
 
-  .view {
-    width: 60px;
-    border-radius: 5px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    background-color: #60993e;
-  }
+  
 
   @keyframes scroll {
     0% {
@@ -908,7 +940,10 @@ a {
 
   .events {
     width: 100%;
-    height: auto;
+    height: 100vh;
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .tittle-experience-visit {
@@ -928,6 +963,7 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
   }
 
   .swiper-slide {
@@ -935,6 +971,7 @@ a {
     background-size: cover;
     width: 300px;
     height: 300px;
+   
   }
 
   .swiper-slide img {
@@ -942,20 +979,42 @@ a {
     width: 100%;
   }
 
+  .events .btn{
+    background-color: var(--space-cadet);
+    color: var(--azure-web);
+    padding: 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    width: 30%;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    transition: 0.7s ease-in;
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    margin: auto;
+    
+  }
+
   /* Grid de cards Restaurant */
   .food-drinks {
+    overflow: hidden;
     margin-top: 30px;
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
     align-items: center;
     flex-direction: column;
     display: flex;
     background-image: url("../img/megafono.svg");
     background-repeat: no-repeat;
     background-position: bottom;
+    padding: 10rem;
 
     justify-content: center;
 
     .tittle-restaurants {
       font-size: 3rem;
+      color: var(--asparagus);
+      margin: 3rem auto;
     }
 
     .grid-restaurants {
@@ -964,8 +1023,8 @@ a {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr 1fr 1fr;
       gap: 20px;
-      height: 60%;
-      margin: 3rem;
+      height: max-content;
+   
 
       .card-restaurant {
         position: relative;
@@ -1050,43 +1109,71 @@ a {
     background-color: var(--space-cadet);
     width: 100%;
     height: max-content;
+    height: 50vh;
+    display: flex;
+    overflow: hidden;
   }
 
   .container-footer {
     display: flex;
-    flex-direction: column;
-    padding: 4rem;
+    width: 80vw;
+    margin: auto;
+    overflow: hidden;
   }
 
   .part-1-footer {
     display: flex;
     justify-content: space-evenly;
-    align-content: center;
+    margin: auto;
+    width: 100vw;
+    height: 100%;
+    
   }
 
-  .part-1-footer h3 {
-    color: var(--azure-web);
+  .section-footer{
+
+    display: flex;
+    flex-direction: column;
+    
+    
   }
+
+  
 
   .part-1-footer p {
     color: white;
+    margin: 1rem 0;
+    font-family: "Work Sans", sans-serif;
   }
 
   .part-1-footer a {
     color: white;
     display: block;
+    margin: 1rem 0;
+    font-family: "Work Sans", sans-serif;
   }
 
   .link-social-footer {
-    margin: 1rem 0;
+ 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    gap: 1rem;
+    
   }
 
   .link-social-footer i {
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1.7rem;
+    color: var(--space-cadet);
+    background-color: white;
     padding: 1rem;
+    border-radius: 50%;
+   
+  }
+
+  .link-social-footer i:hover{
+    transform: scale(1.1);
   }
 
   .input-footer {
@@ -1097,31 +1184,20 @@ a {
   .footer h3 {
     margin: 0 0 1rem 0;
     color: white;
+    font-family: "Work Sans", sans-serif;
   }
 
   .logo-footer {
     width: 80px;
     height: 80px;
   }
-
-  .copy-right {
-    color: white;
-  }
-
-  .part-2-footer {
-    background-color: white;
-    width: 100%;
-    padding: 0.5rem;
-  }
-
-  .copy-right {
-    color: black;
-    text-align: center;
-  }
-
   
-  .footer-display {
-    display: none;
+
+  .copy-rights {
+    color: var(--space-cadet);
+    display: flex;
+    justify-content: center;
+    
   }
 
   .footer-display-yes{
@@ -1129,17 +1205,33 @@ a {
   }
 
   .map-footer {
-    width: 50vw;
+
+
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+  }
+
+  .map-footer img {
+
+    width: 120px;
+    height: auto;
     margin: auto;
 
   }
 
   .map-footer iframe {
     border: 5px solid var(--asparagus);
-    width: 120px;
-    height: 120px;
-    border-radius: 20%;
-    margin: 1rem 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin:  1rem 2rem ;
+ 
+    
   }
 }
 
@@ -1623,6 +1715,7 @@ a {
     width: 100%;
     height: 30rem;
     display: flex;
+    flex-direction: column;
   }
   .slider {
     width: 80vw;
@@ -1805,6 +1898,7 @@ a {
 
     .tittle-restaurants {
       font-size: 3rem;
+      color: var(--asparagus);
     }
 
     .grid-restaurants {
@@ -1885,7 +1979,7 @@ a {
   /* FOOTER */
 
   .footer {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -1897,6 +1991,10 @@ a {
 
   .footer-display {
     display: none;
+  }
+
+  .footer-display-yes{
+    display: block;
   }
 
   .contact-footer {
@@ -1912,9 +2010,23 @@ a {
   }
 
   .map-footer {
-    width: 50vw;
+
     margin: auto;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--space-cadet);
+    padding: 3rem;
+    border-radius: 50%;
+    gap: 2rem;
+    width: 80vw;
+    height: 60vh;
+  }
+
+  .map-footer div{
+    display: flex;
+    margin: auto;
   }
 
   .map-footer iframe {
@@ -1922,7 +2034,8 @@ a {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin: 1rem 0;
+    margin: auto;
+
   }
 
   .link-social-footer {
@@ -1944,6 +2057,7 @@ a {
     margin: 2rem 0 0 0;
     font-family: "Work Sans", sans-serif;
     font-size: 0.8rem;
+    color: var(--space-cadet);
   }
 
   .visit-name {

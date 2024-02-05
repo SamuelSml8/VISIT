@@ -30,7 +30,7 @@
   <!--***** START HEADER ***** By*JR*-->
   <header class="header" id="header">
     <nav class="nav-bar">
-      <a href="#" class="logo-nav">
+      <a href="#home" class="logo-nav">
         <img src="./img/logo.png" alt id="logo-nav" />
       </a>
       <div class="menu-nav">
@@ -43,28 +43,28 @@
           </li>
 
           <li class="item-nav">
-            <a href="../" class="link-nav">
+            <a href="#places" class="link-nav">
               <i class="ri-road-map-line"></i>
               <span>Places</span>
             </a>
           </li>
 
           <li class="item-nav">
-            <a href="hotels.html" class="link-nav">
+            <a href="#hotels" class="link-nav">
               <i class="ri-hotel-line"></i>
               <span>Hotels</span>
             </a>
           </li>
 
           <li class="item-nav">
-            <a href class="link-nav">
+            <a href="#events" class="link-nav">
               <i class="ri-calendar-event-line"></i>
               <span>Events</span>
             </a>
           </li>
 
           <li class="item-nav">
-            <a href="foodDrink.html" class="link-nav">
+            <a href="#food" class="link-nav">
               <i class="ri-restaurant-line"></i>
               <span data-i18n="food_drink">Food & Drink</span>
             </a>
@@ -209,7 +209,7 @@
       </div>
     </section>
 
-    <section class="carrousel-towns">
+    <section class="carrousel-towns" id="places">
       <div class="container-carrousel-towns">
         <div class="content-text-towns">
           <h2>TOP DESTINATIONS</h2>
@@ -228,9 +228,9 @@
               <span>Destinations</span>
             </li>
           </ul>
-          <button class="btn">
+          <a href="/src/html/places.html" target="_blank" class="btn">
             Go to Collections <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          </a>
         </div>
        
 
@@ -264,18 +264,19 @@
     </section>
 
     <!--***** EXPERIENCE & CARRUSEL INFINITO ***** By*JR*-->
-    <div class="baner-hotels">
-      <h2 class="tittle-hotels-baner">Stay & Play Package</h2>
-      <p class="text-hotels-baner">
-        Stay and play at Kalahari Resorts & Conventions! Enjoy up to 15% off
-        our Best Available Rate, plus receive a $100 arcade card for each
-        night of your stay when you use promo code STAYNPLAY.
-      </p>
+    
 
-      <button class="buton-ofers-hotels">Offerts</button>
-    </div>
-
-    <section class="carrusel-infinito">
+    <section class="carrusel-infinito" id="hotels">
+      <div class="baner-hotels" >
+        <h2 class="tittle-hotels-baner">Stay & Play Package</h2>
+        <p class="text-hotels-baner">
+          Stay and play at Kalahari Resorts & Conventions! Enjoy up to 15% off
+          our Best Available Rate, plus receive a $100 arcade card for each
+          night of your stay when you use promo code STAYNPLAY.
+        </p>
+  
+        <a href="/src/html/hotels.html" target="_blank" class="buton-ofers-hotels">Offerts</a>
+      </div>
       <div class="slider">
         <div class="slide-track">
           <!-- CARDS ITERADAS JAVASCRIPT -->
@@ -330,9 +331,10 @@
 
     <!--***** EVENTOS  *****-->
 
-    <h2 class="tittle-experience-visit">EXPERIENCIA VISIT</h2>
 
-    <section class="events">
+    <section class="events" id="events">
+  <img src="/public/img/experiencia.png" alt="img experiencia visit" class="img-experiencia">
+
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide" id="eventosCards">
@@ -353,27 +355,20 @@
           <div class="swiper-slide">
             <img alt="asd" src="./img/eventos/Carl-Cox-–-GLOBAL-474-–-13-04-2012.jpeg" />
           </div>
-          <div class="swiper-slide">
-            <img alt="asd" src="./img/eventos/domingoDiferente.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img alt="asd" src="./img/eventos/domingoDiferente.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img alt="asd" src="./img/eventos/domingoDiferente.jpg" />
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
+         
+       </div>
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
 
-
-
+      <a href="/src/html/places.html" target="_blank" class="btn">
+        Go to Collections <i class="fa-solid fa-arrow-right"></i>
+      </a>
 
     </section>
 
     <!-- FOOD&DRINKS -->
 
-    <section class="food-drinks">
+    <section class="food-drinks" id="food">
 
       <h2 class="tittle-restaurants">FOOD & DRINK</h2>
       <hr class="line-food">
@@ -430,7 +425,7 @@
     <footer class="footer">
       <div class="container-footer">
         <div class="part-1-footer">
-          <div class="section-footer contact footer-display">
+          <div class="section-footer footer-display">
             <h3>CONTACT</h3>
             <p>Cl. 16 #55-129, Guayabal</p>
             <p>Medellín</p>
@@ -438,45 +433,55 @@
             <p>30056778902</p>
           </div>
 
-          <h3 class="contact-footer">CONTACT</h3>
-
-         
-
           <div class="section-footer footer-display">
             <h3>RECENT POST</h3>
-            <a href="" class="link-item-footer">Home</a>
-            <a href="" class="link-item-footer"></a>
-            <a href="" class="link-item-footer">home</a>
-            <a href="" class="link-item-footer">home</a>
-            <a href="" class="link-item-footer">home</a>
-            <a href="" class="link-item-footer">home</a>
-          </div>
-
-          <div class="map-footer">
-            <div style="width: 160%">
-              <iframe
-                src="https://maps.google.com/maps?width=100%25&amp;height=800&amp;hl=es&amp;q=Riwi%20Medell%C3%ACn+(VISIT)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                  href="https://www.gps.ie/car-satnav-gps/">Car Navigation Systems</a></iframe>
-            </div>
+            <a href="" class="link-item-footer">Places</a>
+            <a href="" class="link-item-footer">Hotels</a>
+            <a href="" class="link-item-footer">Events</a>
+            <a href="" class="link-item-footer">Food & Drinks</a>
           </div>
 
           <div class="section-footer">
+
+          
+
+            <div class="map-footer">
+
+              <div style="width: 100%">
+                <iframe
+                  src="https://maps.google.com/maps?width=100%25&amp;height=800&amp;hl=es&amp;q=Riwi%20Medell%C3%ACn+(VISIT)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                    href="https://www.gps.ie/car-satnav-gps/">Car Navigation Systems</a></iframe>
+
+                  
+                   
+              </div>
+
+              <img src="./public/img/logoM.png" alt="" class="logo-footer" />
+           
+            </div>
+
+          </div>
+
+        
+
+          <div class="section-footer">
             <h3 class="footer-display">FOLLOW US</h3>
-            <input type="text" placeholder="Email" class="input-footer footer-display" />
-            <img src="./img/logo2.png" alt="" class="logo-footer" />
+            <input type="text" placeholder="Email" class="input-footer footer-display " />
+          
             <div class="link-social-footer">
               <i class="ri-instagram-fill"></i>
               <i class="ri-facebook-fill"></i>
               <i class="ri-google-fill"></i>
             </div>
-            <p class="copy-rights">
-              CopyRight - <span class="visit-name">VISIT</span> - 2024. All
-              Right Reserved
-            </p>
+           
           </div>
         </div>
       </div>
     </footer>
+    <p class="copy-rights">
+      Copy Rights - <span class="visit-name">VISIT</span> - 2024. All
+      Right Reserved
+    </p>
   </main>
 
   <script type="module">

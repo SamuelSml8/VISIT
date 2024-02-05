@@ -181,6 +181,10 @@ a {
   color: var(--space-cadet);
 }
 
+.search-input:focus{
+  outline: none;
+}
+
 .search-close {
   position: absolute;
   top: 2rem;
@@ -239,6 +243,12 @@ a {
 /* ***** SHOW LOGIN ***** By*JR* */
 
 .show-login {
+  top: 0;
+}
+
+/* * SHOW SIGNUP*/
+
+.show-signup {
   top: 0;
 }
 
@@ -2060,13 +2070,13 @@ a {
 
 /* STYLES SWEETALERT */
 /* styles.css */
-.swal2-popup {
+/* .swal2-popup {
   font-size: 16px;
-  /* font-family: var(--body-font); */
-}
+  font-family: var(--body-font);
+} */
 
-.swal2-title {
-  color: #333;
+ .swal2-title {
+  color: red ;
   font-family: var(--body-font);
 }
 

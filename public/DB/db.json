@@ -44,6 +44,24 @@
       "name": "victoria",
       "email": "victoria3g@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "50f2",
+      "name": "johnfaber",
+      "email": "jhonfaber@gmail.com",
+      "password": "Jose0104123*"
+    },
+    {
+      "id": "02a6",
+      "name": "John",
+      "email": "john@gmail.com.co",
+      "password": "as1"
+    },
+    {
+      "id": "0918",
+      "name": "Daniel",
+      "email": "manco@gmail.com",
+      "password": "as1"
     }
   ],
   "towns": [
@@ -1514,32 +1532,82 @@
     {
       "id_event": 1,
       "event_name": "Domingo diferente Festival",
-      "img_event": "./img/eventos/domingoDiferente.jpg"
+      "img_event": "./img/eventos/domingoDiferente.jpg",
+      "id": "0c20"
     },
     {
       "id_event": 2,
       "event_name": "ColombiaTex",
-      "img_event": "./img/eventos/colombiamoda.png"
+      "img_event": "./img/eventos/colombiamoda.png",
+      "id": "2f18"
     },
     {
       "id_event": 3,
       "event_name": "Music On",
-      "img_event": "./img/eventos/musicOn.jpg"
+      "img_event": "./img/eventos/musicOn.jpg",
+      "id": "0bae"
     },
     {
       "id_event": 3,
       "event_name": "Expotatuaje",
-      "img_event": "./img/eventos/expotatto.jpg"
+      "img_event": "./img/eventos/expotatto.jpg",
+      "id": "1193"
     },
     {
       "id_event": 4,
       "event_name": "Core",
-      "img_event": "./img/eventos/core.jpg"
+      "img_event": "./img/eventos/core.jpg",
+      "id": "c985"
     },
     {
       "id_event": 5,
       "event_name": "Carl cox",
-      "img_event": "./img/eventos/carlcox.jpeg"
+      "img_event": "./img/eventos/carlcox.jpeg",
+      "id": "a144"
+    }
+  ],
+  "restaurants": [
+    {
+      "restaurant_id": 1,
+      "restaurant_name": "La provincia",
+      "avg_dish": 100000,
+      "addres": "",
+      "img_restaurant": "./img/hotels/art.jpg"
+    },
+    {
+      "restaurant_id": 2,
+      "restaurant_name": "Rocotto",
+      "avg_dish": 100000,
+      "addres": "",
+      "img_restaurant": "./img/hotels/art.jpg"
+    },
+    {
+      "restaurant_id": 3,
+      "restaurant_name": "Ancla Mare & Tierra",
+      "avg_dish": 100000,
+      "addres": "",
+      "img_restaurant": "./img/hotels/art.jpg"
+    },
+    {
+      "restaurant_id": 4,
+      "restaurant_name": "El cielo",
+      "avg_dish": 100000,
+      "addres": "",
+      "img_restaurant": "./img/hotels/art.jpg"
+    },
+    {
+      "restaurant_id": 5,
+      "restaurant_name": "Mondongo's",
+      "avg_dish": 100000,
+      "addres": "",
+      "img_restaurant": "./img/hotels/art.jpg"
+    },
+    {
+      "restaurant_id": 5,
+      "restaurant_name": "Oregano y laurel",
+      "avg_dish": 100000,
+      "addres": "",
+      "img_restaurant": "./img/hotels/art.jpg"
     }
   ]
 }

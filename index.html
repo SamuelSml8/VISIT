@@ -1,238 +1,217 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Visit</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VISIT</title>
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!--  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--***** SWIPER CSS ***** By*JR*-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!--***** SWIPER CSS ***** By*JR*-->
-  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
-    crossorigin="anonymous" />
+    <!--***** STYLES CSS ***** By*JR*-->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!--***** STYLES CSS ***** By*JR*-->
-  <link rel="stylesheet" href="./src/css/style.css" />
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--* SWEETALERT STYLES -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="/public/img/visitIcon.png"
+      type="image/x-icon"
+    />
+  </head>
 
-  <!--* SWEETALERT STYLES -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css" />
+  <body>
+    <!--***** START HEADER ***** By*JR*-->
+    <header class="header" id="header">
+      <!-- DINAMIC NAV -->
+    </header>
 
-</head>
+    <!--***** START SEARCH ***** By*JR*-->
+    <div class="search" id="search-content">
+      <form action class="form-search">
+        <i class="ri-search-line search-icon"></i>
+        <input
+          type="search"
+          placeholder="What are you lokking for?"
+          class="search-input"
+        />
+      </form>
 
-<body>
-  <!--***** START HEADER ***** By*JR*-->
-  <header class="header" id="header">
-    <nav class="nav-bar">
-      <a href="#home" class="logo-nav">
-        <img src="/public/img/logo.png" alt id="logo-nav" />
-      </a>
-      <div class="menu-nav">
-        <ul class="list-nav">
-          <li class="item-nav">
-            <a href="../foodDrink/foodDrink.html" class="link-nav link-home-closed">
-              <i class="ri-home-fill"></i>
-              <span data-i18n="home">HOME</span>
-            </a>
-          </li>
+      <i class="ri-close-line search-close" id="search-close"></i>
+    </div>
 
-          <li class="item-nav">
-            <a href="#places" class="link-nav">
-              <i class="ri-road-map-line"></i>
-              <span>Places</span>
-            </a>
-          </li>
+    <!--***** START LOGIN ***** By*JR*-->
+    <div class="login grid" id="login-content">
+      <form action class="login-form grid">
+        <h3 class="login-title">Login</h3>
+        <div class="login-group grid">
+          <div>
+            <label for="login-email" class="login-label">Email</label>
+            <input
+              type="email"
+              placeholder="Write your email"
+              id="login-email"
+              class="login-input"
+            />
+          </div>
 
-          <li class="item-nav">
-            <a href="#hotels" class="link-nav">
-              <i class="ri-hotel-line"></i>
-              <span>Hotels</span>
-            </a>
-          </li>
-
-          <li class="item-nav">
-            <a href="#events" class="link-nav">
-              <i class="ri-calendar-event-line"></i>
-              <span>Events</span>
-            </a>
-          </li>
-
-          <li class="item-nav">
-            <a href="#food" class="link-nav">
-              <i class="ri-restaurant-line"></i>
-              <span data-i18n="food_drink">Food & Drink</span>
-            </a>
-          </li>
-
-          
-
-         
-        </ul>
-      </div>
-
-      <div class="actions-nav">
-        <!--***** BUTTON SEARCH ***** By*JR*-->
-        <i class="ri-search-line" search-button id="search-button"></i>
-
-        <!--***** BUTTON LOGIN ***** By*JR*-->
-        <i class="ri-user-line login-button" id="login-button"></i>
-
-        <!--***** BUTTON THEME ***** By*JR*-->
-        <div class="change-theme">
-
-          <i class="ri-moon-line" theme-change id="dark-btn"></i>
-          <i class="ri-sun-line hidden" id="light-btn"></i>
+          <div>
+            <label for="login-password" class="login-label">Password</label>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="login-password"
+              class="login-input"
+            />
+          </div>
         </div>
 
-        <!--***** BUTTON LANGUAGE ***** By*JR*-->
+        <div class="forgot">
+          <span class="login-signup">
+            You do not have an account? <a href="#" id="signUp">Sign up</a>
+          </span>
 
-
-        <select title="Seleccione su país">
-          <option value="es">Es</option>
-          <option value="us">En</option>
-          <!-- Agrega más opciones según tus necesidades -->
-        </select>
-        
-        
-        
-
-
-
-        <!-- <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('es')"></i>
-        <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('en')" ></i> -->
-      </div>
-    </nav>
-  </header>
-
-  <!--***** START SEARCH ***** By*JR*-->
-  <div class="search" id="search-content">
-    <form action class="form-search">
-      <i class="ri-search-line search-icon"></i>
-      <input type="search" placeholder="What are you lokking for?" class="search-input" />
-    </form>
-
-    <i class="ri-close-line search-close" id="search-close"></i>
-  </div>
-
-  <!--***** START LOGIN ***** By*JR*-->
-  <div class="login grid" id="login-content">
-    <form action class="login-form grid">
-      <h3 class="login-title">Login</h3>
-      <div class="login-group grid">
-        <div>
-          <label for="login-email" class="login-label">Email</label>
-          <input type="email" placeholder="Write your email" id="login-email" class="login-input" />
-        </div>
-
-        <div>
-          <label for="login-password"
-          class="login-label">Password</label>
-          <input type="password" placeholder="Enter your password" id="login-password" class="login-input" />
-        </div>
-      </div>
-
-      <div class="forgot">
-        <span class="login-signup">
-          You do not have an account ? <a href="#" id="signUp">Sign up</a>
-        </span>
-
-        <a href="#" class="login-forgot"> You forgot your password </a>
-
-        <button type="submit" id="loginBtn" class="login-button button">Login</button>
-      </div>
-    </form>
-
-    <i class="ri-close-line login-close" id="login-close"></i>
-  </div>
-
-  <!--* START SIGN UP -->
-  <div class="login grid" id="signUp-content">
-    <form action class="login-form signUp-form grid">
-      <h3 class="login-title">Register</h3>
-      <div class="login-group grid">
-        <div>
-          <label for="login-email" class="login-label">Name</label>
-          <input type="text" placeholder="Write your name" id="signUp-name" class="login-input" />
-        </div>
-        <div>
-          <label for="login-email" class="login-label">Email</label>
-          <input type="email" placeholder="Write your email" id="signUp-email" class="login-input" />
-        </div>
-
-        <div>
-          <label for="login-password"
-          class="login-label">Password</label>
-          <input type="password" placeholder="Create your password" id="signUp-password" class="login-input" />
-        </div>
-      </div>
-
-      <div class="forgot">
-        <span class="login-signup">
-          You have an account? <a href="#" id="haveAccount">Login</a>
-        </span>
-
-        <a href="#" class="login-forgot"> You forgot your password </a>
-
-        <button type="submit" id="loginBtn" class="login-button button">REGISTER</button>
-      </div>
-    </form>
-
-    <i class="ri-close-line login-close" id="signUp-close"></i>
-  </div>
-
-  <!--***** MAIN ***** By*JR*-->
-  <main class="main">
-    <section class="home-section" id="home">
-      <div class="grid-container container-home">
-        <div class="data-home">
-          <h2 class="title-home">
-            Over 1.2 million tourists visited the city in the 2023!
-          </h2>
-
-          <h2 class="big-title">Visit is the tourist's best friend.</h2>
-
-          <p class="description-content">
-            "Discover the charm of our region, savor our cuisine, and enjoy
-            the excitement of our events."
-          </p>
-          <a href="" class="get-started" id="getStarted">Get started <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="img-data-home">
-          <img src="/public/img/chivaHome.png" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <section class="carrousel-towns" id="places">
-      <div class="container-carrousel-towns">
-        <div class="content-text-towns">
-          <h2>TOP DESTINATIONS</h2>
-          <p>
-            We have the most up-to-date statistics, in order to choose between
-            the most convenient options for your destination.
-          </p>
-          <ul class="counter">
-            <li>
-              <h3><i class="ri-user-line"></i>1.3M+</h3>
-              <span>Visitors in 2023</span>
-            </li>
-
-            <li>
-              <h3><i class="ri-map-pin-line"></i>125</h3>
-              <span>Destinations</span>
-            </li>
-          </ul>
-          <a href="/src/html/places.html" target="_blank" class="btn">
-            Go to Collections <i class="fa-solid fa-arrow-right"></i>
+          <a href="/src/html/forgotPass.html" class="login-forgot">
+            You forgot your password
           </a>
+
+          <button type="submit" id="loginBtn" class="login-button button">
+            Login
+          </button>
         </div>
-       
+      </form>
+
+      <i class="ri-close-line login-close" id="login-close"></i>
+    </div>
+
+    <!--* START SIGN UP -->
+    <div class="login grid" id="signUp-content">
+      <form action class="login-form signUp-form grid">
+        <h3 class="login-title">Register</h3>
+        <div class="login-group grid">
+          <div>
+            <label for="login-email" class="login-label">Name</label>
+            <input
+              type="text"
+              placeholder="Write your name"
+              id="signUp-name"
+              class="login-input"
+            />
+          </div>
+          <div>
+            <label for="login-email" class="login-label">Email</label>
+            <input
+              type="email"
+              placeholder="Write your email"
+              id="signUp-email"
+              class="login-input"
+            />
+          </div>
+
+          <div>
+            <label for="login-password" class="login-label">Password</label>
+            <input
+              type="password"
+              placeholder="Create your password"
+              id="signUp-password"
+              class="login-input"
+            />
+          </div>
+        </div>
+
+        <div class="forgot">
+          <span class="login-signup">
+            You have an account? <a href="#" id="haveAccount">Login</a>
+          </span>
+
+          <a href="/src/html/forgotPass.html" class="login-forgot">
+            You forgot your password
+          </a>
+
+          <button type="submit" id="loginBtn" class="login-button button">
+            REGISTER
+          </button>
+        </div>
+      </form>
+
+      <i class="ri-close-line login-close" id="signUp-close"></i>
+    </div>
+
+    <!--***** MAIN ***** By*JR*-->
+    <main class="main">
+      <section class="home-section" id="home">
+        <div class="grid-container container-home">
+          <div class="data-home">
+            <h2 class="title-home">
+              Over 1.2 million tourists visited the city in the 2023!
+            </h2>
+
+            <h2 class="big-title">Visit is the tourist's best friend.</h2>
+      </div>
+            <p class="description-content">
+              "Discover the charm of our region, savor our cuisine, and enjoy
+              the excitement of our events."
+            </p>
+            <a href="" class="get-started" id="getStarted"
+              >Get started <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="img-data-home">
+            <img src="./img/chivaHome.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="carrousel-towns" id="places">
+        <div class="container-carrousel-towns">
+          <div class="content-text-towns">
+            <h2>TOP DESTINATIONS</h2>
+            <p>
+              We have the most up-to-date statistics, in order to choose between
+              the most convenient options for your destination.
+            </p>
+            <ul class="counter">
+              <li>
+                <h3><i class="ri-user-line"></i>1.3M+</h3>
+                <span>Visitors in 2023</span>
+              </li>
+
+              <li>
+                <h3><i class="ri-map-pin-line"></i>125</h3>
+                <span>Destinations</span>
+              </li>
+            </ul>
+            <a href="/src/html/places.html" target="_blank" class="btn">
+              Go to Collections <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
 
         <div class="swiper-towns mySwiper-towns">
           <div class="swiper-wrapper">
@@ -262,279 +241,231 @@
 
       </div>
     </section>
-
-    <!--***** EXPERIENCE & CARRUSEL INFINITO ***** By*JR*-->
-    
-
-    <section class="carrusel-infinito" id="hotels">
-      <div class="baner-hotels" >
-        <h2 class="tittle-hotels-baner">Stay & Play Package</h2>
-        <p class="text-hotels-baner">
-          Stay and play at Kalahari Resorts & Conventions! Enjoy up to 15% off
-          our Best Available Rate, plus receive a $100 arcade card for each
-          night of your stay when you use promo code STAYNPLAY.
-        </p>
-  
-        <a href="/src/html/hotels.html" target="_blank" class="buton-ofers-hotels">Offerts</a>
-      </div>
-      <div class="slider">
-        <div class="slide-track">
-          <!-- CARDS ITERADAS JAVASCRIPT -->
-        </div>
-      </div>
-    </section>
-
-
-    <div class="container-items">
-      <h2 class="tittle-baner-services">WE OFFERT BEST SERVICES</h2>
-
-      <div class="baner-services">
-        <div class="item-services-text">
-          <i class="ri-hotel-line i-baner-services"></i>
-          <h3 class="item-tittle-services">Best Hotels</h3>
-          <p class="text-baner-item-services">
-            the best experience in hotels
-          </p>
-        </div>
-
-        <div class="item-services-text">
-          <i class="ri-map-pin-line i-baner-services"></i>
-          <h3 class="item-tittle-services">Best Places</h3>
-          <p class="text-baner-item-services">
-            the best experience in hotels
-          </p>
-        </div>
-
-        <div class="item-services-text">
-          <i class="ri-restaurant-line i-baner-services"></i>
-          <h3 class="item-tittle-services">Best Restaurants</h3>
-          <p class="text-baner-item-services">
-            the best experience in hotels
-          </p>
-        </div>
-
-        <div class="item-services-text">
-          <i class="ri-calendar-event-line i-baner-services"></i>
-          <h3 class="item-tittle-services">Best Events</h3>
-          <p class="text-baner-item-services">
-            the best experience in hotels
-          </p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container-baner-services">
-
-
-    </div>
-
-    <!--***** EVENTOS  *****-->
-
-
-    <section class="events" id="events">
-  <img src="./public/img/experiencia.png" alt="img experiencia visit" class="img-experiencia">
-
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" id="eventosCards">
-            <img alt="asd" src="./public/img/eventos/domingoDiferente.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img alt="asd" src="./public/img/eventos/colombiamoda.png" />
-          </div>
-          <div class="swiper-slide">
-            <img alt="asd" src="./public/img/eventos/musicOn.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img alt="asd" src="./public/img/eventos/expotatto.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img alt="asd" src="./public/img/eventos/core.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img alt="asd" src="./public/img/eventos/carlcox.jpeg" />
-          </div>
-         
-       </div>
-        <!-- <div class="swiper-pagination"></div> -->
-      </div>
-
-      
-    </section>
-    <div class="btn-container">
-      <a href="" target="_blank" class="btn collection-btn">
-        Go to Collections <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-   
-
-    <!-- FOOD&DRINKS -->
-
-    <section class="food-drinks" id="food">
-
-      <h2 class="tittle-restaurants">FOOD & DRINK</h2>
-      <hr class="line-food">
-      <div class="grid-restaurants">
-
-
-        <div class="card-restaurant" id="item-1">
-          <img src="./public/img/hotels/art.jpg" alt="rest">
-        </div>
-
-        <div class="card-restaurant" id="item-1">
-          <img src="./public/img/hotels/art.jpg" alt="rest">
-        </div>
-
-        <div class="card-restaurant" id="item-1">
-          <img src="./public/img/hotels/art.jpg" alt="rest">
-        </div>
-
-        <div class="card-restaurant" id="item-1">
-          <img src="./public/img/hotels/art.jpg" alt="rest">
-        </div>
-
-        <div class="card-restaurant" id="item-1">
-          <img src="./public/img/hotels/art.jpg" alt="rest">
-          <div class="mask"></div>
-
-          <div class="heart-icons">
-            <i class="ri-heart-line"></i>
-            <i class="ri-heart-fill"></i>
-          </div>
-
-          <div class="item-body">
-            <h3>Nombre del restaurante</h3>
-
-            <div>
-              <i class="ri-star-fill"></i>
-              4.9
-            </div>
-          </div>
-        </div>
-
-        <div class="card-restaurant" id="item-1">
-          <img src="./public/img/hotels/art.jpg" alt="rest">
-        </div>
-
-
-      </div>
-
-      </div>
-    </section>
-
-    <!--***** FOOTER  ***** By*JR*-->
-
-    <footer class="footer">
-      <div class="container-footer">
-        <div class="part-1-footer">
-          <div class="section-footer footer-display">
-            <h3>CONTACT</h3>
-            <p>Cl. 16 #55-129, Guayabal</p>
-            <p>Medellín</p>
-            <p>Antioquia</p>
-            <p>30056778902</p>
-          </div>
-
-          <div class="section-footer footer-display">
-            <h3>RECENT POST</h3>
-            <a href="" class="link-item-footer">Places</a>
-            <a href="" class="link-item-footer">Hotels</a>
-            <a href="" class="link-item-footer">Events</a>
-            <a href="" class="link-item-footer">Food & Drinks</a>
-          </div>
-
-          <div class="section-footer">
-
-          
-
-            <div class="map-footer">
-
-              <div style="width: 100%">
-                <iframe
-                  src="https://maps.google.com/maps?width=100%25&amp;height=800&amp;hl=es&amp;q=Riwi%20Medell%C3%ACn+(VISIT)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                    href="https://www.gps.ie/car-satnav-gps/">Car Navigation Systems</a></iframe>
-
-                  
-                   
+          <div class="swiper-towns mySwiper-towns">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/towns/1.png" alt="" />
               </div>
-
-              <img src="./public/img/logoM.png" alt="" class="logo-footer" />
-           
+              <div class="swiper-slide">
+                <img src="./img/towns/2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/towns/3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/towns/4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/towns/5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/towns/6.png" alt="" />
+              </div>
             </div>
+            <div class="swiper-button-next-towns"></div>
+            <div class="swiper-button-prev-towns"></div>
+            <div class="swiper-pagination-towns"></div>
+          </div>
+        </div>
+      </section>
 
+      <!--***** EXPERIENCE & CARRUSEL INFINITO ***** By*JR*-->
+
+      <section class="carrusel-infinito" id="hotels">
+        <div class="baner-hotels">
+          <h2 class="tittle-hotels-baner">Stay & Play Package</h2>
+          <p class="text-hotels-baner">
+            Stay and play at Kalahari Resorts & Conventions! Enjoy up to 15% off
+            our Best Available Rate, plus receive a $100 arcade card for each
+            night of your stay when you use promo code STAYNPLAY.
+          </p>
+
+          <a
+            href="/src/html/hotels.html"
+            target="_blank"
+            class="buton-ofers-hotels"
+            >Offerts</a
+          >
+        </div>
+        <div class="slider">
+          <div class="slide-track">
+            <!-- CARDS ITERADAS JAVASCRIPT -->
+          </div>
+        </div>
+      </section>
+
+      <div class="container-items">
+        <h2 class="tittle-baner-services">WE OFFERT BEST SERVICES</h2>
+
+        <div class="baner-services">
+          <div class="item-services-text">
+            <i class="ri-hotel-line i-baner-services"></i>
+            <h3 class="item-tittle-services">Best Hotels</h3>
+            <p class="text-baner-item-services">
+              the best experience in hotels
+            </p>
           </div>
 
-        
+          <div class="item-services-text">
+            <i class="ri-map-pin-line i-baner-services"></i>
+            <h3 class="item-tittle-services">Best Places</h3>
+            <p class="text-baner-item-services">
+              the best experience in hotels
+            </p>
+          </div>
 
-          <div class="section-footer">
-            <h3 class="footer-display">FOLLOW US</h3>
-            <input type="text" placeholder="Email" class="input-footer footer-display " />
-          
-            <div class="link-social-footer">
-              <i class="ri-instagram-fill"></i>
-              <i class="ri-facebook-fill"></i>
-              <i class="ri-google-fill"></i>
-            </div>
-           
+          <div class="item-services-text">
+            <i class="ri-restaurant-line i-baner-services"></i>
+            <h3 class="item-tittle-services">Best Restaurants</h3>
+            <p class="text-baner-item-services">
+              the best experience in hotels
+            </p>
+          </div>
+
+          <div class="item-services-text">
+            <i class="ri-calendar-event-line i-baner-services"></i>
+            <h3 class="item-tittle-services">Best Events</h3>
+            <p class="text-baner-item-services">
+              the best experience in hotels
+            </p>
           </div>
         </div>
       </div>
-    </footer>
-    
-    <p class="copy-rights">
-      Copy Rights - <span class="visit-name">VISIT</span> - 2024. All
-      Right Reserved
-    </p>
-  </main>
+
+      <div class="container-baner-services"></div>
+
+      <!--***** EVENTOS  *****-->
+      <section class="events" id="events">
+        <img
+          src="/public/img/experiencia.png"
+          alt="img experiencia visit"
+          class="img-experiencia"
+        />
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="eventsCards">
+            <!-- EVENTS -->
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <a href="/src/html/places.html" target="_blank" class="btn">
+          Go to Collections <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </section>
+
+      <!-- FOOD&DRINKS -->
+      <section class="food-drinks" id="food">
+        <h2 class="tittle-restaurants">FOOD & DRINK</h2>
+        <hr class="line-food" />
+        <div class="grid-restaurants" id="restaurantGrid">
+          <!-- RESTAURANTS CONTENT-->
+        </div>
+      </section>
+
+      <!--***** FOOTER  ***** By*JR*-->
+
+      <footer class="footer">
+        <div class="container-footer">
+          <div class="part-1-footer">
+            <div class="section-footer footer-display">
+              <h3>CONTACT</h3>
+              <p>Cl. 16 #55-129, Guayabal</p>
+              <p>Medellín</p>
+              <p>Antioquia</p>
+              <p>30056778902</p>
+            </div>
+
+            <div class="section-footer footer-display">
+              <h3>RECENT POST</h3>
+              <a href="" class="link-item-footer">Places</a>
+              <a href="" class="link-item-footer">Hotels</a>
+              <a href="" class="link-item-footer">Events</a>
+              <a href="" class="link-item-footer">Food & Drinks</a>
+            </div>
+
+            <div class="section-footer">
+              <div class="map-footer">
+                <div style="width: 100%">
+                  <iframe
+                    src="https://maps.google.com/maps?width=100%25&amp;height=800&amp;hl=es&amp;q=Riwi%20Medell%C3%ACn+(VISIT)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    ><a href="https://www.gps.ie/car-satnav-gps/"
+                      >Car Navigation Systems</a
+                    ></iframe
+                  >
+                </div>
+
+                <img src="./public/img/logoM.png" alt="" class="logo-footer" />
+              </div>
+            </div>
+
+            <div class="section-footer">
+              <h3 class="footer-display">FOLLOW US</h3>
+              <input
+                type="text"
+                placeholder="Email"
+                class="input-footer footer-display"
+              />
+
+              <div class="link-social-footer">
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-google-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <p class="copy-rights">
+        Copy Rights - <span class="visit-name">VISIT</span> - 2024. All Right
+        Reserved
+      </p>
+    </main>
+
+    <script type="module">
+      var swiper = new Swiper(".mySwiper-towns", {
+        effect: "flip",
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- swipper eventos -->
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+    <!-- swipper animaciones -->
 
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script type="module">
-    var swiper = new Swiper(".mySwiper-towns", {
-      effect: "flip",
-      grabCursor: true,
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-  <!-- swipper eventos -->
-  <script type="module">
+    <!-- main js -->
 
-    const swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  </script>
-
-  <!-- swipper animaciones -->
-
-
-
-  <!-- main js -->
-
-  <!-- <script src="./js/design.js" type="module"></script> -->
-  <script src="./src/js/main.js"></script>
-  <script type="module" src="./src/js/translator.js"></script>
-  <script src="/src/js/login.js"></script>
-</body>
-
+    <!-- <script src="./js/design.js" type="module"></script> -->
+    <script src="/src/components/navbar/navbar.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/translator.js"></script>
+    <script src="/src/js/login.js"></script>
+  </body>
 </html>

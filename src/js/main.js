@@ -58,20 +58,20 @@ hotelsCardsRecomended();
 
 const urlEvents = "http://localhost:3000/events";
 
-// async function eventsRecomended() {
-//   const response = await fetch(urlEvents);
-//   const data = await response.json();
+async function eventsRecomended() {
+  const response = await fetch(urlEvents);
+  const data = await response.json();
   
-//   const eventCards = document.querySelector("#eventosCards");
-//   data.forEach((event) => {
-//     // const { event_name, img_event } = event;
-//     eventCards.innerHTML += `
-//     <div class="swiper-slide">
-//     <img alt="${event.event_name}" src="${event.img_event}"/>
-//   </div>
-//   `
-//   })
-// }
+  const eventCards = document.querySelector("#eventosCards");
+  data.forEach((event) => {
+    // const { event_name, img_event } = event;
+    eventCards.innerHTML += `
+    <div class="swiper-slide">
+    <img alt="${event.event_name}" src="${event.img_event}"/>
+  </div>
+  `
+  })
+}
 
 
 

@@ -31,7 +31,7 @@
   <header class="header" id="header">
     <nav class="nav-bar">
       <a href="#home" class="logo-nav">
-        <img src="./img/logo.png" alt id="logo-nav" />
+        <img src="/public/img/logo.png" alt id="logo-nav" />
       </a>
       <div class="menu-nav">
         <ul class="list-nav">
@@ -204,7 +204,7 @@
           <a href="" class="get-started" id="getStarted">Get started <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="img-data-home">
-          <img src="./img/chivaHome.png" alt="" />
+          <img src="/public/img/chivaHome.png" alt="" />
         </div>
       </div>
     </section>
@@ -237,22 +237,22 @@
         <div class="swiper-towns mySwiper-towns">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./img/towns/1.png" alt="" />
+              <img src="/public/img/towns/1.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="./img/towns/2.png" alt="" />
+              <img src="/public/img/towns/2.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="./img/towns/3.png" alt="" />
+              <img src="/public/img/towns/3.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="./img/towns/4.png" alt="" />
+              <img src="/public/img/towns/4.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="./img/towns/5.png" alt="" />
+              <img src="/public/img/towns/5.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="./img/towns/6.png" alt="" />
+              <img src="/public/img/towns/6.png" alt="" />
             </div>
           </div>
           <div class="swiper-button-next-towns"></div>
@@ -333,38 +333,41 @@
 
 
     <section class="events" id="events">
-  <img src="/public/img/experiencia.png" alt="img experiencia visit" class="img-experiencia">
+  <img src="./public/img/experiencia.png" alt="img experiencia visit" class="img-experiencia">
 
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide" id="eventosCards">
-            <img alt="asd" src="./img/eventos/domingoDiferente.jpg" />
+            <img alt="asd" src="./public/img/eventos/domingoDiferente.jpg" />
           </div>
           <div class="swiper-slide">
-            <img alt="asd" src="./img/eventos/colombiamoda.png" />
+            <img alt="asd" src="./public/img/eventos/colombiamoda.png" />
           </div>
           <div class="swiper-slide">
-            <img alt="asd" src="./img/eventos/musicOn.jpg" />
+            <img alt="asd" src="./public/img/eventos/musicOn.jpg" />
           </div>
           <div class="swiper-slide">
-            <img alt="asd" src="./img/eventos/expotatto.jpg" />
+            <img alt="asd" src="./public/img/eventos/expotatto.jpg" />
           </div>
           <div class="swiper-slide">
-            <img alt="asd" src="./img/eventos/core.jpg" />
+            <img alt="asd" src="./public/img/eventos/core.jpg" />
           </div>
           <div class="swiper-slide">
-            <img alt="asd" src="./img/eventos/Carl-Cox-–-GLOBAL-474-–-13-04-2012.jpeg" />
+            <img alt="asd" src="./public/img/eventos/carlcox.jpeg" />
           </div>
          
        </div>
         <!-- <div class="swiper-pagination"></div> -->
       </div>
 
-      <a href="/src/html/places.html" target="_blank" class="btn">
+      
+    </section>
+    <div class="btn-container">
+      <a href="" target="_blank" class="btn collection-btn">
         Go to Collections <i class="fa-solid fa-arrow-right"></i>
       </a>
-
-    </section>
+    </div>
+   
 
     <!-- FOOD&DRINKS -->
 
@@ -376,23 +379,23 @@
 
 
         <div class="card-restaurant" id="item-1">
-          <img src="./img/hotels/art.jpg" alt="rest">
+          <img src="./public/img/hotels/art.jpg" alt="rest">
         </div>
 
         <div class="card-restaurant" id="item-1">
-          <img src="./img/hotels/art.jpg" alt="rest">
+          <img src="./public/img/hotels/art.jpg" alt="rest">
         </div>
 
         <div class="card-restaurant" id="item-1">
-          <img src="./img/hotels/art.jpg" alt="rest">
+          <img src="./public/img/hotels/art.jpg" alt="rest">
         </div>
 
         <div class="card-restaurant" id="item-1">
-          <img src="./img/hotels/art.jpg" alt="rest">
+          <img src="./public/img/hotels/art.jpg" alt="rest">
         </div>
 
         <div class="card-restaurant" id="item-1">
-          <img src="./img/hotels/art.jpg" alt="rest">
+          <img src="./public/img/hotels/art.jpg" alt="rest">
           <div class="mask"></div>
 
           <div class="heart-icons">
@@ -411,7 +414,7 @@
         </div>
 
         <div class="card-restaurant" id="item-1">
-          <img src="./img/hotels/art.jpg" alt="rest">
+          <img src="./public/img/hotels/art.jpg" alt="rest">
         </div>
 
 
@@ -478,11 +481,15 @@
         </div>
       </div>
     </footer>
+    
     <p class="copy-rights">
       Copy Rights - <span class="visit-name">VISIT</span> - 2024. All
       Right Reserved
     </p>
   </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script type="module">
     var swiper = new Swiper(".mySwiper-towns", {
@@ -499,7 +506,6 @@
   </script>
   <!-- swipper eventos -->
   <script type="module">
-    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
     const swiper = new Swiper(".mySwiper", {
       effect: "coverflow",
@@ -521,7 +527,7 @@
 
   <!-- swipper animaciones -->
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
   <!-- main js -->
 

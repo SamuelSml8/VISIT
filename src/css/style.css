@@ -8,38 +8,37 @@
 /* ***** VAR CSS***** By*JR* */
 [data-theme="light"],
 :root {
-  --header-height: 3.5rem;
+    --header-height: 3.5rem;
 
-  /***** COLORS *****/
-  --space-cadet: #2e294e;
-  --azure-web: #edf7f6ff;
-  --asparagus: #60993e;
-  --chefchaouen-blue: #4a8fe7ff;
-  /* --body-color: ; */
-  --btn-color: #edf7f6ff;
-  --font--color: #2e294e;
-  --paragraph-color: #2e294e;
+    /***** COLORS *****/
+    --space-cadet: #2e294e;
+    --azure-web: #edf7f6ff;
+    --asparagus: #60993e;
+    --chefchaouen-blue: #4a8fe7ff;
+    /* --body-color: ; */
+    --btn-color: #edf7f6ff;
+    --font--color: #2e294e;
+    --paragraph-color: #2e294e;
 
-  /***** FONT & TYPOGRAPHY *****/
-  --body-font: "Work Sans", sans-serif;
-  --visit-font: "MOMCAKE", sans-serif;
+    /***** FONT & TYPOGRAPHY *****/
+    --body-font: "Work Sans", sans-serif;
+    --visit-font: "MOMCAKE", sans-serif;
 
-  /***** FONT WEIGHT *****/
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-semi-bold: 600;
+    /***** FONT WEIGHT *****/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
 
-  /***** Z-INDEX *****/
-  --z-tooltip: 10;
-  --z-fixed: 100;
+    /***** Z-INDEX *****/
+    --z-tooltip: 10;
+    --z-fixed: 100;
 
-  body {
-    transition: background-color 0.4s;
-  }
+    body {
+        transition: background-color 0.4s;
+    }
 }
 
 [data-theme="dark"] {
-  
     --header-height: 3.5rem;
 
     /***** COLORS *****/
@@ -47,2472 +46,2346 @@
     --azure-web: #dcdce0;
     --asparagus: #60993e;
     --chefchaouen-blue: #4a8fe7ff;
-    --font--color:#dcdce0;
+    --font--color: #dcdce0;
     --btn-color: #2e294e;
     --paragraph-color: #fff;
 
-    body{
-      background-color: var(--space-cadet);
-
+    body {
+        background-color: var(--space-cadet);
     }
-
-
- 
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /* ***** CSS CLASSES REUSABLE ***** By*JR* */
 
 .container {
-  max-width: 1220px;
+    max-width: 1220px;
 }
 
 .grid {
-  display: grid;
-  gap: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
 }
 
 .main {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 /* ***** HEADER  STYLES NAV-BAR ***** By*JR* */
 
 .header {
-  z-index: var(--z-fixed);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+    z-index: var(--z-fixed);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
-  transition: box-shadow 0.4s, background-color 0.4s;
+    transition: box-shadow 0.4s, background-color 0.4s;
 }
 
 .nav-bar {
-  height: var(--header-height);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-nav {
-  display: inline-flex;
-  align-items: center;
+    display: inline-flex;
+    align-items: center;
 }
 
 .list-nav {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .link-nav {
-  color: var(--space-cadet);
-  transition: color 0.4s;
+    color: var(--space-cadet);
+    transition: color 0.4s;
 }
 
 .link-nav i {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 .actions-nav i {
-  font-size: 1.45rem;
-  color: var(--space-cadet);
-  cursor: pointer;
-  transition: color 0.4s;
+    font-size: 1.45rem;
+    color: var(--space-cadet);
+    cursor: pointer;
+    transition: color 0.4s;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 /* *****  SEARCH ***** By*JR* */
 .search {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: -100%;
-  left: 0;
-  z-index: var(--z-fixed);
-  backdrop-filter: blur(15px);
-  padding: 8rem 1.5rem;
-  transition: top 0.4s;
-  background-color: transparent;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    z-index: var(--z-fixed);
+    backdrop-filter: blur(15px);
+    padding: 8rem 1.5rem;
+    transition: top 0.4s;
+    background-color: transparent;
 }
 
 .form-search {
-  display: flex;
-  align-items: center;
-  column-gap: 5rem;
-  background-color: var(--azure-web);
-  border: 2px solid var(--space-cadet);
-  padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+    background-color: var(--azure-web);
+    border: 2px solid var(--space-cadet);
+    padding-inline: 1rem;
 }
 
 .search-icon {
-  font-size: 1.25rem;
-  color: black;
+    font-size: 1.25rem;
+    color: black;
 }
 
 .search-input {
-  width: 100%;
-  padding-block: 1rem;
-  background-color: var(--azure-web);
-  color: var(--space-cadet);
+    width: 100%;
+    padding-block: 1rem;
+    background-color: var(--azure-web);
+    color: var(--space-cadet);
 }
 
-.search-input:focus{
-  outline: none;
+.search-input:focus {
+    outline: none;
 }
 
 .search-close {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  font-size: 2rem;
-  color: var(--font--color) !important;
-  cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: var(--font--color) !important;
+    cursor: pointer;
 }
 
 /* *****SHOW SEARCH ***** By*JR* */
 
 .show-search {
-  top: 0;
+    top: 0;
 }
 
 /* ***** LOGIN ***** By*JR* */
 .login {
-  position: fixed;
-  left: 0;
-  top: -100%;
-  width: 100%;
-  height: 100%;
-  z-index: var(--z-fixed);
-  background-color: rgb(46, 41, 78, 30%);
-  backdrop-filter: blur(5px);
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-  transition: top 0.4s;
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-fixed);
+    background-color: rgb(46, 41, 78, 30%);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    transition: top 0.4s;
 }
 
 .login-group {
-  row-gap: 1.35rem;
+    row-gap: 1.35rem;
 }
 
 .login-label {
-  display: block;
-  text-align: initial;
-  color: var(--space-cadet);
-  font-weight: var(--font-medium);
-  margin-bottom: 0.25rem;
+    display: block;
+    text-align: initial;
+    color: var(--space-cadet);
+    font-weight: var(--font-medium);
+    margin-bottom: 0.25rem;
 }
 
 .login-input {
-  width: 100%;
-  background-color: var(--azure-web);
-  border: 2px solid rgb(46, 41, 78, 60%);
-  padding: 1rem;
-  color: var(--space-cadet);
+    width: 100%;
+    background-color: var(--azure-web);
+    border: 2px solid rgb(46, 41, 78, 60%);
+    padding: 1rem;
+    color: var(--space-cadet);
 }
 
 .login-input:focus {
-  outline: none;
+    outline: none;
 }
 
 /* ***** SHOW LOGIN ***** By*JR* */
 
 .show-login {
-  top: 0;
+    top: 0;
 }
 
 /* * SHOW SIGNUP*/
 
 .show-signup {
-  top: 0;
+    top: 0;
 }
 
 /* ***** BUTTON ***** By*JR* */
 
 /* TAMAÑO GRANDE */
 @media screen and (min-width: 800px) {
-  /* ***** HEADER ***** By*JR* */
+    /* ***** HEADER ***** By*JR* */
 
-  #logo-nav {
-    max-width: 28px;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  #logo-nav:hover{
-    transform: rotate(-15deg) scale(1.1);
-
-  }
-
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
-    height: 4rem;
-    z-index: 1;
-  }
-
-  .nav-bar {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .nav-bar .menu-nav i {
-    display: none;
-  }
-
-  .link-home-closed {
-    display: none;
-  }
-
-  .item-nav {
-    margin: 0 2rem;
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
-
-  .item-nav i {
-    display: none;
-  }
-
-  .link-nav {
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    transition: border-bottom-color 0.3s;
-    color: var(--space-cadet);
-    font-weight: 500;
-    font-family: "Work Sans", sans-serif;
-    padding-bottom: 6px;
-    font-size: 1.1rem;
-  }
-
-  .link-nav:hover {
-    border-bottom-color: var(--asparagus);
-  }
-
-  .actions-nav {
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-    margin: 0 1rem 0 0;
-  }
-
-  .actions-nav i {
-    color: var(--space-cadet);
-    font-size: 1.3rem;
-  }
-
-  .actions-nav i:hover{
-    color: var(--asparagus);
- 
-  
-  }
-
-  select{
-    background-color: var(--space-cadet);
-    color: var(--azure-web);
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 3px;
-    padding: .2rem .5rem;
-  }
-
-  option{
-    font-size: 1rem;
-    color: var(--space-cadet);
-  }
-
-  /* LOG IN  */
-
-  .login-form {
-    width: 40%;
-    margin: auto;
-    background-color: #2e294e;
-    padding: 2rem 1.5rem;
-    border-radius: 5px;
-  }
-
-  .login-title {
-    font-size: 1.2rem;
-    color: var(--azure-web);
-    font-family: var(--body-font);
-  }
-
-  .login-label {
-    color: var(--azure-web);
-    font-family: var(--body-font);
-  }
-
-  .login-form ::placeholder {
-    color: var(--space-cadet);
-  }
-
-  .login-form input {
-    background-color: var(--azure-web);
-    border: none;
-    border-radius: 5px;
-  }
-
-  .login-signup,
-  .login-forgot {
-    display: block;
-    font-size: var(--small-font-size);
-  }
-
-  .login-signup {
-    color: white;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .login-forgot {
-    color: var(--asparagus);
-    margin-bottom: 1.25rem;
-  }
-
-  .forgot {
-    font-family: var(--body-font);
-  }
-
-  .forgot a {
-    color: var(--asparagus);
-  }
-
-  .forgot a:hover {
-    color: var(--chefchaouen-blue);
-  }
-
-  .button:hover {
-    box-shadow: 0 4px 32px var(--chefchaouen-blue);
-  }
-
-  .button {
-    color: var(--azure-web);
-    background-color: var(--chefchaouen-blue);
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    display: inline-block;
-    padding: 1rem 1.5rem;
-    transition: box-shadow 0.4s;
-    width: 100%;
-    cursor: pointer;
-  }
-
-  .login-close {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    font-size: 2rem;
-    color: var(--space-cadet);
-    cursor: pointer;
-  }
-
-  /* SEARCH */
-
-  .search {
-    background-color: ;
-    backdrop-filter: blur(15px);
-  }
-
-  .search-close {
-    color: white;
-  }
-
-  .search form {
-    border: 2px solid var(--space-cadet);
-    background-color: var(--azure-web);
-    width: 50%;
-    margin: auto;
-  }
-
-  .search input {
-    background-color: var(--azure-web);
-    border: none;
-  }
-
-  /* ***** MAIN ***** By*JR* */
-
-  .main {
-    margin: 4rem 0 0 0;
-  }
-
-  .home-section {
-    width: 100vw;
-    margin: auto;
-    height: max-content;
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.35)
-      ),
-      url(/public/img/montaña2.png);
-  }
-
-  .container-home {
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    margin: auto;
-  }
-
-  .data-home {
-    width: 60vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding: 1rem;
-    margin: 2rem 0;
-    text-align: left;
-  }
-
-  .title-home {
-    font-size: 1.2rem;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 10px;
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--asparagus);
-    color: var(--azure-web);
-    text-align: center;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-  }
-
-  .big-title {
-    font-size: 3.5rem;
-    text-align: left;
-    font-weight: 600;
-    color: var(--font--color);
-    font-family: "Work Sans", sans-serif;
-    opacity: 90%;
-    margin: 1rem 0;
-    text-shadow: 0px 2px 6px rgba(0,0,0,0.6);
-  }
-  .description-content {
-    font-size: 1.2rem;
-    color: var(--paragraph-color);
-    text-align: left;
-    font-family: "Work Sans", sans-serif;
-    opacity: 70%;
-  }
-
-  .get-started {
-    background-color: var(--font--color);
-    color: var(--btn-color);
-    padding: 1rem;
-    border-radius: 25px;
-    font-weight: 600;
-    width: 40%;
-    text-align: center;
-    margin: 1rem 0;
-    font-family: "Work Sans", sans-serif;
-    transition: 0.7s ease-in;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-  }
-
-  .get-started:hover {
-    background-color: var(--azure-web);
-    color: var(--space-cadet);
-    transition: 0.7s ease-in;
-  }
-
-  .img-data-home {
-    width: 50vw;
-    margin: 5rem auto;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .img-data-home img {
-    height: 73vh;
-  }
-
-  /* **** CONTAINER BANER SERVICES ***** By*JR* */
-
-  .container-baner-services {
-    background-image: url("../../public/img/medellin.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 55vh;
-    margin: auto;
-    margin-top: 30px;
-    padding: 8rem 0;
-    background-position: bottom;
-    position: relative;
-  }
-
-  .baner-services {
-    width: 80vw;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-  }
-
-  .item-services-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p{
-      color: var(--font--color);
+    #logo-nav {
+        max-width: 28px;
+        transition: transform 0.3s ease-in-out;
     }
-  }
 
-  .i-baner-services {
-    color: var(--chefchaouen-blue);
-    font-size: 3rem;
-  }
+    #logo-nav:hover {
+        transform: rotate(-15deg) scale(1.1);
+    }
 
-  .tittle-baner-services {
-    font-size: 4rem;
-    font-weight: 600;
-    margin:  auto auto 5rem auto;
-    text-align: center;
-    color: var(--font--color);
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.48);
-  }
-
-  .item-tittle-services {
-    color: var(--asparagus);
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 0.5rem 0 0 0;
-  }
-
-  .text-baner-item-services {
-    color: black;
-    font-size: 1.2rem;
-  }
-
-  /* ***** CARROUSEL TOWNS ***** By*JR* */
-
-  .carrousel-towns {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-  }
-
-  .container-carrousel-towns {
-    width: 80vw;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-  }
-
-  .content-text-towns {
-    width: 50%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-   
-  }
-
-  .content-text-towns h2 {
-    letter-spacing: 0.8px;
-    font-weight: 700;
-    font-size: 5rem;
-    line-height: 1.2;
-    color: var(--font--color) !important;
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.48);
-    font-family: "MOMCAKE", sans-serif;
-  }
-
-  .content-text-towns p {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    margin-inline: auto;
-    margin-top: 10px;
-    color: var(--font--color) !important;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .content-text-towns .counter {
-    font-weight: 400;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    margin: 2.5em 0 2em 0;
-    gap: 2em;
-    color: var(--font--color) !important;
-    font-family: "Work Sans", sans-serif;
-  }
-
- 
-
-  .content-text-towns .counter i {
-    margin-right: 10px;
-    color: var(--chefchaouen-blue);
-    font-size: 2rem;
-  }
-
-  .content-text-towns .counter span {
-    display: block;
-    text-transform: capitalize;
-    font-size: 1rem;
-    color: var(--asparagus);
-    margin-top: 3px;
-  }
-
-  .content-text-towns .btn {
-    background-color: var(--space-cadet);
-    width: 50%;
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 4px;
-    transition: 0.7s ease-in;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.49);
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .content-text-towns .btn i {
-    margin-left: 15px;
-  }
-
-  .content-text-towns .btn:hover {
-    background-color: var(--azure-web);
-    color: var(--space-cadet);
-    transition: 0.8s ease-in;
-  }
-
-  .swiper-towns {
-    /* padding: 50px; */
-
-    width: 50%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-
-    .swiper-slide {
-      margin-top: 20px;
-      height: 90%;
-      width: 90%;
-
-      img {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
+        background-color: white;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+        height: 4rem;
+        z-index: 1;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-bar .menu-nav i {
+        display: none;
+    }
+
+    .link-home-closed {
+        display: none;
+    }
+
+    .item-nav {
+        margin: 0 2rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .item-nav i {
+        display: none;
+    }
+
+    .link-nav {
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+        transition: border-bottom-color 0.3s;
+        color: var(--space-cadet);
+        font-weight: 500;
+        font-family: "Work Sans", sans-serif;
+        padding-bottom: 6px;
+        font-size: 1.1rem;
+    }
+
+    .link-nav:hover {
+        border-bottom-color: var(--asparagus);
+    }
+
+    .actions-nav {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        margin: 0 1rem 0 0;
+    }
+
+    .actions-nav i {
+        color: var(--space-cadet);
+        font-size: 1.3rem;
+    }
+
+    .actions-nav i:hover {
+        color: var(--asparagus);
+    }
+
+    select {
+        background-color: var(--space-cadet);
+        color: var(--azure-web);
+        border: none;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 3px;
+        padding: 0.2rem 0.5rem;
+    }
+
+    option {
+        font-size: 1rem;
+        color: var(--space-cadet);
+    }
+
+    /* LOG IN  */
+
+    .login-form {
+        width: 40%;
+        margin: auto;
+        background-color: #2e294e;
+        padding: 2rem 1.5rem;
+        border-radius: 5px;
+    }
+
+    .login-title {
+        font-size: 1.2rem;
+        color: var(--azure-web);
+        font-family: var(--body-font);
+    }
+
+    .login-label {
+        color: var(--azure-web);
+        font-family: var(--body-font);
+    }
+
+    .login-form ::placeholder {
+        color: var(--space-cadet);
+    }
+
+    .login-form input {
+        background-color: var(--azure-web);
+        border: none;
+        border-radius: 5px;
+    }
+
+    .login-signup,
+    .login-forgot {
+        display: block;
+        font-size: var(--small-font-size);
+    }
+
+    .login-signup {
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .login-forgot {
+        color: var(--asparagus);
+        margin-bottom: 1.25rem;
+    }
+
+    .forgot {
+        font-family: var(--body-font);
+    }
+
+    .forgot a {
+        color: var(--asparagus);
+    }
+
+    .forgot a:hover {
+        color: var(--chefchaouen-blue);
+    }
+
+    .button:hover {
+        box-shadow: 0 4px 32px var(--chefchaouen-blue);
+    }
+
+    .button {
+        color: var(--azure-web);
+        background-color: var(--chefchaouen-blue);
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        transition: box-shadow 0.4s;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .login-close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 2rem;
+        color: var(--space-cadet);
+        cursor: pointer;
+    }
+
+    /* SEARCH */
+
+    .search {
+        background-color: ;
+        backdrop-filter: blur(15px);
+    }
+
+    .search-close {
+        color: white;
+    }
+
+    .search form {
+        border: 2px solid var(--space-cadet);
+        background-color: var(--azure-web);
+        width: 50%;
+        margin: auto;
+    }
+
+    .search input {
+        background-color: var(--azure-web);
+        border: none;
+    }
+
+    /* ***** MAIN ***** By*JR* */
+
+    .main {
+        margin: 4rem 0 0 0;
+    }
+
+    .home-section {
+        width: 100vw;
+        margin: auto;
+        height: max-content;
+        background-image: linear-gradient(
+                rgba(255, 255, 255, 0.5),
+                rgba(255, 255, 255, 0.35)
+            ),
+            url(/public/img/montaña2.png);
+    }
+
+    .container-home {
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        margin: auto;
+    }
+
+    .data-home {
+        width: 60vw;
         height: 100%;
-        object-fit: contain;
-      }
-    }
-  }
-
-  /***** EXPERIENCE & CARRUSEL INFINITO ***** By*JR*/
-
-
-  .img-experiencia{
-   width: 60vw;
-    margin:  3rem auto;
-    display: flex;
-  }
-  .baner-hotels {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 9rem 0 0 0;
-    width: 100%;
-  }
-  .tittle-hotels-baner {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 600;
-    font-family: "MOMCAKE", sans-serif;
-    color: var(--asparagus);
-  }
-
-  .text-hotels-baner {
-    text-align: center;
-    width: 50%;
-    margin: 1rem auto;
-    font-size: 1.2rem;
-    font-weight: 500;
-    font-family: var(--body-font);
-    color: var(--font--color) !important;
-    opacity: 90%;
-  }
- 
-  .buton-ofers-hotels {
-    background-color: var(--font--color);
-    color: var(--btn-color);
-    border: none;
-    padding: 1rem;
-    border-radius: 25px;
-    font-weight: 600;
-    width: 10%;
-    text-align: center;
-    margin: 1rem 0;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.2rem;
-    transition: 0.7s ease-in;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
- 
-  }
-
-  .buton-ofers-hotels:hover{
-    background-color: var(--azure-web);
-    color: var(--space-cadet);
-    transition: 0.7s ease-in;
-
-  }
-
-  .hotel-link {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .image-medellin {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../img/medellin.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .carrusel-infinito {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* margin: 5rem 0 ; */
-  
-  }
-  .slider {
-    width: 80vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-  }
-
-  .slide-track {
-    display: flex;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
-    width: calc(250px * 14);
-    height: 300px;
-
-    gap: 1rem;
-  }
-
-  .slide {
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 15px;
-    a{
-
-      color: var(--font--color) !important;
-    }
-   
-
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-  }
-
-  .slide:hover {
-    transform: scale(1.1);
-    transition: 1.8s ease-out;
-  }
-
-  .checked {
-    color: orange;
-    font-size: 1rem;
-  }
-
-  .slider .slide img {
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    display: block;
-  }
-
-  .name-hotel {
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
-    text-align: left;
-    font-family: "Outfit", sans-serif;
-    font-weight: 600;
-    margin: 0 0 0 0.5rem;
-  }
-
-  .price-hotel {
-    color: var(--asparagus);
-    font-weight: 600;
-    font-size: 1rem;
-    margin: 0 0 0 0.5rem;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .hotel-link{
-
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 1rem;
-  }
-
-  .link-explore-hotel {
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    background-color: var(--chefchaouen-blue);
-    padding: 0.4rem;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .stars {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    margin: 0 0 0 .5rem;
-  }
-
-  .stars i {
-    font-size: 1.5rem;
-    color: gray;
-  }
-
-  
-
-  @keyframes scroll {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-
-    100% {
-      -webkit-transform: translateX(calc(-200px * 7));
-      transform: translateX(calc(-200px * 7));
-    }
-  }
-
-  /*--***** EVENTOS  ***** By*JR**/
-
-  .events {
-    width: 100%;
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-
-  .tittle-experience-visit {
-    text-align: center;
-    font-size: 5rem;
-    margin: 2rem 0;
-    color: var(--space-cadet);
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .swiper {
-    width: 80vw;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-image: url("/public/img/girasol.png");
-    z-index: 1;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-  }
-
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-   
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-
-  .btn-container {
-
-    width: 100svw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-
-  .collection-btn{
-    background-color: var(--font--color);
-    color: var(--btn-color);
-    padding: 1rem;
-    border-radius: 25px;
-    font-weight: 600;
-    width: 30%;
-    text-align: center;
-    font-family: "Work Sans", sans-serif;
-    transition: 0.7s ease-in;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-   
-    
-  }
- }
-
-  /* Grid de cards Restaurant */
-  .food-drinks {
-    overflow: hidden;
-    margin-top: 30px;
-    width: 80vw;
-    height: 100vh;
-    margin: auto;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    background-image: url("/public/img/megafono.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding: 10rem;
-
-    justify-content: center;
-
-    .tittle-restaurants {
-      font-size: 3rem;
-      color: var(--asparagus);
-      margin: 3rem auto;
-    }
-
-    .grid-restaurants {
-      width: 80%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr 1fr 1fr;
-      gap: 20px;
-      height: max-content;
-   
-
-      .card-restaurant {
-        position: relative;
-        gap: 20px;
-
-        .mask {
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          border-radius: 30px;
-          background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.637) 0%,
-            rgba(237, 247, 246, 0) 100%
-          );
-        }
-
-        .heart-icons {
-          position: absolute;
-          top: 20px;
-          right: 20px;
-          cursor: pointer;
-
-          :nth-child(2) {
-            display: none;
-          }
-
-          i {
-            color: white;
-            font-size: 24px;
-          }
-
-          &:hover {
-            :nth-child(1) {
-              display: none;
-            }
-            :nth-child(2) {
-              display: block;
-            }
-          }
-        }
-
-        .item-body {
-          display: flex;
-          position: absolute;
-          bottom: 10px;
-          color: white;
-          left: 10%;
-          gap: 20px;
-          align-items: center;
-
-          div {
-            padding: 10px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.4);
-          }
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          border-radius: 30px;
-        }
-      }
-
-      :nth-child(1) {
-        grid-column: 1/3;
-        grid-row: 1/3;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-    }
-  }
-
-  /*--***** FOOTER  ***** By*JR**/
-
-  .footer {
-    background-color: var(--space-cadet);
-    width: 100%;
-    height: max-content;
-    height: 50vh;
-    display: flex;
-    overflow: hidden;
-  }
-
-  .container-footer {
-    display: flex;
-    width: 80vw;
-    margin: auto;
-    overflow: hidden;
-  }
-
-  .part-1-footer {
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 100vw;
-    height: 100%;
-    
-  }
-
-  .section-footer{
-
-    display: flex;
-    flex-direction: column;
-    
-    
-  }
-
-  
-
-  .part-1-footer p {
-    color: white;
-    margin: 1rem 0;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .part-1-footer a {
-    color: white;
-    display: block;
-    margin: 1rem 0;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .link-social-footer {
- 
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 100%;
-    gap: 1rem;
-    
-  }
-
-  .link-social-footer i {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--space-cadet);
-    background-color: white;
-    padding: 1.1rem;
-    border-radius: 50%;
-   
-  }
-
-  .link-social-footer i:hover{
-    transform: scale(1.1);
-  }
-
-  .input-footer {
-    height: 1.5rem;
-    margin: 1rem 0;
-  }
-
-  .footer h3 {
-    margin: 0 0 1rem 0;
-    color: white;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .logo-footer {
-    width: 80px;
-    height: 80px;
-  }
-  
-
- 
-
-  .copy-rights {
-    color: var(--space-cadet);
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    background-color:white;
-    width: 100%;
-    height:2rem;
-    font-family: "Work Sans", sans-serif;
-    
-    
-  }
-
-  .footer-display-yes{
-    display: block;
-  }
-
-  .map-footer {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-
-  }
-
-  .map-footer img {
-
-    width: 120px;
-    height: auto;
-    margin: auto;
-
-  }
-
-  .map-footer iframe {
-    border: 5px solid var(--asparagus);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin:  1rem 2rem ;
- 
-    
-  }
-
-
-  /* SECTION PLACES GRID  */
-
-
-  .container-cards-places{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   
-    width: 80vw;
-    margin: auto;
-    gap: 2rem;
-    margin-bottom: 3rem;
-
-    .card-info{
-  
-      display: flex;
-      text-align: left;
-      flex-direction: column;
-      justify-content: space-between;
-
-      .tittle{
-        text-align: center;
-      }
-
-      .description-card{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        gap:10px;
-      }
-  
-    .rating{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 20px;
+        align-content: center;
+        padding: 1rem;
+        margin: 2rem 0;
+        text-align: left;
     }
-      h3{
-        font-size: 2rem;
-        font-weight: 800;
-        font-family: "Work Sans", sans-serif;
-        color: var(--space-cadet);
-  
-      }
-  
-  
-      span{
-        color: var(--chefchaouen-blue);
-       
-      }
-  
-      p{
+
+    .title-home {
+        font-size: 1.2rem;
         font-family: "Work Sans", sans-serif;
         font-weight: 500;
-        font-size: 1.1rem;
-        opacity: 80%;
-        
-      }
-  
-      h4{
-        font-family: "MOMCAKE", sans-serif;
+        text-decoration: none;
+        border-radius: 10px;
+        width: 100%;
+        padding: 1rem;
+        background-color: var(--asparagus);
+        color: var(--azure-web);
+        text-align: center;
+        box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    }
+
+    .big-title {
+        font-size: 3.5rem;
+        text-align: left;
+        font-weight: 600;
+        color: var(--font--color);
+        font-family: "Work Sans", sans-serif;
+        opacity: 90%;
+        margin: 1rem 0;
+        text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+    .description-content {
+        font-size: 1.2rem;
+        color: var(--paragraph-color);
+        text-align: left;
+        font-family: "Work Sans", sans-serif;
+        opacity: 70%;
+    }
+
+    .get-started {
+        background-color: var(--font--color);
+        color: var(--btn-color);
+        padding: 1rem;
+        border-radius: 25px;
+        font-weight: 600;
+        width: 40%;
+        text-align: center;
+        margin: 1rem 0;
+        font-family: "Work Sans", sans-serif;
+        transition: 0.7s ease-in;
+        box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    }
+
+    .get-started:hover {
+        background-color: var(--azure-web);
+        color: var(--space-cadet);
+        transition: 0.7s ease-in;
+    }
+
+    .img-data-home {
+        width: 50vw;
+        margin: 5rem auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img-data-home img {
+        height: 73vh;
+    }
+
+    /* **** CONTAINER BANER SERVICES ***** By*JR* */
+
+    .container-baner-services {
+        background-image: url("../../public/img/medellin.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 55vh;
+        margin: auto;
+        margin-top: 30px;
+        padding: 8rem 0;
+        background-position: bottom;
+        position: relative;
+    }
+
+    .baner-services {
+        width: 80vw;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
+    .item-services-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            color: var(--font--color);
+        }
+    }
+
+    .i-baner-services {
         color: var(--chefchaouen-blue);
-        font-size: 1.5rem;
-      }
-  
-      .rate-price{
+        font-size: 3rem;
+    }
+
+    .tittle-baner-services {
+        font-size: 4rem;
+        font-weight: 600;
+        margin: auto auto 5rem auto;
+        text-align: center;
+        color: var(--font--color);
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.48);
+    }
+
+    .item-tittle-services {
+        color: var(--asparagus);
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .text-baner-item-services {
+        color: black;
+        font-size: 1.2rem;
+    }
+
+    /* ***** CARROUSEL TOWNS ***** By*JR* */
+
+    .carrousel-towns {
+        min-height: 100vh;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-      }
-  
-      .rate{
-  
-        color: var(--space-cadet);
-        font-size: 1.4rem;
-        font-weight: 600;
-        border-radius: 5px;
+    }
+
+    .container-carrousel-towns {
+        width: 80vw;
+        height: 100%;
+        margin: auto;
         display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .content-text-towns {
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .content-text-towns h2 {
+        letter-spacing: 0.8px;
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 1.2;
+        color: var(--font--color) !important;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.48);
+        font-family: "MOMCAKE", sans-serif;
+    }
+
+    .content-text-towns p {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        margin-inline: auto;
+        margin-top: 10px;
+        color: var(--font--color) !important;
         font-family: "Work Sans", sans-serif;
-    
-      }
-  
-      .rate i{
-        color: yellow;
-      }
-  
-      .price{
-        
-        padding: .3rem;
-        color: var(--azure-web);
+    }
+
+    .content-text-towns .counter {
+        font-weight: 400;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        margin: 2.5em 0 2em 0;
+        gap: 2em;
+        color: var(--font--color) !important;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .content-text-towns .counter i {
+        margin-right: 10px;
+        color: var(--chefchaouen-blue);
+        font-size: 2rem;
+    }
+
+    .content-text-towns .counter span {
+        display: block;
+        text-transform: capitalize;
+        font-size: 1rem;
+        color: var(--asparagus);
+        margin-top: 3px;
+    }
+
+    .content-text-towns .btn {
+        background-color: var(--space-cadet);
+        width: 50%;
+        border: none;
+        color: white;
+        padding: 12px 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 4px;
+        transition: 0.7s ease-in;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.49);
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .content-text-towns .btn i {
+        margin-left: 15px;
+    }
+
+    .content-text-towns .btn:hover {
+        background-color: var(--azure-web);
+        color: var(--space-cadet);
+        transition: 0.8s ease-in;
+    }
+
+    .swiper-towns {
+        /* padding: 50px; */
+
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .swiper-slide {
+            margin-top: 20px;
+            height: 90%;
+            width: 90%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    /***** EXPERIENCE & CARRUSEL INFINITO ***** By*JR*/
+
+    .img-experiencia {
+        width: 60vw;
+        margin: 3rem auto;
+        display: flex;
+    }
+    .baner-hotels {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 9rem 0 0 0;
+        width: 100%;
+    }
+    .tittle-hotels-baner {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 600;
+        font-family: "MOMCAKE", sans-serif;
+        color: var(--asparagus);
+    }
+
+    .text-hotels-baner {
+        text-align: center;
+        width: 50%;
+        margin: 1rem auto;
         font-size: 1.2rem;
         font-weight: 500;
+        font-family: var(--body-font);
+        color: var(--font--color) !important;
+        opacity: 90%;
+    }
+
+    .buton-ofers-hotels {
+        background-color: var(--font--color);
+        color: var(--btn-color);
+        border: none;
+        padding: 1rem;
+        border-radius: 25px;
+        font-weight: 600;
+        width: 10%;
+        text-align: center;
+        margin: 1rem 0;
         font-family: "Work Sans", sans-serif;
-        background-color: var(--asparagus);
+        font-size: 1.2rem;
+        transition: 0.7s ease-in;
+        box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    }
+
+    .buton-ofers-hotels:hover {
+        background-color: var(--azure-web);
+        color: var(--space-cadet);
+        transition: 0.7s ease-in;
+    }
+
+    .hotel-link {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .image-medellin {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../img/medellin.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .carrusel-infinito {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* margin: 5rem 0 ; */
+    }
+    .slider {
+        width: 80vw;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slide-track {
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(250px * 14);
+        height: 300px;
+
+        gap: 1rem;
+    }
+
+    .slide {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 15px;
+        a {
+            color: var(--font--color) !important;
+        }
+
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .slide:hover {
+        transform: scale(1.1);
+        transition: 1.8s ease-out;
+    }
+
+    .checked {
+        color: orange;
+        font-size: 1rem;
+    }
+
+    .slider .slide img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        display: block;
+    }
+
+    .name-hotel {
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        text-align: left;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        margin: 0 0 0 0.5rem;
+    }
+
+    .price-hotel {
+        color: var(--asparagus);
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 0 0 0 0.5rem;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .hotel-link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .link-explore-hotel {
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: var(--chefchaouen-blue);
+        padding: 0.4rem;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .stars {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin: 0 0 0 0.5rem;
+    }
+
+    .stars i {
+        font-size: 1.5rem;
+        color: gray;
+    }
+
+    @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -webkit-transform: translateX(calc(-200px * 7));
+            transform: translateX(calc(-200px * 7));
+        }
+    }
+
+    /*--***** EVENTOS  ***** By*JR**/
+
+    .events {
+        width: 100%;
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tittle-experience-visit {
+        text-align: center;
+        font-size: 5rem;
+        margin: 2rem 0;
+        color: var(--space-cadet);
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .swiper {
+        width: 80vw;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-image: url("/public/img/girasol.png");
+        z-index: 1;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-container {
+        width: 100svw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .collection-btn {
+            background-color: var(--font--color);
+            color: var(--btn-color);
+            padding: 1rem;
+            border-radius: 25px;
+            font-weight: 600;
+            width: 30%;
+            text-align: center;
+            font-family: "Work Sans", sans-serif;
+            transition: 0.7s ease-in;
+            box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+        }
+    }
+
+    /* Grid de cards Restaurant */
+    .food-drinks {
+        overflow: hidden;
+        margin-top: 30px;
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        background-image: url("/public/img/megafono.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding: 10rem;
+
+        justify-content: center;
+
+        .tittle-restaurants {
+            font-size: 3rem;
+            color: var(--asparagus);
+            margin: 3rem auto;
+        }
+
+        .grid-restaurants {
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 20px;
+            height: max-content;
+
+            .card-restaurant {
+                position: relative;
+                gap: 20px;
+
+                .mask {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                    background: linear-gradient(
+                        0deg,
+                        rgba(0, 0, 0, 0.637) 0%,
+                        rgba(237, 247, 246, 0) 100%
+                    );
+                }
+
+                .heart-icons {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    cursor: pointer;
+
+                    :nth-child(2) {
+                        display: none;
+                    }
+
+                    i {
+                        color: white;
+                        font-size: 24px;
+                    }
+
+                    &:hover {
+                        :nth-child(1) {
+                            display: none;
+                        }
+                        :nth-child(2) {
+                            display: block;
+                        }
+                    }
+                }
+
+                .item-body {
+                    display: flex;
+                    position: absolute;
+                    bottom: 10px;
+                    color: white;
+                    left: 10%;
+                    gap: 20px;
+                    align-items: center;
+
+                    div {
+                        padding: 10px;
+                        border-radius: 10px;
+                        background-color: rgba(0, 0, 0, 0.4);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                }
+            }
+
+            :nth-child(1) {
+                grid-column: 1/3;
+                grid-row: 1/3;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    /*--***** FOOTER  ***** By*JR**/
+
+    .footer {
+        background-color: var(--space-cadet);
+        width: 100%;
+        height: max-content;
+        height: 50vh;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .container-footer {
+        display: flex;
+        width: 80vw;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .part-1-footer {
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .section-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part-1-footer p {
+        color: white;
+        margin: 1rem 0;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .part-1-footer a {
+        color: white;
+        display: block;
+        margin: 1rem 0;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .link-social-footer {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .link-social-footer i {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--space-cadet);
+        background-color: white;
+        padding: 1.1rem;
+        border-radius: 50%;
+    }
+
+    .link-social-footer i:hover {
+        transform: scale(1.1);
+    }
+
+    .input-footer {
+        height: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    .footer h3 {
+        margin: 0 0 1rem 0;
+        color: white;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .logo-footer {
+        width: 80px;
+        height: 80px;
+    }
+
+    .copy-rights {
+        color: var(--space-cadet);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: 2rem;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .footer-display-yes {
+        display: block;
+    }
+
+    .map-footer {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .map-footer img {
+        width: 120px;
+        height: auto;
+        margin: auto;
+    }
+
+    .map-footer iframe {
+        border: 5px solid var(--asparagus);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 1rem 2rem;
+    }
+
+    /* SECTION PLACES GRID  */
+
+    .container-cards-places {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 80vw;
+        margin: auto;
+        gap: 2rem;
+        margin-bottom: 3rem;
+
+        .card-info {
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .tittle {
+                text-align: center;
+            }
+
+            .description-card {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+            }
+
+            .rating {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+            }
+            h3 {
+                font-size: 2rem;
+                font-weight: 800;
+                font-family: "Work Sans", sans-serif;
+                color: var(--space-cadet);
+            }
+
+            span {
+                color: var(--chefchaouen-blue);
+            }
+
+            p {
+                font-family: "Work Sans", sans-serif;
+                font-weight: 500;
+                font-size: 1.1rem;
+                opacity: 80%;
+            }
+
+            h4 {
+                font-family: "MOMCAKE", sans-serif;
+                color: var(--chefchaouen-blue);
+                font-size: 1.5rem;
+            }
+
+            .rate-price {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .rate {
+                color: var(--space-cadet);
+                font-size: 1.4rem;
+                font-weight: 600;
+                border-radius: 5px;
+                display: flex;
+                font-family: "Work Sans", sans-serif;
+            }
+
+            .rate i {
+                color: yellow;
+            }
+
+            .price {
+                padding: 0.3rem;
+                color: var(--azure-web);
+                font-size: 1.2rem;
+                font-weight: 500;
+                font-family: "Work Sans", sans-serif;
+                background-color: var(--asparagus);
+                border-radius: 5px;
+                box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+
+    .tittle-destinations-grid {
+        font-size: 4rem;
+        margin: 5rem auto 1rem 0;
+        color: var(--space-cadet);
+        text-align: center;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .text-main-destinations {
+        text-align: center;
+        margin: 1rem auto 3rem 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--space-cadet);
+        font-family: "Work Sans", sans-serif;
+        opacity: 70%;
+    }
+
+    .card-places-grid {
+        box-sizing: border-box;
+        flex: 1 1 48%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        border: 1px solid var(--space-cadet);
         border-radius: 5px;
-        box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-      }
-  
-  
-      
-
+        padding: 1rem;
+        box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
     }
 
-  }
+    .card-places-grid img {
+        width: 130px;
+        height: 100%;
+        margin: auto auto auto 2rem;
+    }
+    .links-card-destinations {
+        display: flex;
 
-  .tittle-destinations-grid{
-    font-size: 4rem;
-    margin: 5rem auto 1rem 0;
-    color: var(--space-cadet);
-    text-align: center;
-    font-family: "Work Sans", sans-serif;
+        margin: 0 2rem;
+        margin: auto auto auto 3rem;
 
-  }
+        h3 {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: "Work Sans", sans-serif;
+            color: var(--space-cadet);
+        }
 
-  .text-main-destinations{
-    text-align: center;
-    margin: 1rem auto 3rem 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--space-cadet);
-    font-family: "Work Sans", sans-serif;
-    opacity: 70%;
-  }
+        span {
+            color: var(--chefchaouen-blue);
+        }
 
+        p {
+            font-family: "Work Sans", sans-serif;
+            font-weight: 500;
+            font-size: 1.1rem;
+            opacity: 80%;
+        }
 
-  .card-places-grid{
-    box-sizing: border-box;
-    flex: 1 1 48%; 
-    display: flex;
-    align-content: center;
-    align-items: center;
-    border: 1px solid  var(--space-cadet);
-    border-radius: 5px;
-    padding: 1rem;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-   
+        h4 {
+            font-family: "MOMCAKE", sans-serif;
+            color: var(--chefchaouen-blue);
+            font-size: 1.5rem;
+        }
 
-  }
+        .rate-price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-  .card-places-grid img {
-    width: 130px;
-    height: 100%;
-    margin: auto  auto auto 2rem; 
- 
+        .rate {
+            color: var(--space-cadet);
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-radius: 5px;
+            display: flex;
+            font-family: "Work Sans", sans-serif;
+        }
 
-    
-    
- 
-  
+        .rate i {
+            color: yellow;
+        }
 
-  }
-  .links-card-destinations {
-
-    display: flex;
-    
-    margin: 0 2rem ;
-    margin: auto  auto auto 3rem; 
-
-    h3{
-      font-size: 2rem;
-      font-weight: 800;
-      font-family: "Work Sans", sans-serif;
-      color: var(--space-cadet);
-
+        .price {
+            padding: 0.3rem;
+            color: var(--azure-web);
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-family: "Work Sans", sans-serif;
+            background-color: var(--asparagus);
+            border-radius: 5px;
+            box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+        }
     }
 
-
-    span{
-      color: var(--chefchaouen-blue);
-     
+    .explore-location {
+        text-align: center;
+        display: flex;
+        gap: 10px;
+        align-items: center;
     }
 
-    p{
-      font-family: "Work Sans", sans-serif;
-      font-weight: 500;
-      font-size: 1.1rem;
-      opacity: 80%;
-      
+    .explore-location i {
+        font-size: 2rem;
+        color: var(--chefchaouen-blue);
     }
 
-    h4{
-      font-family: "MOMCAKE", sans-serif;
-      color: var(--chefchaouen-blue);
-      font-size: 1.5rem;
+    .explore {
+        background-color: var(--space-cadet);
+        width: 60%;
+        border: none;
+        color: white;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.3s ease-in;
+        margin: 1rem auto;
+        font-family: "Work Sans", sans-serif;
+        text-align: center;
+        font-weight: 600;
+        box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
     }
-
-    .rate-price{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .rate{
-
-      color: var(--space-cadet);
-      font-size: 1.4rem;
-      font-weight: 600;
-      border-radius: 5px;
-      display: flex;
-      font-family: "Work Sans", sans-serif;
-  
-    }
-
-    .rate i{
-      color: yellow;
-    }
-
-    .price{
-      
-      padding: .3rem;
-      color: var(--azure-web);
-      font-size: 1.2rem;
-      font-weight: 500;
-      font-family: "Work Sans", sans-serif;
-      background-color: var(--asparagus);
-      border-radius: 5px;
-      box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-    }
-
-
-    
-  }
-
-
-  .explore-location{
-  
-    text-align: center;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  
-  }
-
-  .explore-location i {
-    font-size: 2rem;
-    color: var(--chefchaouen-blue);
-  }
-
-
-  .explore{
-    background-color: var(--space-cadet);
-    width: 60%;
-    border: none;
-    color: white;
-    padding: .5rem ;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: 0.3s ease-in;
-    margin:  1rem auto;
-    font-family: "Work Sans", sans-serif;
-    text-align: center;
-    font-weight: 600;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-  }
-
-
-
-
 }
 
 /* TAMAÑO PEQUEÑO */
 @media screen and (max-width: 800px) {
-  body {
-    transition: background-color 0.4s;
-    background-color: var(--azure-web);
-  }
-
-  /* NAV-BAR STYLES */
-
-  #logo-nav {
-    max-width: 28px;
-  }
-
-  .header {
-    background-color: white;
-    box-shadow: 0px 8px 12px -9px rgba(0, 0, 0, 0.25);
-  }
-
-  .menu-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--space-cadet);
-    box-shadow: 0 -8px 32px hsla(0, 0%, 0%, 0.2);
-    padding: 1.25rem 4rem;
-    transition: background-color 0.4s;
-  }
-
-  .logo-nav {
-    margin: 0 0 0 1rem;
-  }
-
-  .menu-nav li i {
-    color: azure;
-    font-size: 1.3rem;
-  }
-
-  .menu-nav li i:hover {
-    color: var(--asparagus);
-  }
-
-  .link-nav span {
-    display: none;
-  }
-
-  .actions-nav {
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-    margin: 0 1rem 0 0;
-  }
-
-  .ri-search-line {
-    font-size: 1.5rem;
-  }
-
-  /* LOG IN  */
-
-  .login-form {
-    background-color: #2e294e;
-    padding: 2rem 1.5rem;
-  }
-
-  .login-title {
-    font-size: 1.2rem;
-    color: var(--azure-web);
-    font-family: var(--body-font);
-  }
-
-  .login-label {
-    color: var(--azure-web);
-    font-family: var(--body-font);
-  }
-
-  .login-form ::placeholder {
-    color: var(--space-cadet);
-  }
-
-  .login-form input {
-    background-color: var(--azure-web);
-    border: none;
-    border-radius: 5px;
-  }
-
-  .login-signup,
-  .login-forgot {
-    display: block;
-    font-size: var(--small-font-size);
-  }
-
-  .login-signup {
-    color: white;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .login-forgot {
-    color: var(--asparagus);
-    margin-bottom: 1.25rem;
-  }
-
-  .forgot {
-    font-family: var(--body-font);
-  }
-
-  .forgot a {
-    color: var(--asparagus);
-  }
-
-  .forgot a:hover {
-    color: var(--chefchaouen-blue);
-  }
-
-  .button:hover {
-    box-shadow: 0 4px 32px var(--chefchaouen-blue);
-  }
-
-  .button {
-    color: white;
-    background-color: var(--chefchaouen-blue);
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    display: inline-block;
-    padding: 1rem 1.5rem;
-    transition: box-shadow 0.4s;
-    width: 100%;
-    cursor: pointer;
-  }
-
-  .login-close {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    font-size: 2rem;
-    color: var(--space-cadet);
-    cursor: pointer;
-  }
-
-  /* SEARCH */
-
-  .search form {
-    border: 2px solid var(--space-cadet);
-    background-color: var(--azure-web);
-    width: 90%;
-    margin: auto;
-  }
-
-  .search input {
-    background-color: var(--azure-web);
-    border: none;
-  }
-
-  /* main styles */
-  .main {
-    margin: 1.5rem 0 0 0;
-  }
-
-  /* home section */
-
-  .home-section {
-    width: 100%;
-    height: max-content;
-  }
-
-  .container-home {
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: auto;
-  }
-
-  .data-home {
-    width: 80vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding: 1rem;
-    margin: 2rem 0;
-    text-align: center;
-  }
-
-  .title-home {
-    font-size: 1rem;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 5px;
-    width: 100%;
-    background-color: var(--asparagus);
-    color: white;
-    text-align: center;
-    padding: 0.6rem;
-  }
-
-  .big-title {
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 600;
-    color: var(--font--color);
-    font-family: "Work Sans", sans-serif;
-    margin: 0.3rem;
-  }
-
-  .description-content {
-    font-size: 1rem;
-    color: var(--space-cadet);
-    text-align: center;
-    font-family: "Work Sans", sans-serif;
-    opacity: 70%;
-    margin: 0 0 1rem 0;
-  }
-
-  .get-started {
-    background-color: var(--space-cadet);
-    color: white;
-    border-radius: 30px;
-    font-weight: 500;
-    width: 40%;
-    text-align: center;
-    margin: 0 auto;
-    font-family: "Work Sans", sans-serif;
-    padding: 0.5rem;
-  }
-
-  .get-started:hover {
-    background-color: var(--asparagus);
-    color: white;
-    transition: 0.1s ease-in;
-  }
-
-  .img-data-home {
-    width: 100%;
-    height: max-content;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .img-data-home img {
-    height: 200px;
-    margin: 1.4rem 0 0 0;
-  }
-
-  /* BANER SERVICES */
-
-  .container-items {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--space-cadet);
-    flex-direction: column;
-    gap: 20px;
-    padding: 2rem;
-  }
-  .container-baner-services {
-    display: none !important;
-  }
-
-  .baner-services {
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    margin: auto;
-    gap: 1rem;
-  }
-
-  .tittle-baner-services {
-    color: var(--font--color) !important;
-      margin: 4rem 0 0 0;
-  }
-
-  .item-services-text {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .i-baner-services {
-    color: var(--asparagus);
-    font-size: 2.5rem;
-  }
-
-  .item-tittle-services {
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 0.5rem auto;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .text-baner-item-services {
-    color: var(--chefchaouen-blue);
-    font-size: 0.7rem;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  /* TOP DESTINATIONS */
-
-  .carrousel-towns {
-    min-height: 120vh;
-    display: flex;
-    padding: 0;
-  }
-
-  .container-carrousel-towns {
-    width: 80vw;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .content-text-towns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 15% 0 0 0;
-  }
-
-  .content-text-towns h2 {
-    letter-spacing: 0.8px;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 1.2;
-    color: var(--font--color) !important;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .content-text-towns p {
-    font-size: 1rem;
-    line-height: 1.3;
-    margin-inline: auto;
-    margin-top: 0.5rem;
-    color: rgb(46, 41, 78, 80%);
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .content-text-towns .counter {
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    color: black;
-    margin: 1rem auto;
-  }
-
-  .content-text-towns .counter i {
-    margin-right: 10px;
-    font-size: 2rem;
-    color: var(--chefchaouen-blue);
-  }
-
-  .counter h3 {
-    color: var(--space-cadet);
-    font-family: "Work Sans", sans-serif;
-    font-weight: 500;
-    font-size: 1.5rem;
-  }
-
-  .content-text-towns .counter span {
-    display: block;
-    font-size: 1rem;
-    color: var(--space-cadet);
-    margin-top: 1rem;
-    font-family: "Work Sans", sans-serif;
-    color: var(--asparagus);
-  }
-
-  .content-text-towns .btn {
-    background-color: var(--space-cadet);
-    width: 50%;
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: 0.3s ease-in;
-    margin: auto;
-  }
-
-  .content-text-towns .btn i {
-    margin-left: 15px;
-  }
-
-  .content-text-towns .btn:hover {
-    background-color: #ae0a53;
-  }
-
-  .swiper-towns {
-    /* padding: 50px; */
-
-    width: 80%;
-    height: 60vh;
-    margin: 4rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .swiper-slide {
-      margin: auto;
-      height: 90%;
-      width: 90%;
-
-      img {
+    body {
+        transition: background-color 0.4s;
+        background-color: var(--azure-web);
+    }
+
+    /* NAV-BAR STYLES */
+
+    #logo-nav {
+        max-width: 28px;
+    }
+
+    .header {
+        background-color: white;
+        box-shadow: 0px 8px 12px -9px rgba(0, 0, 0, 0.25);
+    }
+
+    .menu-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--space-cadet);
+        box-shadow: 0 -8px 32px hsla(0, 0%, 0%, 0.2);
+        padding: 1.25rem 4rem;
+        transition: background-color 0.4s;
+    }
+
+    .logo-nav {
+        margin: 0 0 0 1rem;
+    }
+
+    .menu-nav li i {
+        color: azure;
+        font-size: 1.3rem;
+    }
+
+    .menu-nav li i:hover {
+        color: var(--asparagus);
+    }
+
+    .link-nav span {
+        display: none;
+    }
+
+    .actions-nav {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        margin: 0 1rem 0 0;
+    }
+
+    .ri-search-line {
+        font-size: 1.5rem;
+    }
+
+    /* LOG IN  */
+
+    .login-form {
+        background-color: #2e294e;
+        padding: 2rem 1.5rem;
+    }
+
+    .login-title {
+        font-size: 1.2rem;
+        color: var(--azure-web);
+        font-family: var(--body-font);
+    }
+
+    .login-label {
+        color: var(--azure-web);
+        font-family: var(--body-font);
+    }
+
+    .login-form ::placeholder {
+        color: var(--space-cadet);
+    }
+
+    .login-form input {
+        background-color: var(--azure-web);
+        border: none;
+        border-radius: 5px;
+    }
+
+    .login-signup,
+    .login-forgot {
+        display: block;
+        font-size: var(--small-font-size);
+    }
+
+    .login-signup {
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .login-forgot {
+        color: var(--asparagus);
+        margin-bottom: 1.25rem;
+    }
+
+    .forgot {
+        font-family: var(--body-font);
+    }
+
+    .forgot a {
+        color: var(--asparagus);
+    }
+
+    .forgot a:hover {
+        color: var(--chefchaouen-blue);
+    }
+
+    .button:hover {
+        box-shadow: 0 4px 32px var(--chefchaouen-blue);
+    }
+
+    .button {
+        color: white;
+        background-color: var(--chefchaouen-blue);
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        transition: box-shadow 0.4s;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .login-close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 2rem;
+        color: var(--space-cadet);
+        cursor: pointer;
+    }
+
+    /* SEARCH */
+
+    .search form {
+        border: 2px solid var(--space-cadet);
+        background-color: var(--azure-web);
+        width: 90%;
+        margin: auto;
+    }
+
+    .search input {
+        background-color: var(--azure-web);
+        border: none;
+    }
+
+    /* main styles */
+    .main {
+        margin: 1.5rem 0 0 0;
+    }
+
+    /* home section */
+
+    .home-section {
+        width: 100%;
+        height: max-content;
+    }
+
+    .container-home {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: auto;
+    }
+
+    .data-home {
+        width: 80vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 1rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .title-home {
+        font-size: 1rem;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 5px;
+        width: 100%;
+        background-color: var(--asparagus);
+        color: white;
+        text-align: center;
+        padding: 0.6rem;
+    }
+
+    .big-title {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 600;
+        color: var(--font--color);
+        font-family: "Work Sans", sans-serif;
+        margin: 0.3rem;
+    }
+
+    .description-content {
+        font-size: 1rem;
+        color: var(--space-cadet);
+        text-align: center;
+        font-family: "Work Sans", sans-serif;
+        opacity: 70%;
+        margin: 0 0 1rem 0;
+    }
+
+    .get-started {
+        background-color: var(--space-cadet);
+        color: white;
+        border-radius: 30px;
+        font-weight: 500;
+        width: 40%;
+        text-align: center;
+        margin: 0 auto;
+        font-family: "Work Sans", sans-serif;
+        padding: 0.5rem;
+    }
+
+    .get-started:hover {
+        background-color: var(--asparagus);
+        color: white;
+        transition: 0.1s ease-in;
+    }
+
+    .img-data-home {
+        width: 100%;
+        height: max-content;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-data-home img {
+        height: 200px;
+        margin: 1.4rem 0 0 0;
+    }
+
+    /* BANER SERVICES */
+
+    .container-items {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--space-cadet);
+        flex-direction: column;
+        gap: 20px;
+        padding: 2rem;
+    }
+    .container-baner-services {
+        display: none !important;
+    }
+
+    .baner-services {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 1rem;
+    }
+
+    .tittle-baner-services {
+        color: var(--font--color) !important;
+        margin: 4rem 0 0 0;
+    }
+
+    .item-services-text {
         width: 100%;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .i-baner-services {
+        color: var(--asparagus);
+        font-size: 2.5rem;
+    }
+
+    .item-tittle-services {
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0.5rem auto;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .text-baner-item-services {
+        color: var(--chefchaouen-blue);
+        font-size: 0.7rem;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    /* TOP DESTINATIONS */
+
+    .carrousel-towns {
+        min-height: 120vh;
+        display: flex;
+        padding: 0;
+    }
+
+    .container-carrousel-towns {
+        width: 80vw;
         margin: auto;
-        object-fit: contain;
-      }
-    }
-  }
-
-  .swiper-wrapper {
-    margin: auto;
-  }
-
-  /* BANER HOTELS */
-
-  .baner-hotels {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .tittle-hotels-baner {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 600;
-    font-family: "MOMCAKE", sans-serif;
-    color: var(--asparagus);
-  }
-
-  .text-hotels-baner {
-    text-align: center;
-    width: 80%;
-    margin: 1rem auto;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--space-cadet);
-    opacity: 60%;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .buton-ofers-hotels {
-    background-color: var(--space-cadet);
-    width: 50%;
-    border: none;
-    color: white;
-    padding: 12px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: 0.3s ease-in;
-    margin: 1rem auto;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .buton-ofers-hotels:hover {
-    background-color: #ae0a53;
-  }
-
-  /* CARROUSEL INFINITO */
-
-  .carrusel-infinito {
-    width: 100%;
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .slider {
-    width: 80vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-  }
-
-  .slide-track {
-    display: flex;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
-    width: calc(250px * 14);
-    height: max-content;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .slide {
-    width: 250px;
-    height: 280px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 15px;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-    overflow: hidden;
-  }
-
-  .checked {
-    color: orange;
-    font-size: 1rem;
-  }
-
-  .slider .slide img {
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    display: block;
-  }
-
-  .name-hotel {
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
-    text-align: left;
-    font-family: "Outfit", sans-serif;
-    font-weight: 600;
-    margin: 0 0 0 0.5rem;
-  }
-
-  .price-hotel {
-    color: var(--asparagus);
-    font-weight: 600;
-    font-size: 1rem;
-    margin: 0 0 0 0.5rem;
-  }
-
-  .link-explore-hotel {
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
-    background-color: var(--chefchaouen-blue);
-    padding: 0.4rem;
-  }
-
-  .stars {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-  }
-
-  .stars i {
-    font-size: 1.3rem;
-    color: gray;
-  }
-
-  .hotel-link {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .link-explore-hotel {
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
-    background-color: var(--space-cadet);
-    padding: 0.8rem;
-    border-top-left-radius: 15px;
-    font-family: "Work Sans", sans-serif;
-    box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.75);
-    cursor: pointer;
-    transition: 0.3s ease-in;
-  }
-
-  .link-explore-hotel:hover {
-    background-color: #ae0a53;
-  }
-
-  .view {
-    width: 60px;
-    border-radius: 5px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    background-color: #60993e;
-  }
-
-  @keyframes scroll {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    100% {
-      -webkit-transform: translateX(calc(-200px * 7));
-      transform: translateX(calc(-200px * 7));
-    }
-  }
-
-  /* experiencia visit eventos */
-
-  .tittle-experience-visit {
-    width: 90vw;
-    text-align: center;
-    font-size: 4rem;
-    font-family: var(--visit-font);
-    color: var(--asparagus);
-    margin: auto;
-  }
-
-  .events {
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-image: url("../img/girasol.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .events .swiper {
-    width: 80%;
-    height: 50vh;
-    margin: auto;
-  }
-
-  .events .swiper-wrapper {
-    width: 90%;
-    height: 80%;
-  }
-
-  .events .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    margin: auto;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
-
-  /* FOOD DRINKS */
-
-  .food-drinks {
-    margin-top: 30px;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    background-image: url("../img/megafono.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-
-    justify-content: center;
-
-    .tittle-restaurants {
-      font-size: 3rem;
-      color: var(--asparagus);
+    .content-text-towns {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 15% 0 0 0;
     }
 
-    .grid-restaurants {
-      width: 80%;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      height: 60%;
-      margin: 3rem;
+    .content-text-towns h2 {
+        letter-spacing: 0.8px;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.2;
+        color: var(--font--color) !important;
+        font-family: "Work Sans", sans-serif;
+    }
 
-      .card-restaurant {
-        position: relative;
-        gap: 20px;
+    .content-text-towns p {
+        font-size: 1rem;
+        line-height: 1.3;
+        margin-inline: auto;
+        margin-top: 0.5rem;
+        color: rgb(46, 41, 78, 80%);
+        font-family: "Work Sans", sans-serif;
+    }
 
-        .mask {
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          border-radius: 30px;
-          background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.637) 0%,
-            rgba(237, 247, 246, 0) 100%
-          );
+    .content-text-towns .counter {
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        color: black;
+        margin: 1rem auto;
+    }
+
+    .content-text-towns .counter i {
+        margin-right: 10px;
+        font-size: 2rem;
+        color: var(--chefchaouen-blue);
+    }
+
+    .counter h3 {
+        color: var(--space-cadet);
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .content-text-towns .counter span {
+        display: block;
+        font-size: 1rem;
+        color: var(--space-cadet);
+        margin-top: 1rem;
+        font-family: "Work Sans", sans-serif;
+        color: var(--asparagus);
+    }
+
+    .content-text-towns .btn {
+        background-color: var(--space-cadet);
+        width: 50%;
+        border: none;
+        color: white;
+        padding: 12px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.3s ease-in;
+        margin: auto;
+    }
+
+    .content-text-towns .btn i {
+        margin-left: 15px;
+    }
+
+    .content-text-towns .btn:hover {
+        background-color: #ae0a53;
+    }
+
+    .swiper-towns {
+        /* padding: 50px; */
+
+        width: 80%;
+        height: 60vh;
+        margin: 4rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .swiper-slide {
+            margin: auto;
+            height: 90%;
+            width: 90%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .swiper-wrapper {
+        margin: auto;
+    }
+
+    /* BANER HOTELS */
+
+    .baner-hotels {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .tittle-hotels-baner {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: "MOMCAKE", sans-serif;
+        color: var(--asparagus);
+    }
+
+    .text-hotels-baner {
+        text-align: center;
+        width: 80%;
+        margin: 1rem auto;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--space-cadet);
+        opacity: 60%;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .buton-ofers-hotels {
+        background-color: var(--space-cadet);
+        width: 50%;
+        border: none;
+        color: white;
+        padding: 12px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.3s ease-in;
+        margin: 1rem auto;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .buton-ofers-hotels:hover {
+        background-color: #ae0a53;
+    }
+
+    /* CARROUSEL INFINITO */
+
+    .carrusel-infinito {
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .slider {
+        width: 80vw;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slide-track {
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(250px * 14);
+        height: max-content;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .slide {
+        width: 250px;
+        height: 280px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 15px;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+        overflow: hidden;
+    }
+
+    .checked {
+        color: orange;
+        font-size: 1rem;
+    }
+
+    .slider .slide img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        display: block;
+    }
+
+    .name-hotel {
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        text-align: left;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        margin: 0 0 0 0.5rem;
+    }
+
+    .price-hotel {
+        color: var(--asparagus);
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 0 0 0 0.5rem;
+    }
+
+    .link-explore-hotel {
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        background-color: var(--chefchaouen-blue);
+        padding: 0.4rem;
+    }
+
+    .stars {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .stars i {
+        font-size: 1.3rem;
+        color: gray;
+    }
+
+    .hotel-link {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .link-explore-hotel {
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        background-color: var(--space-cadet);
+        padding: 0.8rem;
+        border-top-left-radius: 15px;
+        font-family: "Work Sans", sans-serif;
+        box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+        transition: 0.3s ease-in;
+    }
+
+    .link-explore-hotel:hover {
+        background-color: #ae0a53;
+    }
+
+    .view {
+        width: 60px;
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        background-color: #60993e;
+    }
+
+    @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
         }
 
-        .heart-icons {
-          position: absolute;
-          top: 20px;
-          right: 20px;
-          cursor: pointer;
+        100% {
+            -webkit-transform: translateX(calc(-200px * 7));
+            transform: translateX(calc(-200px * 7));
+        }
+    }
 
-          :nth-child(2) {
+    /* experiencia visit eventos */
+
+    .tittle-experience-visit {
+        width: 90vw;
+        text-align: center;
+        font-size: 4rem;
+        font-family: var(--visit-font);
+        color: var(--asparagus);
+        margin: auto;
+    }
+
+    .events {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-image: url("../img/girasol.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .events .swiper {
+        width: 80%;
+        height: 50vh;
+        margin: auto;
+    }
+
+    .events .swiper-wrapper {
+        width: 90%;
+        height: 80%;
+    }
+
+    .events .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+
+    /* FOOD DRINKS */
+
+    .food-drinks {
+        margin-top: 30px;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        background-image: url("../img/megafono.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        justify-content: center;
+
+        .tittle-restaurants {
+            font-size: 3rem;
+            color: var(--asparagus);
+        }
+
+        .grid-restaurants {
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            height: 60%;
+            margin: 3rem;
+
+            .card-restaurant {
+                position: relative;
+                gap: 20px;
+
+                .mask {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                    background: linear-gradient(
+                        0deg,
+                        rgba(0, 0, 0, 0.637) 0%,
+                        rgba(237, 247, 246, 0) 100%
+                    );
+                }
+
+                .heart-icons {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    cursor: pointer;
+
+                    :nth-child(2) {
+                        display: none;
+                    }
+
+                    i {
+                        color: white;
+                        font-size: 24px;
+                    }
+
+                    &:hover {
+                        :nth-child(1) {
+                            display: none;
+                        }
+                        :nth-child(2) {
+                            display: block;
+                        }
+                    }
+                }
+
+                .item-body {
+                    display: flex;
+                    position: absolute;
+                    bottom: 10px;
+                    color: white;
+                    left: 10%;
+                    gap: 20px;
+                    align-items: center;
+
+                    div {
+                        padding: 10px;
+                        border-radius: 10px;
+                        background-color: rgba(0, 0, 0, 0.4);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+
+    /* FOOTER */
+
+    .footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .footer-display {
+        display: none;
+    }
+
+    .footer-display-yes {
+        display: block;
+    }
+
+    .contact-footer {
+        font-size: 2rem;
+        font-family: "Work Sans", sans-serif;
+        color: #2e294e;
+    }
+
+    .logo-footer {
+        margin: auto;
+        display: block;
+        height: 25vh;
+    }
+
+    .map-footer {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--space-cadet);
+        padding: 3rem;
+        border-radius: 50%;
+        gap: 2rem;
+        width: 80vw;
+        height: 60vh;
+    }
+
+    .map-footer div {
+        display: flex;
+        margin: auto;
+    }
+
+    .map-footer iframe {
+        border: 5px solid var(--asparagus);
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    .link-social-footer {
+        width: 100%;
+        height: 100%;
+        margin: 2rem 0 0 0;
+    }
+
+    .section-footer i {
+        font-size: 2rem;
+        color: var(--azure-web);
+        background-color: var(--space-cadet);
+        padding: 0.6rem;
+        border-radius: 50%;
+        margin: 0 1.5rem;
+    }
+
+    .copy-rights {
+        margin: 2rem 0 0 0;
+        font-family: "Work Sans", sans-serif;
+        font-size: 0.8rem;
+        color: var(--space-cadet);
+    }
+
+    .visit-name {
+        color: var(--asparagus);
+        font-family: "MOMCAKE", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .container-cards-places {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100%;
+        width: 80vw;
+        overflow: hidden;
+        margin: 4rem auto;
+    }
+
+    .card-places-grid {
+        box-sizing: border-box;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        border: 1px solid var(--space-cadet);
+        border-radius: 5px;
+        padding: 0.5rem;
+        box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+        width: 100%;
+        height: 250px;
+        margin: 1rem 0;
+    }
+
+    .card-places-grid img {
+        width: 30%;
+        height: 60%;
+    }
+    .links-card-destinations {
+        display: flex;
+        width: 40%;
+        margin: auto auto auto 3rem;
+        overflow: hidden;
+        padding: 0 0.1rem;
+
+        .rating {
+            display: flex;
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            font-family: "Work Sans", sans-serif;
+            color: var(--space-cadet);
+        }
+
+        li {
+            margin: 0.1rem;
+        }
+
+        span {
+            color: var(--chefchaouen-blue);
+        }
+
+        p {
+            font-family: "Work Sans", sans-serif;
+            font-weight: 500;
+            font-size: 0.8rem;
+            opacity: 80%;
+        }
+
+        h4 {
+            font-family: "MOMCAKE", sans-serif;
+            color: var(--chefchaouen-blue);
+            font-size: 1.2rem;
+        }
+
+        .rate-price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .rate {
+            color: var(--space-cadet);
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 5px;
+            display: flex;
+            font-family: "Work Sans", sans-serif;
+        }
+
+        .rate i {
+            color: yellow;
+        }
+
+        .price {
+            padding: 0.2rem;
+            color: var(--azure-web);
+            font-size: 1rem;
+            font-weight: 500;
+            font-family: "Work Sans", sans-serif;
+            background-color: var(--asparagus);
+            border-radius: 5px;
+            box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+            text-align: center;
+        }
+
+        .price i {
             display: none;
-          }
-
-          i {
-            color: white;
-            font-size: 24px;
-          }
-
-          &:hover {
-            :nth-child(1) {
-              display: none;
-            }
-            :nth-child(2) {
-              display: block;
-            }
-          }
         }
-
-        .item-body {
-          display: flex;
-          position: absolute;
-          bottom: 10px;
-          color: white;
-          left: 10%;
-          gap: 20px;
-          align-items: center;
-
-          div {
-            padding: 10px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.4);
-          }
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          border-radius: 30px;
-        }
-      }
-    }
-  }
-
-  /* FOOTER */
-
-  .footer {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-
-  .footer-display {
-    display: none;
-  }
-
-  .footer-display-yes{
-    display: block;
-  }
-
-  .contact-footer {
-    font-size: 2rem;
-    font-family: "Work Sans", sans-serif;
-    color: #2e294e;
-  }
-
-  .logo-footer {
-    margin: auto;
-    display: block;
-    height: 25vh;
-  }
-
-  .map-footer {
-
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--space-cadet);
-    padding: 3rem;
-    border-radius: 50%;
-    gap: 2rem;
-    width: 80vw;
-    height: 60vh;
-  }
-
-  .map-footer div{
-    display: flex;
-    margin: auto;
-  }
-
-  .map-footer iframe {
-    border: 5px solid var(--asparagus);
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin: auto;
-
-  }
-
-  .link-social-footer {
-    width: 100%;
-    height: 100%;
-    margin: 2rem 0 0 0;
-  }
-
-  .section-footer i {
-    font-size: 2rem;
-    color: var(--azure-web);
-    background-color: var(--space-cadet);
-    padding: 0.6rem;
-    border-radius: 50%;
-    margin: 0 1.5rem;
-  }
-
-  .copy-rights {
-    margin: 2rem 0 0 0;
-    font-family: "Work Sans", sans-serif;
-    font-size: 0.8rem;
-    color: var(--space-cadet);
-  }
-
-  .visit-name {
-    color: var(--asparagus);
-    font-family: "MOMCAKE", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-
-
-  .container-cards-places{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    height: 100%;
-    width: 80vw;
-    overflow: hidden;
-    margin: 4rem  auto;
- 
-  }
-
-
-  .card-places-grid{
-    box-sizing: border-box;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    border: 1px solid  var(--space-cadet);
-    border-radius: 5px;
-    padding: .5rem;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-    width: 100%;
-    height: 250px;
-    margin: 1rem 0;
-   
-   
-   
-
-  }
-
-  .card-places-grid img {
-    width: 30%;
-    height: 60%; 
-   
-
-  }
-  .links-card-destinations {
-
-    display: flex;
-    width:40% ;
-    margin: auto  auto auto 3rem;
-    overflow: hidden;
-    padding:0 .1rem;
-
-    
-    .rating{
-      display: flex;
-      width: 100%;
-    }
-    
-    h3{
-      font-size: 1.5rem;
-      font-weight: 800;
-      font-family: "Work Sans", sans-serif;
-      color: var(--space-cadet);
-
     }
 
-    li{
-      margin: .1rem;
+    .explore-location {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
-    span{
-      color: var(--chefchaouen-blue);
-     
+    .explore-location i {
+        font-size: 3rem;
+        color: var(--chefchaouen-blue);
     }
 
-    p{
-      font-family: "Work Sans", sans-serif;
-      font-weight: 500;
-      font-size: .8rem;
-      opacity: 80%;
-      
+    .explore {
+        background-color: var(--space-cadet);
+        width: 100%;
+        border: none;
+        color: white;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.3s ease-in;
+        margin: auto auto 2.2rem auto;
+        font-family: "Work Sans", sans-serif;
+        text-align: center;
+        font-weight: 600;
+        box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
     }
-
-    h4{
-      font-family: "MOMCAKE", sans-serif;
-      color: var(--chefchaouen-blue);
-      font-size: 1.2rem;
-    }
-
-    .rate-price{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .rate{
-
-      color: var(--space-cadet);
-      font-size: 1.2rem;
-      font-weight: 600;
-      border-radius: 5px;
-      display: flex;
-      font-family: "Work Sans", sans-serif;
-  
-    }
-
-    .rate i{
-      color: yellow;
-    
-    }
-
-    .price{
-      
-    padding: .2rem;
-      color: var(--azure-web);
-      font-size: 1rem;
-      font-weight: 500;
-      font-family: "Work Sans", sans-serif;
-      background-color: var(--asparagus);
-      border-radius: 5px;
-      box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-      text-align: center;
-    
-
-    }
-
-    .price i {
-      display: none;
-    }
-
-
-    
-  }
-
-
-  .explore-location{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-  
-  }
-
-  .explore-location i {
-    font-size: 3rem;
-    color: var(--chefchaouen-blue);
-  }
-
-
-  .explore{
-    background-color: var(--space-cadet);
-    width: 100%;
-    border: none;
-    color: white;
-    padding: .5rem ;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: 0.3s ease-in;
-    margin: auto auto 2.2rem  auto;
-    font-family: "Work Sans", sans-serif;
-    text-align: center;
-    font-weight: 600;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-  }
-
-  
 }
 
 /* STYLES SWEETALERT */
@@ -2522,12 +2395,12 @@ a {
   font-family: var(--body-font);
 } */
 
- .swal2-title {
-  color: red ;
-  font-family: var(--body-font);
+.swal2-title {
+    color: red;
+    font-family: var(--body-font);
 }
 
 .swal2-text {
-  color: #666;
-  font-family: var(--body-font);
+    color: #666;
+    font-family: var(--body-font);
 }

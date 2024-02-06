@@ -195,7 +195,7 @@ async function registerValidation(user) {
       showConfirmButton: false,
       timer: 2500,
     });
-    // window.location = "/index.html"
+    signUpContent.classList.remove("show-signup");
     console.log(user);
   }
 }

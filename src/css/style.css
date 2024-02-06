@@ -15,7 +15,10 @@
   --azure-web: #edf7f6ff;
   --asparagus: #60993e;
   --chefchaouen-blue: #4a8fe7ff;
-  --body-color: ;
+  /* --body-color: ; */
+  --btn-color: #edf7f6ff;
+  --font--color: #2e294e;
+  --paragraph-color: #2e294e;
 
   /***** FONT & TYPOGRAPHY *****/
   --body-font: "Work Sans", sans-serif;
@@ -36,33 +39,25 @@
 }
 
 [data-theme="dark"] {
-  :root {
+  
     --header-height: 3.5rem;
 
     /***** COLORS *****/
     --space-cadet: #2e294e;
-    --azure-web: #2e294e;
+    --azure-web: #dcdce0;
     --asparagus: #60993e;
     --chefchaouen-blue: #4a8fe7ff;
-    --body-color: ;
+    --font--color:#dcdce0;
+    --btn-color: #2e294e;
+    --paragraph-color: #fff;
 
-    /***** FONT & TYPOGRAPHY *****/
-    --body-font: "Work Sans", sans-serif;
-    --visit-font: "MOMCAKE", sans-serif;
+    body{
+      background-color: var(--space-cadet);
 
-    /***** FONT WEIGHT *****/
-    --font-regular: 400;
-    --font-medium: 500;
-    --font-semi-bold: 600;
+    }
 
-    /***** Z-INDEX *****/
-    --z-tooltip: 10;
-    --z-fixed: 100;
-  }
 
-  body {
-    background-color:var(--space-cadet);
-  }
+ 
 }
 
 * {
@@ -158,6 +153,7 @@ a {
   backdrop-filter: blur(15px);
   padding: 8rem 1.5rem;
   transition: top 0.4s;
+  background-color: transparent;
 }
 
 .form-search {
@@ -190,7 +186,7 @@ a {
   top: 2rem;
   right: 2rem;
   font-size: 2rem;
-  color: var(--space-cadet);
+  color: var(--font--color) !important;
   cursor: pointer;
 }
 
@@ -440,7 +436,7 @@ a {
   /* SEARCH */
 
   .search {
-    background-color: var(--space-cadet);
+    background-color: ;
     backdrop-filter: blur(15px);
   }
 
@@ -463,7 +459,7 @@ a {
   /* ***** MAIN ***** By*JR* */
 
   .main {
-    margin: 4rem 0;
+    margin: 4rem 0 0 0;
   }
 
   .home-section {
@@ -516,7 +512,7 @@ a {
     font-size: 3.5rem;
     text-align: left;
     font-weight: 600;
-    color: var(--space-cadet);
+    color: var(--font--color);
     font-family: "Work Sans", sans-serif;
     opacity: 90%;
     margin: 1rem 0;
@@ -524,19 +520,19 @@ a {
   }
   .description-content {
     font-size: 1.2rem;
-    color: var(--space-cadet);
+    color: var(--paragraph-color);
     text-align: left;
     font-family: "Work Sans", sans-serif;
     opacity: 70%;
   }
 
   .get-started {
-    background-color: var(--space-cadet);
-    color: var(--azure-web);
+    background-color: var(--font--color);
+    color: var(--btn-color);
     padding: 1rem;
     border-radius: 25px;
     font-weight: 600;
-    width: 30%;
+    width: 40%;
     text-align: center;
     margin: 1rem 0;
     font-family: "Work Sans", sans-serif;
@@ -593,6 +589,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    p{
+      color: var(--font--color);
+    }
   }
 
   .i-baner-services {
@@ -605,7 +604,7 @@ a {
     font-weight: 600;
     margin:  auto auto 5rem auto;
     text-align: center;
-    color: var(--space-cadet);
+    color: var(--font--color);
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.48);
   }
 
@@ -656,7 +655,7 @@ a {
     font-weight: 700;
     font-size: 5rem;
     line-height: 1.2;
-    color: var(--space-cadet);
+    color: var(--font--color) !important;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.48);
     font-family: "MOMCAKE", sans-serif;
   }
@@ -666,7 +665,7 @@ a {
     line-height: 1.8;
     margin-inline: auto;
     margin-top: 10px;
-    color: rgb(46, 41, 78, 80%);
+    color: var(--font--color) !important;
     font-family: "Work Sans", sans-serif;
   }
 
@@ -677,7 +676,7 @@ a {
     align-items: center;
     margin: 2.5em 0 2em 0;
     gap: 2em;
-    color: var(--space-cadet);
+    color: var(--font--color) !important;
     font-family: "Work Sans", sans-serif;
   }
 
@@ -776,13 +775,13 @@ a {
     font-size: 1.2rem;
     font-weight: 500;
     font-family: var(--body-font);
-    color: var(--space-cadet);
+    color: var(--font--color) !important;
     opacity: 90%;
   }
  
   .buton-ofers-hotels {
-    background-color: var(--space-cadet);
-    color: var(--azure-web);
+    background-color: var(--font--color);
+    color: var(--btn-color);
     border: none;
     padding: 1rem;
     border-radius: 25px;
@@ -823,7 +822,7 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 5rem 0 ;
+    /* margin: 5rem 0 ; */
   
   }
   .slider {
@@ -851,6 +850,10 @@ a {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 15px;
+    a{
+
+      color: var(--font--color) !important;
+    }
    
 
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
@@ -940,11 +943,11 @@ a {
 
   .events {
     width: 100%;
-    height: 100vh;
-    margin: 5rem 0;
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
   }
+
 
   .tittle-experience-visit {
     text-align: center;
@@ -958,7 +961,7 @@ a {
     width: 80vw;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url("/images/marca/PNG/girasol.png");
+    background-image: url("/public/img/girasol.png");
     z-index: 1;
     background-size: contain;
     background-repeat: no-repeat;
@@ -977,11 +980,21 @@ a {
   .swiper-slide img {
     display: block;
     width: 100%;
+    height: 100%;
   }
 
-  .events .btn{
-    background-color: var(--space-cadet);
-    color: var(--azure-web);
+
+  .btn-container {
+
+    width: 100svw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+  .collection-btn{
+    background-color: var(--font--color);
+    color: var(--btn-color);
     padding: 1rem;
     border-radius: 25px;
     font-weight: 600;
@@ -990,9 +1003,10 @@ a {
     font-family: "Work Sans", sans-serif;
     transition: 0.7s ease-in;
     box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-    margin: auto;
+   
     
   }
+ }
 
   /* Grid de cards Restaurant */
   .food-drinks {
@@ -1004,7 +1018,7 @@ a {
     align-items: center;
     flex-direction: column;
     display: flex;
-    background-image: url("../img/megafono.svg");
+    background-image: url("/public/img/megafono.svg");
     background-repeat: no-repeat;
     background-position: bottom;
     padding: 10rem;
@@ -1164,10 +1178,11 @@ a {
   }
 
   .link-social-footer i {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+    font-weight: 700;
     color: var(--space-cadet);
     background-color: white;
-    padding: 1rem;
+    padding: 1.1rem;
     border-radius: 50%;
    
   }
@@ -1193,10 +1208,18 @@ a {
   }
   
 
+ 
+
   .copy-rights {
     color: var(--space-cadet);
     display: flex;
     justify-content: center;
+    align-items: center ;
+    background-color:white;
+    width: 100%;
+    height:2rem;
+    font-family: "Work Sans", sans-serif;
+    
     
   }
 
@@ -1205,9 +1228,6 @@ a {
   }
 
   .map-footer {
-
-
-
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1233,6 +1253,267 @@ a {
  
     
   }
+
+
+  /* SECTION PLACES GRID  */
+
+
+  .container-cards-places{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    width: 80vw;
+    margin: auto;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    .card-info{
+  
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .tittle{
+        text-align: center;
+      }
+
+      .description-card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:10px;
+      }
+  
+    .rating{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+      h3{
+        font-size: 2rem;
+        font-weight: 800;
+        font-family: "Work Sans", sans-serif;
+        color: var(--space-cadet);
+  
+      }
+  
+  
+      span{
+        color: var(--chefchaouen-blue);
+       
+      }
+  
+      p{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        font-size: 1.1rem;
+        opacity: 80%;
+        
+      }
+  
+      h4{
+        font-family: "MOMCAKE", sans-serif;
+        color: var(--chefchaouen-blue);
+        font-size: 1.5rem;
+      }
+  
+      .rate-price{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+  
+      .rate{
+  
+        color: var(--space-cadet);
+        font-size: 1.4rem;
+        font-weight: 600;
+        border-radius: 5px;
+        display: flex;
+        font-family: "Work Sans", sans-serif;
+    
+      }
+  
+      .rate i{
+        color: yellow;
+      }
+  
+      .price{
+        
+        padding: .3rem;
+        color: var(--azure-web);
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: "Work Sans", sans-serif;
+        background-color: var(--asparagus);
+        border-radius: 5px;
+        box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+      }
+  
+  
+      
+
+    }
+
+  }
+
+  .tittle-destinations-grid{
+    font-size: 4rem;
+    margin: 5rem auto 1rem 0;
+    color: var(--space-cadet);
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+
+  }
+
+  .text-main-destinations{
+    text-align: center;
+    margin: 1rem auto 3rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--space-cadet);
+    font-family: "Work Sans", sans-serif;
+    opacity: 70%;
+  }
+
+
+  .card-places-grid{
+    box-sizing: border-box;
+    flex: 1 1 48%; 
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border: 1px solid  var(--space-cadet);
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+   
+
+  }
+
+  .card-places-grid img {
+    width: 130px;
+    height: 100%;
+    margin: auto  auto auto 2rem; 
+ 
+
+    
+    
+ 
+  
+
+  }
+  .links-card-destinations {
+
+    display: flex;
+    
+    margin: 0 2rem ;
+    margin: auto  auto auto 3rem; 
+
+    h3{
+      font-size: 2rem;
+      font-weight: 800;
+      font-family: "Work Sans", sans-serif;
+      color: var(--space-cadet);
+
+    }
+
+
+    span{
+      color: var(--chefchaouen-blue);
+     
+    }
+
+    p{
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+      font-size: 1.1rem;
+      opacity: 80%;
+      
+    }
+
+    h4{
+      font-family: "MOMCAKE", sans-serif;
+      color: var(--chefchaouen-blue);
+      font-size: 1.5rem;
+    }
+
+    .rate-price{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .rate{
+
+      color: var(--space-cadet);
+      font-size: 1.4rem;
+      font-weight: 600;
+      border-radius: 5px;
+      display: flex;
+      font-family: "Work Sans", sans-serif;
+  
+    }
+
+    .rate i{
+      color: yellow;
+    }
+
+    .price{
+      
+      padding: .3rem;
+      color: var(--azure-web);
+      font-size: 1.2rem;
+      font-weight: 500;
+      font-family: "Work Sans", sans-serif;
+      background-color: var(--asparagus);
+      border-radius: 5px;
+      box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    }
+
+
+    
+  }
+
+
+  .explore-location{
+  
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  
+  }
+
+  .explore-location i {
+    font-size: 2rem;
+    color: var(--chefchaouen-blue);
+  }
+
+
+  .explore{
+    background-color: var(--space-cadet);
+    width: 60%;
+    border: none;
+    color: white;
+    padding: .5rem ;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+    margin:  1rem auto;
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+  }
+
+
+
+
 }
 
 /* TAMAÑO PEQUEÑO */
@@ -1391,7 +1672,7 @@ a {
 
   /* main styles */
   .main {
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 0 0;
   }
 
   /* home section */
@@ -1437,7 +1718,7 @@ a {
     font-size: 2rem;
     text-align: center;
     font-weight: 600;
-    color: var(--space-cadet);
+    color: var(--font--color);
     font-family: "Work Sans", sans-serif;
     margin: 0.3rem;
   }
@@ -1511,8 +1792,8 @@ a {
   }
 
   .tittle-baner-services {
-    color: var(--azure-web);
-    margin: 4rem 0 0 0;
+    color: var(--font--color) !important;
+      margin: 4rem 0 0 0;
   }
 
   .item-services-text {
@@ -1571,7 +1852,7 @@ a {
     font-weight: 700;
     font-size: 2rem;
     line-height: 1.2;
-    color: var(--space-cadet);
+    color: var(--font--color) !important;
     font-family: "Work Sans", sans-serif;
   }
 
@@ -2066,6 +2347,172 @@ a {
     font-size: 1.5rem;
     font-weight: 600;
   }
+
+
+  .container-cards-places{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+    width: 80vw;
+    overflow: hidden;
+    margin: 4rem  auto;
+ 
+  }
+
+
+  .card-places-grid{
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border: 1px solid  var(--space-cadet);
+    border-radius: 5px;
+    padding: .5rem;
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    width: 100%;
+    height: 250px;
+    margin: 1rem 0;
+   
+   
+   
+
+  }
+
+  .card-places-grid img {
+    width: 30%;
+    height: 60%; 
+   
+
+  }
+  .links-card-destinations {
+
+    display: flex;
+    width:40% ;
+    margin: auto  auto auto 3rem;
+    overflow: hidden;
+    padding:0 .1rem;
+
+    
+    .rating{
+      display: flex;
+      width: 100%;
+    }
+    
+    h3{
+      font-size: 1.5rem;
+      font-weight: 800;
+      font-family: "Work Sans", sans-serif;
+      color: var(--space-cadet);
+
+    }
+
+    li{
+      margin: .1rem;
+    }
+
+    span{
+      color: var(--chefchaouen-blue);
+     
+    }
+
+    p{
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+      font-size: .8rem;
+      opacity: 80%;
+      
+    }
+
+    h4{
+      font-family: "MOMCAKE", sans-serif;
+      color: var(--chefchaouen-blue);
+      font-size: 1.2rem;
+    }
+
+    .rate-price{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .rate{
+
+      color: var(--space-cadet);
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 5px;
+      display: flex;
+      font-family: "Work Sans", sans-serif;
+  
+    }
+
+    .rate i{
+      color: yellow;
+    
+    }
+
+    .price{
+      
+    padding: .2rem;
+      color: var(--azure-web);
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: "Work Sans", sans-serif;
+      background-color: var(--asparagus);
+      border-radius: 5px;
+      box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+      text-align: center;
+    
+
+    }
+
+    .price i {
+      display: none;
+    }
+
+
+    
+  }
+
+
+  .explore-location{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+  
+  }
+
+  .explore-location i {
+    font-size: 3rem;
+    color: var(--chefchaouen-blue);
+  }
+
+
+  .explore{
+    background-color: var(--space-cadet);
+    width: 100%;
+    border: none;
+    color: white;
+    padding: .5rem ;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+    margin: auto auto 2.2rem  auto;
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+  }
+
+  
 }
 
 /* STYLES SWEETALERT */

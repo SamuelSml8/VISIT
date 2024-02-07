@@ -1,24 +1,22 @@
-// MENU *
+// SEARCH
 const searchButton = document.getElementById("search-button");
 const searchClose = document.getElementById("search-close");
 const searchContent = document.getElementById("search-content");
 const changeThemeBtn = document.querySelector(".change-theme");
 
-// SHOW MENU *
+// SHOW SEARCH
 if (searchButton) {
   searchButton.addEventListener("click", () => {
     searchContent.classList.add("show-search");
   });
 }
 
-//  MENU HIDDEN *
+//  SEARCH HIDDEN
 if (searchClose) {
   searchClose.addEventListener("click", () => {
     searchContent.classList.remove("show-search");
   });
 }
-
-/*  ***** LOGIN JS * */
 
 // JSON ITERATOR HOTELS
 const urlHotels = "http://localhost:3000/hotels";
@@ -69,8 +67,6 @@ async function eventsRecomended() {
     data.forEach((event) => {
       const eventCards = document.querySelector("#eventsCards");
       const { event_name, img_event } = event;
-      console.log(event_name);
-      console.log(img_event);
       eventCards.innerHTML += `
       <div class="swiper-slide">
         <img alt="${event_name}" src="${img_event}"/>
@@ -124,6 +120,41 @@ async function restaurantsRecomended() {
   }
 }
 restaurantsRecomended();
+
+// TOWNS SECTION ITERATION (6)
+const imgs = ['/public/img/towns/1.png','/public/img/towns/2.png','/public/img/towns/3.png','/public/img/towns/4.png','/public/img/towns/5.png','/public/img/towns/6.png']
+
+const swiperTowns = document.querySelector('#swiper-towns')
+for (let s = 0; s < imgs.length; s++) {
+  swiperTowns.innerHTML += `
+  <div class="swiper-slide">
+  <img src="${imgs[s]}" alt="" />
+  </div>
+  `
+}
+
+// JSON ITERATION SERVICES
+
+const urlServices = 'http://localhost:3000/services'
+
+async function servicesVisit(){
+  const response = await fetch(urlServices);
+  const data = await response.json()
+  const banerServices = document.querySelector("#services")
+  data.forEach(service => {
+    const {class_icon, title, text} = service
+    banerServices.innerHTML += `
+    <div class="item-services-text">
+    <i class="${class_icon}"></i>
+    <h3 class="item-tittle-services">${title}</h3>
+    <p class="text-baner-item-services">
+      ${text}
+    </p>
+  </div>
+    `
+  });
+}
+servicesVisit()
 
 // MODO OSCURO
 changeThemeBtn.addEventListener("click", () => {

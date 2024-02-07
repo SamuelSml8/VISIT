@@ -2,7 +2,7 @@ const navbar = document.querySelector(`#header`);
 
 navbar.innerHTML = `
 <nav class="nav-bar">
-        <a href="#home" class="logo-nav">
+        <a href="" class="logo-nav">
           <img src="/public/img/logo.png" alt id="logo-nav" />
         </a>
         <div class="menu-nav">
@@ -69,3 +69,7 @@ navbar.innerHTML = `
         </div>
       </nav>
 `;
+
+// LOGIN
+
+// SIGN UP

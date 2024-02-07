@@ -34,7 +34,7 @@
     <!-- STYLES CSS -->
     <link rel="stylesheet" href="./src/css/style.css" />
     <!-- LOADER STYLES -->
-    <link rel="stylesheet" href="./src/css/loader.css">
+    <link rel="stylesheet" href="/src/components/loader/loader.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- SWEET ALERT IMPORTATION -->
@@ -55,9 +55,9 @@
   </head>
 
   <body>
-    <div class="loadingio-spinner-dual-ball-inm8mv8rmb"><div class="ldio-whguq3hveys">
-      <div></div><div></div><div></div>
-      </div></div>
+    <div class="load" id="load">
+      <!-- LOADER DINAMIC -->
+    </div>
     <!-- START HEADER - NAVBAR -->
     <header class="header" id="header">
       <!-- DINAMIC NAV -->
@@ -101,19 +101,21 @@
               Over 1.2 million tourists visited the city in the 2023!
             </h2>
 
-          <h2 class="big-title">Visit is the tourist's best friend.</h2>
+            <h2 class="big-title">Visit is the tourist's best friend.</h2>
 
-          <p class="description-content">
-            "Discover the charm of our region, savor our cuisine, and enjoy
-            the excitement of our events."
-          </p>
-          <a href="" class="get-started" id="getStarted">Get started <i class="fa-solid fa-arrow-right"></i></a>
+            <p class="description-content">
+              "Discover the charm of our region, savor our cuisine, and enjoy
+              the excitement of our events."
+            </p>
+            <a href="" class="get-started" id="getStarted"
+              >Get started <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="img-data-home">
+            <img src="/public/img/homepage/chivaHome.png" alt="" />
+          </div>
         </div>
-        <div class="img-data-home">
-          <img src="/public/img/homepage/chivaHome.png" alt="" />
-        </div>
-      </div>
-    </section>
+      </section>
 
       <!-- START PLACES -->
       <section class="carrousel-towns" id="places">
@@ -163,10 +165,7 @@
             night of your stay when you use promo code STAYNPLAY.
           </p>
 
-          <a
-            href="/src/html/hotels.html"
-            target="_blank"
-            class="get-started"
+          <a href="/src/html/hotels.html" target="_blank" class="get-started"
             >Offerts</a
           >
         </div>
@@ -202,18 +201,15 @@
           </div>
           <!-- <div class="swiper-pagination"></div> -->
         </div>
-      </div>
-      <div class="btn-container">
-        
-        <a
-          href="/src/components/eventsGallery/events1.html"
-          target="_blank"
-          class="btn collection-btn"
-        >
-          Go to Collections <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-      </div>
+        <div class="btn-container">
+          <a
+            href="/src/html/eventsGrid.html"
+            target="_blank"
+            class="btn collection-btn"
+          >
+            Go to Collections <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </section>
       <!-- END EVENTOS -->
 
@@ -281,6 +277,7 @@
     <!-- END SWIPPER EVENTS -->
 
     <!-- SWIPPER ANIMATIONS -->
+    <script src="/src/components/loader/loader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/src/components/navbar/navbar.js"></script>
     <script src="./src/js/main.js"></script>

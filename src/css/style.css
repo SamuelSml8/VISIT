@@ -428,7 +428,7 @@ a {
     /* SEARCH */
 
     .search {
-        background-color: ;
+        /* background-color: ; */
         backdrop-filter: blur(15px);
     }
 
@@ -462,7 +462,7 @@ a {
                 rgba(255, 255, 255, 0.5),
                 rgba(255, 255, 255, 0.35)
             ),
-            url(/public/img/montaña2.png);
+            url(/public/img/homepage/montaña2.png);
     }
 
     .container-home {
@@ -554,7 +554,7 @@ a {
     /* **** CONTAINER BANER SERVICES ***** By*JR* */
 
     .container-baner-services {
-        background-image: url("../../public/img/medellin.png");
+        background-image: url("../../public/img/homepage/medellin.png");
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -938,7 +938,7 @@ a {
         width: 80vw;
         padding-top: 50px;
         padding-bottom: 50px;
-        background-image: url("/public/img/girasol.png");
+        background-image: url("/public/img/homepage/girasol.png");
         z-index: 1;
         background-size: contain;
         background-repeat: no-repeat;
@@ -987,7 +987,7 @@ a {
         align-items: center;
         flex-direction: column;
         display: flex;
-        background-image: url("/public/img/megafono.svg");
+        background-image: url("/public/img/homepage/megafono.svg");
         background-repeat: no-repeat;
         background-position: bottom;
         padding: 5rem;
@@ -2266,8 +2266,7 @@ a {
         display: flex;
         justify-content: center;
         align-content: center;
-        background-image: url("../img/girasol.png");
-        background-size: contain;
+        background-image: url("/public/img/homepage/girasol.png");
         background-repeat: no-repeat;
         background-position: center;
         flex-direction: column;

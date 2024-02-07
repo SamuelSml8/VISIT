@@ -1,0 +1,447 @@
+/*formateo */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+ /*TAMAÑO GRANDE */
+@media (min-width: 800px) {
+    #card-town{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.350)), url(/img/places/fondo/montañas.png);
+        background-size: cover;
+        background-position: center, 100%;
+    
+    }
+    .contenedor-inf{
+        background-color: rgb(230, 226, 222, 0.5);
+        display: flex;
+        flex-direction: row;
+        justify-content:  flex-end;
+        background-size: cover;
+        width: 61%;
+        height: 85%;
+        margin: 0;
+        padding: 0;
+        border-radius: 5rem;
+        box-shadow: 0.5rem 1rem 1rem  rgba(22, 22, 22, 0.541);
+    
+    }
+    
+    .button-inf{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+       
+          
+    }
+    
+    .contenedor-res{
+        
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    button{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        border-radius: 20px;
+        background-color: #008cba;
+        width: 60%;
+        border: 5px solid #008cba;
+        margin: 15px;
+        padding: 15px 50px ;
+        user-select: none;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    
+    button:hover{
+        background-color: #3e7384;
+        border: 5px solid #3e7384;
+    }
+    .restaurantBtn{
+        background-color: #2E294E;
+    }
+    
+    .contenedor-img{
+        display: block;
+        width: 50%;
+       
+        height: 100%;
+        
+    }
+    .contenedor-img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0 5rem 5rem 0;
+        
+    }
+    
+    .contenedor-inf iframe{
+        
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        
+        
+    }
+    .contenedor-res{
+        
+        display:block;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .galeria{ 
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: #008cba;
+        border-bottom-left-radius: 50rem;
+        border-top-left-radius: 50rem;
+        border-top-right-radius: 4.5rem;
+        border-bottom-right-radius: 4.5rem;
+        align-items: center;
+        gap: 5%;
+    }
+    
+    .imagenPlatos{
+        
+        display: block;
+        width: 50%;
+        height: 40%;
+        transition: 1s;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 1rem 4rem 2rem  rgba(22, 22, 22, 0.541);
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .imagenPlatos:hover{
+        transform: scale(1.2); 
+    }
+    .textPlatos{
+        
+        font-family: 'Work Sans', sans-serif;
+        color: #edf7f6;
+        text-decoration: none;
+        font-size: 180%; 
+        width: 50%;
+        
+    }
+    .textPlatos a {
+        text-decoration: none;
+        /* background-color: #2E294E; */
+        width: 40%;
+        color: #edf7f6;
+    }
+    
+    .lugares{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-color: #008cba;
+        border-bottom-left-radius: 0rem;
+        border-top-left-radius: 50rem;
+        border-top-right-radius: 4.5rem;
+        border-bottom-right-radius: 4.5rem;
+        justify-content: end;
+        align-items:end;
+    
+    
+    }
+    
+    .contenedor-lug{
+        
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .textLug{
+        
+        font-family: 'Work Sans', sans-serif;
+        color: #edf7f6;
+        text-decoration: none;
+        font-size: 180%; 
+        width: 50%;
+        text-align: right;
+        margin-right: 5%;
+    }
+    
+    .pLugares{
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        width: 70%;
+        font-size: 130%; 
+        text-align:right;
+        padding: 5%;
+    }
+    
+    .imagenLugar img{
+      width: 100%;
+    }
+    
+    .botonLugares{
+       
+        width: 50%;
+        button{
+            background-color: #2E294E;
+        }
+    }
+    
+    .Celebration{
+        
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+        background-image: url(/img/places/fondo/flores.png);
+        background-size: cover;
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 4.5rem; 
+        border-bottom-right-radius: 4.5rem;
+        
+    }
+    
+    .imgCelebration{
+        height: 45%;
+    }
+    
+    .imgCelebration img{
+        margin:15% 0 0 0;   
+    }
+    
+    .textCelebration{
+        
+        margin: 3rem;
+        font-family: 'Work Sans', sans-serif;
+        color: #2E294E;
+        width: 75%;
+        font-size: 150%;
+    }
+    
+    .pCelebration{
+        font-family: 'Work Sans', sans-serif;
+        color: #2E294E;
+        width: 90%;
+        font-size: 130%; 
+        text-align:justify;
+        margin: 3rem;
+        margin-top: 0;
+    }
+ }
+
+
+
+/* TAMAÑO PEQUEÑO*/
+@media (max-width: 790px) { 
+    /*IMAGEN PRINCIPAL Y MAPA*/
+    #card-town{
+        background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.350)), url(/img/places/fondo/montañas\ medida.png);
+        background-size: cover;
+        width: 100vw;
+        height: auto;
+        margin-top: 4rem;
+        
+    }
+    .maps-i{
+
+    }
+    .button-inf{
+        display:flex;
+        align-items: center;
+        justify-content: center; 
+        width: 100vw;
+        height: 10vh;
+            
+    }
+    .contenedor-inf{
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid rgb(74, 53, 53);
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        border-radius: 20px;
+        background-color: #008cba;
+        height: 60%;
+        border: 5px solid #008cba;
+        margin: 5px;
+        padding: 10px 5px ;
+        user-select: none;
+        transition-duration: 0.4s;  
+    }
+    .contenedor-img{
+        width:max-content ;
+      
+    }
+    .contenedor-img iframe{
+        width: 100vw;
+        height:78vh;
+        clip-path: circle(40% at 50% 50%);
+    }
+
+    .button-inf button i{
+        color: white;
+    }
+    /*RESTAURANTE*/
+    .contenedor-res{
+        width: 100vw;
+        height: 80vh;
+        display: block;
+        align-items: center;
+    }
+    .galeria{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        height: 100%;  
+    }
+    .imagenPlatos{
+        margin: auto;
+        width: 60%;
+    }
+    .imagenPlatos img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 1rem 4rem 5rem;
+        clip-path: none;   
+    }
+    .textPlatos{
+        overflow: hidden;
+        
+        margin: 0 0 6rem 0;
+        color: #edf7f6;
+        font-size: 150%;
+     
+         button{ 
+            color: white;
+            text-decoration: none;
+            padding: 2.5rem;
+            font-size: 80%;
+            width: 20rem;
+            height: 5rem;   
+        }
+        button a{ 
+            color: white;
+            text-decoration: none;
+            font-family: 'Work Sans', sans-serif;   
+        }
+       
+    }
+    /*QUE HACER*/
+    .contenedor-lug{
+       
+        display: flex;
+        width: min-content;
+        height: 80vh
+   
+    }
+
+    .Celebration{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100svw;
+        height: 100%;
+        background-color: white;
+        background-image: url("/img/places/fondo/flores.png");
+        background-size: cover;
+        z-index: 10;
+    }
+    .pCelebration{
+        color: white;
+        background-color: rgba(13, 33, 133, 0.343);
+        font-size: 26px;
+        width: 80%;
+        padding: 2rem;
+        border-radius: 2rem;
+       backdrop-filter: blur(20px);
+    }
+    .textCelebration{
+        margin: 3rem;
+        font-family: 'Work Sans', sans-serif;
+        color: #2E294E;
+        width: 75%;
+        font-size: 150%;
+    }
+    .lugares{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #008bba68;
+        backdrop-filter: blur(10px);
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+   
+    .pLugares{
+      
+        text-align: center;
+        font-size:1.8rem;
+    }
+    .imagenLugar{
+      
+        width: 90VW;
+        
+    }
+    .imagenLugar img {
+      border-radius: 1rem;
+        clip-path: none; 
+        width: 100%;
+        height: 100%;
+    }
+    .botonLugares{
+        margin-bottom: 20px;
+        font-family: 'Work Sans', sans-serif;
+        font-size:2rem;
+        button{
+            border: none;
+            width: 100%;
+            height: 100%;
+            background-color: #2E294E;
+            cursor: pointer;
+        }
+        
+    }
+    .textLug{
+        font-family: 'Work Sans', sans-serif;
+        font-size: 2.5rem; 
+    }
+
+ }

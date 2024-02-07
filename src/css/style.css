@@ -43,7 +43,7 @@
 
     /***** COLORS *****/
     --space-cadet: #2e294e;
-    --azure-web: #dcdce0;
+    --azure-web: #2e294e;
     --asparagus: #60993e;
     --chefchaouen-blue: #4a8fe7ff;
     --font--color: #dcdce0;
@@ -983,7 +983,6 @@ a {
         overflow: hidden;
         margin-top: 30px;
         width: 100vw;
-        height: 100vh;
         margin: auto;
         align-items: center;
         flex-direction: column;
@@ -991,7 +990,7 @@ a {
         background-image: url("/public/img/megafono.svg");
         background-repeat: no-repeat;
         background-position: bottom;
-        padding: 10rem;
+        padding: 5rem;
 
         justify-content: center;
 
@@ -2032,6 +2031,26 @@ a {
         margin: auto;
     }
 
+    .btn-container {
+        width: 100svw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .collection-btn {
+            background-color: var(--font--color);
+            color: var(--btn-color);
+            padding: 1rem;
+            border-radius: 25px;
+            font-weight: 600;
+            width: 50%;
+            text-align: center;
+            font-family: "Work Sans", sans-serif;
+            transition: 0.7s ease-in;
+            box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+        }
+    }
+
     .events {
         width: 100vw;
         height: 80vh;
@@ -2042,6 +2061,7 @@ a {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        flex-direction: column;
     }
 
     .events .swiper {
@@ -2069,6 +2089,9 @@ a {
     }
 
     /* FOOD DRINKS */
+    .img-experiencia {
+        display: none;
+    }
 
     .food-drinks {
         margin-top: 30px;

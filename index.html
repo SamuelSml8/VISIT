@@ -47,11 +47,89 @@
     />
   </head>
 
-  <body>
-    <!--***** START HEADER ***** By*JR*-->
-    <header class="header" id="header">
-      <!-- DINAMIC NAV -->
-    </header>
+<body>
+  <!--***** START HEADER ***** By*JR*-->
+  <header class="header" id="header">
+    <nav class="nav-bar">
+      <a href="#home" class="logo-nav">
+        <img src="./img/logo.png" alt id="logo-nav" />
+      </a>
+      <div class="menu-nav">
+        <ul class="list-nav">
+          <li class="item-nav">
+            <a href="../foodDrink/foodDrink.html" class="link-nav link-home-closed">
+              <i class="ri-home-fill"></i>
+              <span data-i18n="home">HOME</span>
+            </a>
+          </li>
+
+          <li class="item-nav">
+            <a href="#places" class="link-nav">
+              <i class="ri-road-map-line"></i>
+              <span>Places</span>
+            </a>
+          </li>
+
+          <li class="item-nav">
+            <a href="#hotels" class="link-nav">
+              <i class="ri-hotel-line"></i>
+              <span>Hotels</span>
+            </a>
+          </li>
+
+          <li class="item-nav">
+            <a href="#events" class="link-nav">
+              <i class="ri-calendar-event-line"></i>
+              <span>Events</span>
+            </a>
+          </li>
+
+          <li class="item-nav">
+            <a href="#food" class="link-nav">
+              <i class="ri-restaurant-line"></i>
+              <span data-i18n="food_drink">Food & Drink</span>
+            </a>
+          </li>
+
+          
+
+         
+        </ul>
+      </div>
+
+      <div class="actions-nav">
+        <!--***** BUTTON SEARCH ***** By*JR*-->
+        <i class="ri-search-line" search-button id="search-button"></i>
+
+        <!--***** BUTTON LOGIN ***** By*JR*-->
+        <i class="ri-user-line login-button" id="login-button"></i>
+
+        <!--***** BUTTON THEME ***** By*JR*-->
+        <div class="change-theme">
+
+          <i class="ri-moon-line" theme-change id="dark-btn"></i>
+          <i class="ri-sun-line hidden" id="light-btn"></i>
+        </div>
+
+        <!--***** BUTTON LANGUAGE ***** By*JR*-->
+
+
+        <select title="Seleccione su país">
+          <option value="es">Es</option>
+          <option value="us">En</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        
+        
+        
+
+
+
+        <!-- <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('es')"></i>
+        <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('en')" ></i> -->
+      </div>
+    </nav>
+  </header>
 
     <!--***** START SEARCH ***** By*JR*-->
     <div class="search" id="search-content">
@@ -173,21 +251,19 @@
               Over 1.2 million tourists visited the city in the 2023!
             </h2>
 
-            <h2 class="big-title">Visit is the tourist's best friend.</h2>
-      </div>
-            <p class="description-content">
-              "Discover the charm of our region, savor our cuisine, and enjoy
-              the excitement of our events."
-            </p>
-            <a href="" class="get-started" id="getStarted"
-              >Get started <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-          <div class="img-data-home">
-            <img src="./img/chivaHome.png" alt="" />
-          </div>
+          <h2 class="big-title">Visit is the tourist's best friend.</h2>
+
+          <p class="description-content">
+            "Discover the charm of our region, savor our cuisine, and enjoy
+            the excitement of our events."
+          </p>
+          <a href="" class="get-started" id="getStarted">Get started <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-      </section>
+        <div class="img-data-home">
+          <img src="./img/chivaHome.png" alt="" />
+        </div>
+      </div>
+    </section>
 
       <section class="carrousel-towns" id="places">
         <div class="container-carrousel-towns">
@@ -216,22 +292,22 @@
         <div class="swiper-towns mySwiper-towns">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="/public/img/towns/1.png" alt="" />
+              <img src="./img/towns/1.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="/public/img/towns/2.png" alt="" />
+              <img src="./img/towns/2.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="/public/img/towns/3.png" alt="" />
+              <img src="./img/towns/3.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="/public/img/towns/4.png" alt="" />
+              <img src="./img/towns/4.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="/public/img/towns/5.png" alt="" />
+              <img src="./img/towns/5.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="/public/img/towns/6.png" alt="" />
+              <img src="./img/towns/6.png" alt="" />
             </div>
           </div>
           <div class="swiper-button-next-towns"></div>
@@ -241,31 +317,7 @@
 
       </div>
     </section>
-          <div class="swiper-towns mySwiper-towns">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./img/towns/1.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/towns/2.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/towns/3.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/towns/4.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/towns/5.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/towns/6.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-button-next-towns"></div>
-            <div class="swiper-button-prev-towns"></div>
-            <div class="swiper-pagination-towns"></div>
-          </div>
+          
         </div>
       </section>
 
@@ -334,32 +386,97 @@
 
       <div class="container-baner-services"></div>
 
-      <!--***** EVENTOS  *****-->
-      <section class="events" id="events">
-        <img
-          src="/public/img/experiencia.png"
-          alt="img experiencia visit"
-          class="img-experiencia"
-        />
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper" id="eventsCards">
-            <!-- EVENTS -->
+    <!--***** EVENTOS  *****-->
+
+
+    <section class="events" id="events">
+  <img src="/public/img/experiencia.png" alt="img experiencia visit" class="img-experiencia">
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" id="eventosCards">
+            <img alt="asd" src="./img/eventos/domingoDiferente.jpg" />
           </div>
-          <!-- <div class="swiper-pagination"></div> -->
-        </div>
-        <a href="/src/html/places.html" target="_blank" class="btn">
+          <div class="swiper-slide">
+            <img alt="asd" src="./img/eventos/colombiamoda.png" />
+          </div>
+          <div class="swiper-slide">
+            <img alt="asd" src="./img/eventos/musicOn.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img alt="asd" src="./img/eventos/expotatto.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img alt="asd" src="./img/eventos/core.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img alt="asd" src="./img/eventos/Carl-Cox-–-GLOBAL-474-–-13-04-2012.jpeg" />
+          </div>
+         
+       </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <div class="btn-container">
+        <a href="/src/html/places.html" target="_blank" class="btn collection-btn">
           Go to Collections <i class="fa-solid fa-arrow-right"></i>
         </a>
+      </div>
       </section>
 
-      <!-- FOOD&DRINKS -->
-      <section class="food-drinks" id="food">
-        <h2 class="tittle-restaurants">FOOD & DRINK</h2>
-        <hr class="line-food" />
-        <div class="grid-restaurants" id="restaurantGrid">
-          <!-- RESTAURANTS CONTENT-->
+    <!-- FOOD&DRINKS -->
+
+    <section class="food-drinks" id="food">
+
+      <h2 class="tittle-restaurants">FOOD & DRINK</h2>
+      <hr class="line-food">
+      <div class="grid-restaurants">
+
+
+        <div class="card-restaurant" id="item-1">
+          <img src="./img/hotels/art.jpg" alt="rest">
         </div>
-      </section>
+
+        <div class="card-restaurant" id="item-1">
+          <img src="./img/hotels/art.jpg" alt="rest">
+        </div>
+
+        <div class="card-restaurant" id="item-1">
+          <img src="./img/hotels/art.jpg" alt="rest">
+        </div>
+
+        <div class="card-restaurant" id="item-1">
+          <img src="./img/hotels/art.jpg" alt="rest">
+        </div>
+
+        <div class="card-restaurant" id="item-1">
+          <img src="./img/hotels/art.jpg" alt="rest">
+          <div class="mask"></div>
+
+          <div class="heart-icons">
+            <i class="ri-heart-line"></i>
+            <i class="ri-heart-fill"></i>
+          </div>
+
+          <div class="item-body">
+            <h3>Nombre del restaurante</h3>
+
+            <div>
+              <i class="ri-star-fill"></i>
+              4.9
+            </div>
+          </div>
+        </div>
+
+        <div class="card-restaurant" id="item-1">
+          <img src="./img/hotels/art.jpg" alt="rest">
+        </div>
+
+
+      </div>
+
+      </div>
+    </section>
 
       <!--***** FOOTER  ***** By*JR*-->
 
@@ -420,22 +537,22 @@
       </p>
     </main>
 
-    <script type="module">
-      var swiper = new Swiper(".mySwiper-towns", {
-        effect: "flip",
-        grabCursor: true,
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <!-- swipper eventos -->
-    <script type="module">
-      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+  <script type="module">
+    var swiper = new Swiper(".mySwiper-towns", {
+      effect: "flip",
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- swipper eventos -->
+  <script type="module">
+    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
       const swiper = new Swiper(".mySwiper", {
         effect: "coverflow",

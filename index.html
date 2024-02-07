@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Visit</title>
 
-    <!--  -->
+    <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,33 +13,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- REMIXICON -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
     />
+
+    <!-- SWIPER SLIDER CSS 1-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!--***** SWIPER CSS ***** By*JR*-->
+    <!-- SWIPER SLIDER CSS 2  -->
     <link
       href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
 
-    <!--***** STYLES CSS ***** By*JR*-->
+    <!-- STYLES CSS -->
     <link rel="stylesheet" href="./src/css/style.css" />
+    <!-- LOADER STYLES -->
+    <link rel="stylesheet" href="./src/css/loader.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-- SWEET ALERT IMPORTATION -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!--* SWEETALERT STYLES -->
+    <!-- SWEETALERT STYLES -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css"
     />
+
+    <!-- ICON PAGE -->
     <link
       rel="shortcut icon"
       href="/public/img/visitIcon.png"
@@ -48,12 +55,16 @@
   </head>
 
   <body>
-    <!--***** START HEADER ***** By*JR*-->
+    <div class="loadingio-spinner-dual-ball-inm8mv8rmb"><div class="ldio-whguq3hveys">
+      <div></div><div></div><div></div>
+      </div></div>
+    <!-- START HEADER - NAVBAR -->
     <header class="header" id="header">
       <!-- DINAMIC NAV -->
     </header>
+    <!-- END HEADER - NAVBAR -->
 
-    <!--***** START SEARCH ***** By*JR*-->
+    <!-- START SEARCH  -->
     <div class="search" id="search-content">
       <form action class="form-search">
         <i class="ri-search-line search-icon"></i>
@@ -66,106 +77,23 @@
 
       <i class="ri-close-line search-close" id="search-close"></i>
     </div>
+    <!-- END SEARCH  -->
 
-    <!--***** START LOGIN ***** By*JR*-->
+    <!-- START LOGIN  -->
     <div class="login grid" id="login-content">
-      <form action class="login-form grid">
-        <h3 class="login-title">Login</h3>
-        <div class="login-group grid">
-          <div>
-            <label for="login-email" class="login-label">Email</label>
-            <input
-              type="email"
-              placeholder="Write your email"
-              id="login-email"
-              class="login-input"
-            />
-          </div>
-
-          <div>
-            <label for="login-password" class="login-label">Password</label>
-            <input
-              type="password"
-              placeholder="Enter your password"
-              id="login-password"
-              class="login-input"
-            />
-          </div>
-        </div>
-
-        <div class="forgot">
-          <span class="login-signup">
-            You do not have an account? <a href="#" id="signUp">Sign up</a>
-          </span>
-
-          <a href="/src/html/forgotPass.html" class="login-forgot">
-            You forgot your password
-          </a>
-
-          <button type="submit" id="loginBtn" class="login-button button">
-            Login
-          </button>
-        </div>
-      </form>
-
-      <i class="ri-close-line login-close" id="login-close"></i>
+      <!-- DINAMIC LOGIN -->
     </div>
+    <!-- END LOGIN  -->
 
-    <!--* START SIGN UP -->
+    <!-- START SIGN UP -->
     <div class="login grid" id="signUp-content">
-      <form action class="login-form signUp-form grid">
-        <h3 class="login-title">Register</h3>
-        <div class="login-group grid">
-          <div>
-            <label for="login-email" class="login-label">Name</label>
-            <input
-              type="text"
-              placeholder="Write your name"
-              id="signUp-name"
-              class="login-input"
-            />
-          </div>
-          <div>
-            <label for="login-email" class="login-label">Email</label>
-            <input
-              type="email"
-              placeholder="Write your email"
-              id="signUp-email"
-              class="login-input"
-            />
-          </div>
-
-          <div>
-            <label for="login-password" class="login-label">Password</label>
-            <input
-              type="password"
-              placeholder="Create your password"
-              id="signUp-password"
-              class="login-input"
-            />
-          </div>
-        </div>
-
-        <div class="forgot">
-          <span class="login-signup">
-            You have an account? <a href="#" id="haveAccount">Login</a>
-          </span>
-
-          <a href="/src/html/forgotPass.html" class="login-forgot">
-            You forgot your password
-          </a>
-
-          <button type="submit" id="loginBtn" class="login-button button">
-            REGISTER
-          </button>
-        </div>
-      </form>
-
-      <i class="ri-close-line login-close" id="signUp-close"></i>
+      <!-- DINAMIC SIGN UP -->
     </div>
+    <!-- END SIGN UP -->
 
-    <!--***** MAIN ***** By*JR*-->
+    <!-- START MAIN  -->
     <main class="main">
+      <!-- START HOMEPAGE -->
       <section class="home-section" id="home">
         <div class="grid-container container-home">
           <div class="data-home">
@@ -174,21 +102,22 @@
             </h2>
 
             <h2 class="big-title">Visit is the tourist's best friend.</h2>
-      </div>
-            <p class="description-content">
-              "Discover the charm of our region, savor our cuisine, and enjoy
-              the excitement of our events."
-            </p>
-            <a href="" class="get-started" id="getStarted"
-              >Get started <i class="fa-solid fa-arrow-right"></i
-            ></a>
           </div>
-          <div class="img-data-home">
-            <img src="./img/chivaHome.png" alt="" />
-          </div>
+          <p class="description-content">
+            "Discover the charm of our region, savor our cuisine, and enjoy the
+            excitement of our events."
+          </p>
+          <a href="" class="get-started" id="getStarted"
+            >Get started <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="img-data-home">
+          <img src="/public/img/homepage/chivaHome.png" alt="" />
         </div>
       </section>
+      <!-- END HOMEPAGE -->
 
+      <!-- START PLACES -->
       <section class="carrousel-towns" id="places">
         <div class="container-carrousel-towns">
           <div class="content-text-towns">
@@ -208,69 +137,25 @@
                 <span>Destinations</span>
               </li>
             </ul>
-            <a href="/src/html/places.html" target="_blank" class="btn">
+            <a
+              href="/src/components/places/places.html"
+              target="_blank"
+              class="btn"
+            >
               Go to Collections <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
 
-        <div class="swiper-towns mySwiper-towns">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/public/img/towns/1.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/public/img/towns/2.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/public/img/towns/3.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/public/img/towns/4.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/public/img/towns/5.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/public/img/towns/6.png" alt="" />
-            </div>
-          </div>
-          <div class="swiper-button-next-towns"></div>
-          <div class="swiper-button-prev-towns"></div>
-          <div class="swiper-pagination-towns"></div>
-        </div>
-
-      </div>
-    </section>
           <div class="swiper-towns mySwiper-towns">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./img/towns/1.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/towns/2.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/towns/3.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/towns/4.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/towns/5.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/towns/6.png" alt="" />
-              </div>
+            <div class="swiper-wrapper" id="swiper-towns">
+              <!-- IMAGES TOWN -->
             </div>
-            <div class="swiper-button-next-towns"></div>
-            <div class="swiper-button-prev-towns"></div>
-            <div class="swiper-pagination-towns"></div>
           </div>
         </div>
       </section>
+      <!-- END PLACES -->
 
-      <!--***** EXPERIENCE & CARRUSEL INFINITO ***** By*JR*-->
-
+      <!-- START HOTELS & CARRUSEL INFINITO  -->
       <section class="carrusel-infinito" id="hotels">
         <div class="baner-hotels">
           <h2 class="tittle-hotels-baner">Stay & Play Package</h2>
@@ -293,51 +178,23 @@
           </div>
         </div>
       </section>
+      <!-- END HOTELS & CARRUSEL INFINITO  -->
 
+      <!-- START SERVICES -->
       <div class="container-items">
         <h2 class="tittle-baner-services">WE OFFERT BEST SERVICES</h2>
 
-        <div class="baner-services">
-          <div class="item-services-text">
-            <i class="ri-hotel-line i-baner-services"></i>
-            <h3 class="item-tittle-services">Best Hotels</h3>
-            <p class="text-baner-item-services">
-              the best experience in hotels
-            </p>
-          </div>
-
-          <div class="item-services-text">
-            <i class="ri-map-pin-line i-baner-services"></i>
-            <h3 class="item-tittle-services">Best Places</h3>
-            <p class="text-baner-item-services">
-              the best experience in hotels
-            </p>
-          </div>
-
-          <div class="item-services-text">
-            <i class="ri-restaurant-line i-baner-services"></i>
-            <h3 class="item-tittle-services">Best Restaurants</h3>
-            <p class="text-baner-item-services">
-              the best experience in hotels
-            </p>
-          </div>
-
-          <div class="item-services-text">
-            <i class="ri-calendar-event-line i-baner-services"></i>
-            <h3 class="item-tittle-services">Best Events</h3>
-            <p class="text-baner-item-services">
-              the best experience in hotels
-            </p>
-          </div>
+        <div class="baner-services" id="services">
+          <!-- SERVICES DINAMIC CONTENT -->
         </div>
       </div>
-
       <div class="container-baner-services"></div>
+      <!-- END SERVICES -->
 
-      <!--***** EVENTOS  *****-->
+      <!-- START EVENTOS -->
       <section class="events" id="events">
         <img
-          src="/public/img/experiencia.png"
+          src="/public/img/homepage/experiencia.png"
           alt="img experiencia visit"
           class="img-experiencia"
         />
@@ -347,12 +204,17 @@
           </div>
           <!-- <div class="swiper-pagination"></div> -->
         </div>
-        <a href="/src/html/places.html" target="_blank" class="btn">
+        <a
+          href="/src/components/eventsGallery/events1.html"
+          target="_blank"
+          class="btn"
+        >
           Go to Collections <i class="fa-solid fa-arrow-right"></i>
         </a>
       </section>
+      <!-- END EVENTOS -->
 
-      <!-- FOOD&DRINKS -->
+      <!-- START FOOD&DRINKS -->
       <section class="food-drinks" id="food">
         <h2 class="tittle-restaurants">FOOD & DRINK</h2>
         <hr class="line-food" />
@@ -360,66 +222,23 @@
           <!-- RESTAURANTS CONTENT-->
         </div>
       </section>
+      <!-- END FOOD&DRINKS -->
 
-      <!--***** FOOTER  ***** By*JR*-->
-
+      <!-- START FOOTER -->
       <footer class="footer">
-        <div class="container-footer">
-          <div class="part-1-footer">
-            <div class="section-footer footer-display">
-              <h3>CONTACT</h3>
-              <p>Cl. 16 #55-129, Guayabal</p>
-              <p>Medellín</p>
-              <p>Antioquia</p>
-              <p>30056778902</p>
-            </div>
-
-            <div class="section-footer footer-display">
-              <h3>RECENT POST</h3>
-              <a href="" class="link-item-footer">Places</a>
-              <a href="" class="link-item-footer">Hotels</a>
-              <a href="" class="link-item-footer">Events</a>
-              <a href="" class="link-item-footer">Food & Drinks</a>
-            </div>
-
-            <div class="section-footer">
-              <div class="map-footer">
-                <div style="width: 100%">
-                  <iframe
-                    src="https://maps.google.com/maps?width=100%25&amp;height=800&amp;hl=es&amp;q=Riwi%20Medell%C3%ACn+(VISIT)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                    ><a href="https://www.gps.ie/car-satnav-gps/"
-                      >Car Navigation Systems</a
-                    ></iframe
-                  >
-                </div>
-
-                <img src="./public/img/logoM.png" alt="" class="logo-footer" />
-              </div>
-            </div>
-
-            <div class="section-footer">
-              <h3 class="footer-display">FOLLOW US</h3>
-              <input
-                type="text"
-                placeholder="Email"
-                class="input-footer footer-display"
-              />
-
-              <div class="link-social-footer">
-                <i class="ri-instagram-fill"></i>
-                <i class="ri-facebook-fill"></i>
-                <i class="ri-google-fill"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- DINAMIC FOOTER -->
       </footer>
+      <!-- END FOOTER -->
+      <!-- START COPYRIGHT -->
       <p class="copy-rights">
-        Copy Rights - <span class="visit-name">VISIT</span> - 2024. All Right
-        Reserved
+        <!-- P DINAMIC -->
       </p>
+      <!-- END COPYRIGHT -->
     </main>
+    <!-- END MAIN  -->
 
+    <!-- START SCRIPTS -->
+    <!-- START SWIPPER TOWNS -->
     <script type="module">
       var swiper = new Swiper(".mySwiper-towns", {
         effect: "flip",
@@ -433,7 +252,9 @@
         },
       });
     </script>
-    <!-- swipper eventos -->
+    <!-- END SWIPPER TOWNS -->
+
+    <!-- START SWIPPER EVENTS -->
     <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
@@ -454,18 +275,15 @@
         },
       });
     </script>
+    <!-- END SWIPPER EVENTS -->
 
-    <!-- swipper animaciones -->
-
-
+    <!-- SWIPPER ANIMATIONS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- main js -->
-
-    <!-- <script src="./js/design.js" type="module"></script> -->
     <script src="/src/components/navbar/navbar.js"></script>
     <script src="./src/js/main.js"></script>
     <script type="module" src="./src/js/translator.js"></script>
-    <script src="/src/js/login.js"></script>
+    <script src="/src/components/login/login.js"></script>
+    <script src="/src/components/footer/footer.js"></script>
+    <!-- END SCRIPTS -->
   </body>
 </html>

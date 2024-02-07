@@ -39,25 +39,20 @@
 }
 
 [data-theme="dark"] {
-  
-    --header-height: 3.5rem;
+  --header-height: 3.5rem;
 
-    /***** COLORS *****/
-    --space-cadet: #2e294e;
-    --azure-web: #dcdce0;
-    --asparagus: #60993e;
-    --chefchaouen-blue: #4a8fe7ff;
-    --font--color:#dcdce0;
-    --btn-color: #2e294e;
-    --paragraph-color: #fff;
+  /***** COLORS *****/
+  --space-cadet: #2e294e;
+  --azure-web: #dcdce0;
+  --asparagus: #60993e;
+  --chefchaouen-blue: #4a8fe7ff;
+  --font--color: #dcdce0;
+  --btn-color: #2e294e;
+  --paragraph-color: #fff;
 
-    body{
-      background-color: var(--space-cadet);
-
-    }
-
-
- 
+  body {
+    background-color: var(--space-cadet);
+  }
 }
 
 * {
@@ -177,7 +172,7 @@ a {
   color: var(--space-cadet);
 }
 
-.search-input:focus{
+.search-input:focus {
   outline: none;
 }
 
@@ -259,9 +254,8 @@ a {
     transition: transform 0.3s ease-in-out;
   }
 
-  #logo-nav:hover{
+  #logo-nav:hover {
     transform: rotate(-15deg) scale(1.1);
-
   }
 
   .header {
@@ -326,23 +320,21 @@ a {
     font-size: 1.3rem;
   }
 
-  .actions-nav i:hover{
+  .actions-nav i:hover {
     color: var(--asparagus);
- 
-  
   }
 
-  select{
+  select {
     background-color: var(--space-cadet);
     color: var(--azure-web);
     border: none;
     font-size: 1rem;
     font-weight: 500;
     border-radius: 3px;
-    padding: .2rem .5rem;
+    padding: 0.2rem 0.5rem;
   }
 
-  option{
+  option {
     font-size: 1rem;
     color: var(--space-cadet);
   }
@@ -436,7 +428,7 @@ a {
   /* SEARCH */
 
   .search {
-    background-color: ;
+    /* background-color: ; */
     backdrop-filter: blur(15px);
   }
 
@@ -470,7 +462,7 @@ a {
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.35)
       ),
-      url(/public/img/montaña2.png);
+      url(/public/img/homepage/montaña2.png);
   }
 
   .container-home {
@@ -503,9 +495,9 @@ a {
     background-color: var(--asparagus);
     color: var(--azure-web);
     text-align: center;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
   }
 
   .big-title {
@@ -516,7 +508,7 @@ a {
     font-family: "Work Sans", sans-serif;
     opacity: 90%;
     margin: 1rem 0;
-    text-shadow: 0px 2px 6px rgba(0,0,0,0.6);
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
   }
   .description-content {
     font-size: 1.2rem;
@@ -537,9 +529,9 @@ a {
     margin: 1rem 0;
     font-family: "Work Sans", sans-serif;
     transition: 0.7s ease-in;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
   }
 
   .get-started:hover {
@@ -562,7 +554,7 @@ a {
   /* **** CONTAINER BANER SERVICES ***** By*JR* */
 
   .container-baner-services {
-    background-image: url("../../public/img/medellin.png");
+    background-image: url("../../public/img/homepage/medellin.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -589,7 +581,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    p{
+    p {
       color: var(--font--color);
     }
   }
@@ -602,7 +594,7 @@ a {
   .tittle-baner-services {
     font-size: 4rem;
     font-weight: 600;
-    margin:  auto auto 5rem auto;
+    margin: auto auto 5rem auto;
     text-align: center;
     color: var(--font--color);
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.48);
@@ -628,7 +620,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
   }
 
   .container-carrousel-towns {
@@ -647,7 +638,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-   
   }
 
   .content-text-towns h2 {
@@ -679,8 +669,6 @@ a {
     color: var(--font--color) !important;
     font-family: "Work Sans", sans-serif;
   }
-
- 
 
   .content-text-towns .counter i {
     margin-right: 10px;
@@ -730,7 +718,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-  
 
     .swiper-slide {
       margin-top: 20px;
@@ -747,10 +734,9 @@ a {
 
   /***** EXPERIENCE & CARRUSEL INFINITO ***** By*JR*/
 
-
-  .img-experiencia{
-   width: 60vw;
-    margin:  3rem auto;
+  .img-experiencia {
+    width: 60vw;
+    margin: 3rem auto;
     display: flex;
   }
   .baner-hotels {
@@ -778,7 +764,7 @@ a {
     color: var(--font--color) !important;
     opacity: 90%;
   }
- 
+
   .buton-ofers-hotels {
     background-color: var(--font--color);
     color: var(--btn-color);
@@ -792,15 +778,13 @@ a {
     font-family: "Work Sans", sans-serif;
     font-size: 1.2rem;
     transition: 0.7s ease-in;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
- 
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
   }
 
-  .buton-ofers-hotels:hover{
+  .buton-ofers-hotels:hover {
     background-color: var(--azure-web);
     color: var(--space-cadet);
     transition: 0.7s ease-in;
-
   }
 
   .hotel-link {
@@ -823,7 +807,6 @@ a {
     display: flex;
     flex-direction: column;
     /* margin: 5rem 0 ; */
-  
   }
   .slider {
     width: 80vw;
@@ -850,11 +833,9 @@ a {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 15px;
-    a{
-
+    a {
       color: var(--font--color) !important;
     }
-   
 
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
   }
@@ -893,13 +874,12 @@ a {
     font-family: "Work Sans", sans-serif;
   }
 
-  .hotel-link{
-
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 1rem;
+  .hotel-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
   }
 
   .link-explore-hotel {
@@ -917,15 +897,13 @@ a {
     display: flex;
     justify-content: start;
     align-items: start;
-    margin: 0 0 0 .5rem;
+    margin: 0 0 0 0.5rem;
   }
 
   .stars i {
     font-size: 1.5rem;
     color: gray;
   }
-
-  
 
   @keyframes scroll {
     0% {
@@ -948,7 +926,6 @@ a {
     flex-direction: column;
   }
 
-
   .tittle-experience-visit {
     text-align: center;
     font-size: 5rem;
@@ -961,12 +938,11 @@ a {
     width: 80vw;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url("/public/img/girasol.png");
+    background-image: url("/public/img/homepage/girasol.png");
     z-index: 1;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
   }
 
   .swiper-slide {
@@ -974,7 +950,6 @@ a {
     background-size: cover;
     width: 300px;
     height: 300px;
-   
   }
 
   .swiper-slide img {
@@ -983,30 +958,25 @@ a {
     height: 100%;
   }
 
-
   .btn-container {
-
     width: 100svw;
     display: flex;
     align-items: center;
     justify-content: center;
-  
 
-  .collection-btn{
-    background-color: var(--font--color);
-    color: var(--btn-color);
-    padding: 1rem;
-    border-radius: 25px;
-    font-weight: 600;
-    width: 30%;
-    text-align: center;
-    font-family: "Work Sans", sans-serif;
-    transition: 0.7s ease-in;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-   
-    
+    .collection-btn {
+      background-color: var(--font--color);
+      color: var(--btn-color);
+      padding: 1rem;
+      border-radius: 25px;
+      font-weight: 600;
+      width: 30%;
+      text-align: center;
+      font-family: "Work Sans", sans-serif;
+      transition: 0.7s ease-in;
+      box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    }
   }
- }
 
   /* Grid de cards Restaurant */
   .food-drinks {
@@ -1018,7 +988,7 @@ a {
     align-items: center;
     flex-direction: column;
     display: flex;
-    background-image: url("/public/img/megafono.svg");
+    background-image: url("/public/img/homepage/megafono.svg");
     background-repeat: no-repeat;
     background-position: bottom;
     padding: 10rem;
@@ -1038,7 +1008,6 @@ a {
       grid-template-rows: 1fr 1fr 1fr;
       gap: 20px;
       height: max-content;
-   
 
       .card-restaurant {
         position: relative;
@@ -1141,18 +1110,12 @@ a {
     margin: auto;
     width: 100vw;
     height: 100%;
-    
   }
 
-  .section-footer{
-
+  .section-footer {
     display: flex;
     flex-direction: column;
-    
-    
   }
-
-  
 
   .part-1-footer p {
     color: white;
@@ -1168,13 +1131,11 @@ a {
   }
 
   .link-social-footer {
- 
     display: flex;
     justify-content: space-between;
     margin: auto;
     width: 100%;
     gap: 1rem;
-    
   }
 
   .link-social-footer i {
@@ -1184,10 +1145,9 @@ a {
     background-color: white;
     padding: 1.1rem;
     border-radius: 50%;
-   
   }
 
-  .link-social-footer i:hover{
+  .link-social-footer i:hover {
     transform: scale(1.1);
   }
 
@@ -1206,24 +1166,19 @@ a {
     width: 80px;
     height: 80px;
   }
-  
-
- 
 
   .copy-rights {
     color: var(--space-cadet);
     display: flex;
     justify-content: center;
-    align-items: center ;
-    background-color:white;
+    align-items: center;
+    background-color: white;
     width: 100%;
-    height:2rem;
+    height: 2rem;
     font-family: "Work Sans", sans-serif;
-    
-    
   }
 
-  .footer-display-yes{
+  .footer-display-yes {
     display: block;
   }
 
@@ -1232,16 +1187,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-
   }
 
   .map-footer img {
-
     width: 120px;
     height: auto;
     margin: auto;
-
   }
 
   .map-footer iframe {
@@ -1249,127 +1200,109 @@ a {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin:  1rem 2rem ;
- 
-    
+    margin: 1rem 2rem;
   }
-
 
   /* SECTION PLACES GRID  */
 
-
-  .container-cards-places{
+  .container-cards-places {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   
+
     width: 80vw;
     margin: auto;
     gap: 2rem;
     margin-bottom: 3rem;
 
-    .card-info{
-  
+    .card-info {
       display: flex;
       text-align: left;
       flex-direction: column;
       justify-content: space-between;
 
-      .tittle{
+      .tittle {
         text-align: center;
       }
 
-      .description-card{
+      .description-card {
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap:10px;
+        gap: 10px;
       }
-  
-    .rating{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 20px;
-    }
-      h3{
+
+      .rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+      h3 {
         font-size: 2rem;
         font-weight: 800;
         font-family: "Work Sans", sans-serif;
         color: var(--space-cadet);
-  
       }
-  
-  
-      span{
+
+      span {
         color: var(--chefchaouen-blue);
-       
       }
-  
-      p{
+
+      p {
         font-family: "Work Sans", sans-serif;
         font-weight: 500;
         font-size: 1.1rem;
         opacity: 80%;
-        
       }
-  
-      h4{
+
+      h4 {
         font-family: "MOMCAKE", sans-serif;
         color: var(--chefchaouen-blue);
         font-size: 1.5rem;
       }
-  
-      .rate-price{
+
+      .rate-price {
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
-  
-      .rate{
-  
+
+      .rate {
         color: var(--space-cadet);
         font-size: 1.4rem;
         font-weight: 600;
         border-radius: 5px;
         display: flex;
         font-family: "Work Sans", sans-serif;
-    
       }
-  
-      .rate i{
+
+      .rate i {
         color: yellow;
       }
-  
-      .price{
-        
-        padding: .3rem;
+
+      .price {
+        padding: 0.3rem;
         color: var(--azure-web);
         font-size: 1.2rem;
         font-weight: 500;
         font-family: "Work Sans", sans-serif;
         background-color: var(--asparagus);
         border-radius: 5px;
-        box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
       }
-  
-  
-      
-
     }
-
   }
 
-  .tittle-destinations-grid{
+  .tittle-destinations-grid {
     font-size: 4rem;
     margin: 5rem auto 1rem 0;
     color: var(--space-cadet);
     text-align: center;
     font-family: "Work Sans", sans-serif;
-
   }
 
-  .text-main-destinations{
+  .text-main-destinations {
     text-align: center;
     margin: 1rem auto 3rem 0;
     font-size: 1.2rem;
@@ -1379,113 +1312,89 @@ a {
     opacity: 70%;
   }
 
-
-  .card-places-grid{
+  .card-places-grid {
     box-sizing: border-box;
-    flex: 1 1 48%; 
+    flex: 1 1 48%;
     display: flex;
     align-content: center;
     align-items: center;
-    border: 1px solid  var(--space-cadet);
+    border: 1px solid var(--space-cadet);
     border-radius: 5px;
     padding: 1rem;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
-   
-
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
   }
 
   .card-places-grid img {
     width: 130px;
     height: 100%;
-    margin: auto  auto auto 2rem; 
- 
-
-    
-    
- 
-  
-
+    margin: auto  auto auto 2rem;
   }
+
   .links-card-destinations {
-
     display: flex;
-    
-    margin: 0 2rem ;
-    margin: auto  auto auto 3rem; 
+    margin: 0 2rem;
+    margin: auto auto auto 3rem;
 
-    h3{
+    h3 {
       font-size: 2rem;
       font-weight: 800;
       font-family: "Work Sans", sans-serif;
       color: var(--space-cadet);
-
     }
 
-
-    span{
+    span {
       color: var(--chefchaouen-blue);
-     
     }
 
-    p{
+    p {
       font-family: "Work Sans", sans-serif;
       font-weight: 500;
       font-size: 1.1rem;
       opacity: 80%;
-      
     }
 
-    h4{
+    h4 {
       font-family: "MOMCAKE", sans-serif;
       color: var(--chefchaouen-blue);
       font-size: 1.5rem;
     }
 
-    .rate-price{
+    .rate-price {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
-    .rate{
-
+    .rate {
       color: var(--space-cadet);
       font-size: 1.4rem;
       font-weight: 600;
       border-radius: 5px;
       display: flex;
       font-family: "Work Sans", sans-serif;
-  
     }
 
-    .rate i{
+    .rate i {
       color: yellow;
     }
 
-    .price{
-      
-      padding: .3rem;
+    .price {
+      padding: 0.3rem;
       color: var(--azure-web);
       font-size: 1.2rem;
       font-weight: 500;
       font-family: "Work Sans", sans-serif;
       background-color: var(--asparagus);
       border-radius: 5px;
-      box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+      box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
     }
-
-
-    
   }
 
-
-  .explore-location{
-  
+  .explore-location {
     text-align: center;
     display: flex;
     gap: 10px;
     align-items: center;
-  
   }
 
   .explore-location i {
@@ -1493,27 +1402,22 @@ a {
     color: var(--chefchaouen-blue);
   }
 
-
-  .explore{
+  .explore {
     background-color: var(--space-cadet);
     width: 60%;
     border: none;
     color: white;
-    padding: .5rem ;
+    padding: 0.5rem;
     font-size: 1.2rem;
     cursor: pointer;
     border-radius: 4px;
     transition: 0.3s ease-in;
-    margin:  1rem auto;
+    margin: 1rem auto;
     font-family: "Work Sans", sans-serif;
     text-align: center;
     font-weight: 600;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
   }
-
-
-
-
 }
 
 /* TAMAÑO PEQUEÑO */
@@ -1793,7 +1697,7 @@ a {
 
   .tittle-baner-services {
     color: var(--font--color) !important;
-      margin: 4rem 0 0 0;
+    margin: 4rem 0 0 0;
   }
 
   .item-services-text {
@@ -2274,7 +2178,7 @@ a {
     display: none;
   }
 
-  .footer-display-yes{
+  .footer-display-yes {
     display: block;
   }
 
@@ -2291,7 +2195,6 @@ a {
   }
 
   .map-footer {
-
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -2305,7 +2208,7 @@ a {
     height: 60vh;
   }
 
-  .map-footer div{
+  .map-footer div {
     display: flex;
     margin: auto;
   }
@@ -2316,7 +2219,6 @@ a {
     height: 120px;
     border-radius: 50%;
     margin: auto;
-
   }
 
   .link-social-footer {
@@ -2348,8 +2250,7 @@ a {
     font-weight: 600;
   }
 
-
-  .container-cards-places{
+  .container-cards-places {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -2357,136 +2258,111 @@ a {
     height: 100%;
     width: 80vw;
     overflow: hidden;
-    margin: 4rem  auto;
- 
+    margin: 4rem auto;
   }
 
-
-  .card-places-grid{
+  .card-places-grid {
     box-sizing: border-box;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    border: 1px solid  var(--space-cadet);
+    border: 1px solid var(--space-cadet);
     border-radius: 5px;
-    padding: .5rem;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    padding: 0.5rem;
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
     width: 100%;
     height: 250px;
     margin: 1rem 0;
-   
-   
-   
-
   }
 
   .card-places-grid img {
     width: 30%;
-    height: 60%; 
-   
-
+    height: 60%;
   }
   .links-card-destinations {
-
     display: flex;
-    width:40% ;
-    margin: auto  auto auto 3rem;
+    width: 40%;
+    margin: auto auto auto 3rem;
     overflow: hidden;
-    padding:0 .1rem;
+    padding: 0 0.1rem;
 
-    
-    .rating{
+    .rating {
       display: flex;
       width: 100%;
     }
-    
-    h3{
+
+    h3 {
       font-size: 1.5rem;
       font-weight: 800;
       font-family: "Work Sans", sans-serif;
       color: var(--space-cadet);
-
     }
 
-    li{
-      margin: .1rem;
+    li {
+      margin: 0.1rem;
     }
 
-    span{
+    span {
       color: var(--chefchaouen-blue);
-     
     }
 
-    p{
+    p {
       font-family: "Work Sans", sans-serif;
       font-weight: 500;
-      font-size: .8rem;
+      font-size: 0.8rem;
       opacity: 80%;
-      
     }
 
-    h4{
+    h4 {
       font-family: "MOMCAKE", sans-serif;
       color: var(--chefchaouen-blue);
       font-size: 1.2rem;
     }
 
-    .rate-price{
+    .rate-price {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
-    .rate{
-
+    .rate {
       color: var(--space-cadet);
       font-size: 1.2rem;
       font-weight: 600;
       border-radius: 5px;
       display: flex;
       font-family: "Work Sans", sans-serif;
-  
     }
 
-    .rate i{
+    .rate i {
       color: yellow;
-    
     }
 
-    .price{
-      
-    padding: .2rem;
+    .price {
+      padding: 0.2rem;
       color: var(--azure-web);
       font-size: 1rem;
       font-weight: 500;
       font-family: "Work Sans", sans-serif;
       background-color: var(--asparagus);
       border-radius: 5px;
-      box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+      box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
       text-align: center;
-    
-
     }
 
     .price i {
       display: none;
     }
-
-
-    
   }
 
-
-  .explore-location{
+  .explore-location {
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
-  
   }
 
   .explore-location i {
@@ -2494,25 +2370,22 @@ a {
     color: var(--chefchaouen-blue);
   }
 
-
-  .explore{
+  .explore {
     background-color: var(--space-cadet);
     width: 100%;
     border: none;
     color: white;
-    padding: .5rem ;
+    padding: 0.5rem;
     font-size: 1.2rem;
     cursor: pointer;
     border-radius: 4px;
     transition: 0.3s ease-in;
-    margin: auto auto 2.2rem  auto;
+    margin: auto auto 2.2rem auto;
     font-family: "Work Sans", sans-serif;
     text-align: center;
     font-weight: 600;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
   }
-
-  
 }
 
 /* STYLES SWEETALERT */
@@ -2522,8 +2395,8 @@ a {
   font-family: var(--body-font);
 } */
 
- .swal2-title {
-  color: red ;
+.swal2-title {
+  color: var(--asparagus);
   font-family: var(--body-font);
 }
 

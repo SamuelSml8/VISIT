@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+
+       <!-- FONT AWESOME -->
+       <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+       crossorigin="anonymous"
+       referrerpolicy="no-referrer"
+     />
+     <!-- REMIXICON -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+     />
+ 
+     <!-- SWIPER SLIDER CSS 1-->
+     <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
+     <!-- SWIPER SLIDER CSS 2  -->
+     <link
+       href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+       rel="stylesheet"
+       crossorigin="anonymous"
+     />
+ 
+     <!-- STYLES CSS -->
+     <link rel="stylesheet" href="/src/css/style.css" />
+     <!-- LOADER STYLES -->
+     <link rel="stylesheet" href="./src/css/loader.css">
+     <script src="https://unpkg.com/scrollreveal"></script>
+ 
+     <!-- SWEET ALERT IMPORTATION -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+     <!-- SWEETALERT STYLES -->
+     <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css"
+     />
+ 
+     <!-- ICON PAGE -->
+     <link
+       rel="shortcut icon"
+       href="/public/img/visitIcon.png"
+       type="image/x-icon"
+     />
+</head>
+<body>
+
+    <div class="loadingio-spinner-dual-ball-inm8mv8rmb"><div class="ldio-whguq3hveys">
+        <div></div><div></div><div></div>
+        </div></div>
+      <!-- START HEADER - NAVBAR -->
+      <header class="header" id="header">
+        <!-- DINAMIC NAV -->
+      </header>
+      <!-- END HEADER - NAVBAR -->
+  
+      <!-- START SEARCH  -->
+      <div class="search" id="search-content">
+        <form action class="form-search">
+          <i class="ri-search-line search-icon"></i>
+          <input
+            type="search"
+            placeholder="What are you lokking for?"
+            class="search-input"
+          />
+        </form>
+  
+        <i class="ri-close-line search-close" id="search-close"></i>
+      </div>
+      <!-- END SEARCH  -->
+  
+      <!-- START LOGIN  -->
+      <div class="login grid" id="login-content">
+        <!-- DINAMIC LOGIN -->
+      </div>
+      <!-- END LOGIN  -->
+  
+      <!-- START SIGN UP -->
+      <div class="login grid" id="signUp-content">
+        <!-- DINAMIC SIGN UP -->
+      </div>
+      <!-- END SIGN UP -->
+
+
+      <!-- DASHBOARD  -->
+
+
+      <div class="container-dashboard">
+        <div class="aside">
+
+            <div class="img-profile">
+                <img src="/public/img/girl.avif" alt="">
+                <h3>Welcome to Manuela</h3>
+            </div>
+
+            <div class="items-dashboard">
+                <a href=""></a>
+            </div>
+
+           
+
+        </div>
+      </div>
+
+
+       <!-- START SCRIPTS -->
+    <!-- START SWIPPER TOWNS -->
+    <script type="module">
+        var swiper = new Swiper(".mySwiper-towns", {
+          effect: "flip",
+          grabCursor: true,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <!-- END SWIPPER TOWNS -->
+  
+      <!-- START SWIPPER EVENTS -->
+      <script type="module">
+        import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+  
+        const swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+      <!-- END SWIPPER EVENTS -->
+  
+      <!-- SWIPPER ANIMATIONS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="/src/components/navbar/navbar.js"></script>
+      <script src="./src/js/main.js"></script>
+      <script type="module" src="./src/js/translator.js"></script>
+      <script src="/src/components/login/login.js"></script>
+      <script src="/src/components/footer/footer.js"></script>
+      <!-- END SCRIPTS -->
+    
+</body>
+</html>

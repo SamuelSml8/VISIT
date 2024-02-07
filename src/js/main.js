@@ -98,8 +98,8 @@ async function restaurantsRecomended() {
         <img src="${img_restaurant}" alt="${restaurant_name}"/>
       <div class="mask"></div>
         <div class="heart-icons">
-          <i class="ri-heart-line"></i>
-          <i class="ri-heart-fill"></i>
+          <i onclick="addFavorite(${restaurant.restaurant_id})" class="ri-heart-line"></i>
+          <i  class="ri-heart-fill"></i>
         </div>
         <div class="item-body">
           <h3>Nombre del restaurante</h3>
@@ -121,28 +121,40 @@ async function restaurantsRecomended() {
 }
 restaurantsRecomended();
 
-// TOWNS SECTION ITERATION (6)
-const imgs = ['/public/img/towns/1.png','/public/img/towns/2.png','/public/img/towns/3.png','/public/img/towns/4.png','/public/img/towns/5.png','/public/img/towns/6.png']
+// const addFavorite = (index) => {
+//   const favoritesId = [...addFavorite(index)]
 
-const swiperTowns = document.querySelector('#swiper-towns')
+// }
+
+// TOWNS SECTION ITERATION (6)
+const imgs = [
+  "/public/img/towns/1.png",
+  "/public/img/towns/2.png",
+  "/public/img/towns/3.png",
+  "/public/img/towns/4.png",
+  "/public/img/towns/5.png",
+  "/public/img/towns/6.png",
+];
+
+const swiperTowns = document.querySelector("#swiper-towns");
 for (let s = 0; s < imgs.length; s++) {
   swiperTowns.innerHTML += `
   <div class="swiper-slide">
   <img src="${imgs[s]}" alt="" />
   </div>
-  `
+  `;
 }
 
 // JSON ITERATION SERVICES
 
-const urlServices = 'http://localhost:3000/services'
+const urlServices = "http://localhost:3000/services";
 
-async function servicesVisit(){
+async function servicesVisit() {
   const response = await fetch(urlServices);
-  const data = await response.json()
-  const banerServices = document.querySelector("#services")
-  data.forEach(service => {
-    const {class_icon, title, text} = service
+  const data = await response.json();
+  const banerServices = document.querySelector("#services");
+  data.forEach((service) => {
+    const { class_icon, title, text } = service;
     banerServices.innerHTML += `
     <div class="item-services-text">
     <i class="${class_icon}"></i>
@@ -151,10 +163,10 @@ async function servicesVisit(){
       ${text}
     </p>
   </div>
-    `
+    `;
   });
 }
-servicesVisit()
+servicesVisit();
 
 // MODO OSCURO
 changeThemeBtn.addEventListener("click", () => {
@@ -176,7 +188,7 @@ changeThemeBtn.addEventListener("click", () => {
   }
 });
 
-const options = { origin: "top", distance: "60px", duration: 2500, delay: 50 };
+const options = { origin: "top", distance: "60px", duration: 2000, delay: 10 };
 
 ScrollReveal().reveal(".home-section", options);
 ScrollReveal().reveal(".carrousel-towns", options);
@@ -189,3 +201,106 @@ ScrollReveal().reveal(".container-baner-services", options);
 ScrollReveal().reveal(".events", options);
 ScrollReveal().reveal(".baner-hotels", options);
 ScrollReveal().reveal(".food-drinks", options);
+
+// API WEATHER
+const result = document.querySelector('.result');
+const form = document.querySelector('.get-weather');
+const nameCity = document.querySelector('#city');
+const nameCountry = document.querySelector('#country');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    if (nameCity.value === '' || nameCountry.value === '') {
+        showError('Ambos campos son obligatorios...');
+        return;
+    }
+
+    callAPI(nameCity.value, nameCountry.value);
+    //console.log(nameCity.value);
+    //console.log(nameCountry.value);
+})
+
+function callAPI(city, country){
+    const apiId = '41d1d7f5c2475b3a16167b30bc4f265c';
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiId}`;
+
+    fetch(url)
+        .then(data => {
+            return data.json();
+        })
+        .then(dataJSON => {
+            if (dataJSON.cod === '404') {
+                showError('Ciudad no encontrada...');
+            } else {
+                clearHTML();
+                showWeather(dataJSON);
+            }
+            //console.log(dataJSON);
+        })
+        .catch(error => {
+            console.log(error);
+        })
+}
+
+
+const weatherContainer = document.querySelector('.btn-open-w');
+const weatherForm = document.querySelector('.get-weather');
+const weatherResult = document.querySelector('.result');
+
+
+weatherContainer.addEventListener('click', () =>{
+
+  weatherForm.classList.toggle("hidden");
+
+  if(!weatherResult.classList.contains("hidden")){
+    weatherResult.classList.toggle("hidden");
+  }
+
+} )
+
+
+function showWeather(data){
+    const {name, main:{temp, temp_min, temp_max}, weather:[arr]} = data;
+
+    const degrees = kelvinToCentigrade(temp);
+    const min = kelvinToCentigrade(temp_min);
+    const max = kelvinToCentigrade(temp_max);
+    weatherResult.classList.toggle("hidden");
+    const content = document.createElement('div');
+    content.innerHTML = `
+        <h5>Clima en ${name}</h5>
+        <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="icon">
+        <h2>${degrees}°C</h2>
+        <p>Max: ${max}°C</p>
+        <p>Min: ${min}°C</p>
+    `;
+
+    result.appendChild(content);
+
+    /* console.log(name);
+    console.log(temp);
+    console.log(temp_max);
+    console.log(temp_min);
+    console.log(arr.icon); */
+}
+
+function showError(message){
+    //console.log(message);
+    const alert = document.createElement('p');
+    alert.classList.add('alert-message');
+    alert.innerHTML = message;
+
+    form.appendChild(alert);
+    setTimeout(() => {
+        alert.remove();
+    }, 3000);
+}
+
+function kelvinToCentigrade(temp){
+    return parseInt(temp - 273.15);
+}
+
+function clearHTML(){
+    result.innerHTML = '';
+}

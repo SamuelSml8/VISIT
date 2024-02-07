@@ -89,7 +89,9 @@ a {
 }
 
 /* ***** HEADER  STYLES NAV-BAR ***** By*JR* */
-
+.loged{
+    color: #60993e !important;
+}
 .header {
     z-index: var(--z-fixed);
     position: fixed;
@@ -134,7 +136,7 @@ a {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 /* *****  SEARCH ***** By*JR* */
@@ -247,6 +249,73 @@ a {
 
 /* TAMAÑO GRANDE */
 @media screen and (min-width: 800px) {
+    .weather-content{
+        color: white;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: #2e294e81;
+        backdrop-filter: blur(10px);
+        text-align: center;
+        border-radius: 100vh;
+        padding: 2rem;
+        cursor: pointer;
+        transition: all 1s;
+
+        h1{
+            font-size: 42px;
+            color: white;
+        }
+    
+    }
+
+    .result{
+        font-size: 20px;
+        transition: all 1s;
+        flex-direction: column;
+        height: 10rem;
+        img{
+            display: none;
+        }
+    }
+
+    #city {
+        transition: all 1s;
+        height: 2rem;
+        color: aqua;
+        display: block;
+        width: 100%;
+    }
+    .get-weather{
+        transition: all 1s;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+
+        #city{
+            background-color: transparent;
+            border: none !important;
+            outline: 2px solid white;
+            border-radius: 10px;
+            padding: 0 10px;
+        }
+
+        #get{
+            font-size: 20px;
+            background-color: #2e294e;
+            border: none;
+            color: white;
+            border-radius: 2rem;
+            padding: 10px 0 ;
+            cursor: pointer;
+            width: 70%;
+            
+        }
+    }
     /* ***** HEADER ***** By*JR* */
 
     #logo-nav {
@@ -560,7 +629,7 @@ a {
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 55vh;
+        height: 65vh;
         margin: auto;
         margin-top: 30px;
         padding: 8rem 0;
@@ -594,10 +663,12 @@ a {
     .tittle-baner-services {
         font-size: 4rem;
         font-weight: 600;
-        margin: auto auto 5rem auto;
+        margin: 3rem auto 5rem auto;
         text-align: center;
         color: var(--font--color);
         text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.48);
+        font-family: var(--body-font);
+
     }
 
     .item-tittle-services {
@@ -734,10 +805,13 @@ a {
 
     /***** EXPERIENCE & CARRUSEL INFINITO ***** By*JR*/
 
-    .img-experiencia {
-        width: 60vw;
-        margin: 3rem auto;
-        display: flex;
+    .exp-visit {
+       font-size: 5rem;
+       height: 6rem;
+       font-family: var(--visit-font);
+       color: var(--font--color);
+       text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     }
     .baner-hotels {
         display: flex;
@@ -922,8 +996,10 @@ a {
     .events {
         width: 100%;
         margin: 1rem 0;
+        height: 100vh;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .tittle-experience-visit {
@@ -2153,7 +2229,7 @@ a {
 
     .carrusel-infinito {
         width: 100%;
-        height: 30rem;
+        height: 40rem;
         display: flex;
         flex-direction: column;
     }
@@ -2306,6 +2382,15 @@ a {
             box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
         }
     }
+
+    .exp-visit {
+        font-size: 5rem;
+        height: 6rem;
+        font-family: var(--visit-font);
+        color: var(--font--color);
+        text-align: center;
+     text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+     }
 
     .events {
         width: 100vw;

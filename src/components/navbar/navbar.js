@@ -1,5 +1,8 @@
 const navbar = document.querySelector(`#header`);
+const isLogin= JSON.parse(localStorage.getItem('isLogin'));
 
+
+console.log(isLogin)
 navbar.innerHTML = `
 <nav class="nav-bar">
         <a href="" class="logo-nav">
@@ -52,7 +55,7 @@ navbar.innerHTML = `
           <i class="ri-search-line" search-button id="search-button"></i>
 
           <!--***** BUTTON LOGIN ***** By*JR*-->
-          <i class="ri-user-line login-button" id="login-button"></i>
+          <i class="${isLogin ?"ri-user-fill" :"ri-user-line" } login-button ${isLogin && "loged"}" id="login-button"></i>
 
           <!--***** BUTTON THEME ***** By*JR*-->
           <div class="change-theme">

@@ -191,11 +191,9 @@
 
       <!-- START EVENTOS -->
       <section class="events" id="events">
-        <img
-          src="/public/img/homepage/experiencia.png"
-          alt="img experiencia visit"
-          class="img-experiencia"
-        />
+
+        <h2 class="exp-visit">Experience Visit</h2>
+        
         <div class="swiper mySwiper">
           <div class="swiper-wrapper" id="eventsCards">
             <!-- EVENTS -->
@@ -226,6 +224,25 @@
         </div>
       </section>
       <!-- END FOOD&DRINKS -->
+
+      <section class="weather-content">
+        <h1><i class="ri-cloud-fill btn-open-w"></i></h1>
+        <div class="result hidden">
+            <!-- <h5>Clima en Bogota</h5>
+            <img src="" alt="">
+            <h2>28°C</h2>
+            <p>Max: 29°C</p>
+            <p>Min: 27°C</p> -->
+        </div>
+        <form action="" method="POST" class="get-weather hidden">
+            <input type="text" name="city" id="city" placeholder="Write your city...">
+            <select name="" id="country">
+                <option disabled selected value="">Select</option>
+                <option value="CO">Antioquia</option>
+            </select>
+            <input type="submit" name="" id="get" value="Get Weather">
+        </form>
+    </section>
 
       <!-- START FOOTER -->
       <footer class="footer">

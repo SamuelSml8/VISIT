@@ -1537,7 +1537,7 @@
       "wifi": true,
       "bar": true,
       "pet_friendly": true,
-      "img_hotel": "../img/hotels/art.jpg",
+      "img_hotel": "./public/img/restaurants/Della Nonna/cremoso-de-epinaca-y.jpg",
       "id": "73d4"
     },
     {
@@ -1828,7 +1828,7 @@
       "restaurant_name": "La provincia",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/Della Nonna/cremoso-de-epinaca-y.jpg",
       "id": "ea96"
     },
     {
@@ -1836,7 +1836,7 @@
       "restaurant_name": "Rocotto",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/Della Nonna/pasta-corta.jpg",
       "id": "3fea"
     },
     {
@@ -1844,7 +1844,7 @@
       "restaurant_name": "Ancla Mare & Tierra",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/okus/okus2.jpg",
       "id": "1c69"
     },
     {
@@ -1852,7 +1852,7 @@
       "restaurant_name": "El cielo",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/madurando/caption1.jpg",
       "id": "2de2"
     },
     {
@@ -1860,7 +1860,7 @@
       "restaurant_name": "Mondongo's",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/madurando/caption2.jpg",
       "id": "060b"
     },
     {
@@ -1868,7 +1868,7 @@
       "restaurant_name": "Oregano y laurel",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/madurando/caption.jpg",
       "id": "26e5"
     }
   ],

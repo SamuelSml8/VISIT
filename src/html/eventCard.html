@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EVENTS</title>
+    <title>My Event | Visit</title>
     <!--  -->
     <link
       rel="stylesheet"
@@ -21,20 +21,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!--***** SWIPER CSS ***** By*JR*-->
+    <!-- SWIPER CSS-->
     <link
       href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
 
-    <!--***** STYLES CSS ***** By*JR*-->
+    <!-- STYLES CSS-->
     <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/components/loader/loader.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!--* SWEETALERT STYLES -->
+    <!-- SWEETALERT STYLES -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css"
@@ -46,280 +47,119 @@
     />
   </head>
   <body>
-    <!--***** START HEADER ***** By*JR*-->
+    <div class="load" id="load">
+      <!-- LOADER DINAMIC -->
+    </div>
     <header class="header" id="header">
-      <nav class="nav-bar">
-        <a href="#home" class="logo-nav">
-          <img src="/public/img/logo.png" alt id="logo-nav" />
-        </a>
-        <div class="menu-nav">
-          <ul class="list-nav">
-            <li class="item-nav">
-              <a
-                href="../foodDrink/foodDrink.html"
-                class="link-nav link-home-closed"
-              >
-                <i class="ri-home-fill"></i>
-                <span data-i18n="home">HOME</span>
-              </a>
-            </li>
-
-            <li class="item-nav">
-              <a href="#places" class="link-nav">
-                <i class="ri-road-map-line"></i>
-                <span>Places</span>
-              </a>
-            </li>
-
-            <li class="item-nav">
-              <a href="#hotels" class="link-nav">
-                <i class="ri-hotel-line"></i>
-                <span>Hotels</span>
-              </a>
-            </li>
-
-            <li class="item-nav">
-              <a href="#events" class="link-nav">
-                <i class="ri-calendar-event-line"></i>
-                <span>Events</span>
-              </a>
-            </li>
-
-            <li class="item-nav">
-              <a href="#food" class="link-nav">
-                <i class="ri-restaurant-line"></i>
-                <span data-i18n="food_drink">Food & Drink</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="actions-nav">
-          <!--***** BUTTON SEARCH ***** By*JR*-->
-          <i class="ri-search-line" search-button id="search-button"></i>
-
-          <!--***** BUTTON LOGIN ***** By*JR*-->
-          <i class="ri-user-line login-button" id="login-button"></i>
-
-          <!--***** BUTTON THEME ***** By*JR*-->
-          <div class="change-theme">
-            <i class="ri-moon-line" theme-change id="dark-btn"></i>
-            <i class="ri-sun-line hidden" id="light-btn"></i>
-          </div>
-
-          <!--***** BUTTON LANGUAGE ***** By*JR*-->
-
-          <select title="Seleccione su país">
-            <option value="es">Es</option>
-            <option value="us">En</option>
-            <!-- Agrega más opciones según tus necesidades -->
-          </select>
-
-          <!-- <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('es')"></i>
-        <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('en')" ></i> -->
-        </div>
-      </nav>
+      <!-- DINAMIC NAV -->
     </header>
 
-    <!--***** START SEARCH ***** By*JR*-->
-    <div class="search" id="search-content">
-      <form action class="form-search">
-        <i class="ri-search-line search-icon"></i>
-        <input
-          type="search"
-          placeholder="What are you lokking for?"
-          class="search-input"
-        />
-      </form>
-
-      <i class="ri-close-line search-close" id="search-close"></i>
-    </div>
-
-    <!--***** START LOGIN ***** By*JR*-->
     <div class="login grid" id="login-content">
-      <form action class="login-form grid">
-        <h3 class="login-title">Login</h3>
-        <div class="login-group grid">
-          <div>
-            <label for="login-email" class="login-label">Email</label>
-            <input
-              type="email"
-              placeholder="Write your email"
-              id="login-email"
-              class="login-input"
-            />
-          </div>
-
-          <div>
-            <label for="login-password" class="login-label">Password</label>
-            <input
-              type="password"
-              placeholder="Enter your password"
-              id="login-password"
-              class="login-input"
-            />
-          </div>
-        </div>
-
-        <div class="forgot">
-          <span class="login-signup">
-            You do not have an account? <a href="#" id="signUp">Sign up</a>
-          </span>
-
-          <a href="/src/html/forgotPass.html" class="login-forgot">
-            You forgot your password
-          </a>
-
-          <button type="submit" id="loginBtn" class="login-button button">
-            Login
-          </button>
-        </div>
-      </form>
-
-      <i class="ri-close-line login-close" id="login-close"></i>
+      <!-- DINAMIC LOGIN -->
     </div>
 
-    <!--* START SIGN UP -->
     <div class="login grid" id="signUp-content">
-      <form action class="login-form signUp-form grid">
-        <h3 class="login-title">Register</h3>
-        <div class="login-group grid">
-          <div>
-            <label for="login-email" class="login-label">Name</label>
-            <input
-              type="text"
-              placeholder="Write your name"
-              id="signUp-name"
-              class="login-input"
-            />
-          </div>
-          <div>
-            <label for="login-email" class="login-label">Email</label>
-            <input
-              type="email"
-              placeholder="Write your email"
-              id="signUp-email"
-              class="login-input"
-            />
-          </div>
-
-          <div>
-            <label for="login-password" class="login-label">Password</label>
-            <input
-              type="password"
-              placeholder="Create your password"
-              id="signUp-password"
-              class="login-input"
-            />
-          </div>
-        </div>
-
-        <div class="forgot">
-          <span class="login-signup">
-            You have an account? <a href="#" id="haveAccount">Login</a>
-          </span>
-
-          <a href="/src/html/forgotPass.html" class="login-forgot">
-            You forgot your password
-          </a>
-
-          <button type="submit" id="loginBtn" class="login-button button">
-            REGISTER
-          </button>
-        </div>
-      </form>
-
-      <i class="ri-close-line login-close" id="signUp-close"></i>
+      <!-- DINAMIC SIGNUP -->
     </div>
 
     <!-- GRID CONTAINER EVENT  CARD  -->
 
     <div class="container-events-post">
-
-        <div class="imagen-event-description">
-            <img src="/public/img/eventos/carlcox.jpeg" alt="" class="img-size-events">
-        </div>
-
-        <div class="description-event">
-            <div class="item-event-description">
-                <i class="ri-map-pin-line"></i>
-                <p class="text-description-event">Place:</p>
-                <p class="text-response-description-event">Parque Norte</p>
-            </div>
-
-            <div class="item-event-description">
-                <i class="ri-calendar-line"></i>
-                <p class="text-description-event">Date:</p>
-                <p class="text-response-description-event">02/M/2024</p>
-            </div>
-
-            <div class="item-event-description">
-                <i class="ri-time-line"></i>
-                <p class="text-description-event">Time:</p>
-                <p class="text-response-description-event">6:00 PM</p>
-            </div>
-
-            <div class="item-event-description">
-                <i class="ri-building-line"></i>
-                <p class="text-description-event">City:</p>
-                <p class="text-response-description-event">Medellin</p>
-            </div>
-
-            <div class="item-event-description">
-                <i class="ri-bookmark-line"></i>
-                <p class="text-description-event">Cat:</p>
-                <p class="text-response-description-event">Music</p>
-            </div>
-
-            <div class="item-event-description">
-                <i class="ri-user-shared-line"></i>
-                <p class="text-description-event">Age:</p>
-                <p class="text-response-description-event">+18</p>
-            </div>
-
-            <div class="item-event-description">
-                <i class="ri-wheelchair-line"></i>
-                <p class="text-description-event">Mov:</p>
-                <p class="text-response-description-event">No</p>
-            </div>
-
-            
-
-            <div class="item-event-description">
-                <i class="ri-team-fill"></i>
-                <p class="text-description-event">Own:</p>
-                <p class="text-response-description-event">C group</p>
-            </div>
-
-            <div class="item-event-description">
-                <i class="ri-share-fill"></i>
-                <p class="text-description-event">Info:</p>
-                <i class="ri-facebook-circle-fill"></i>
-                <i class="ri-instagram-fill"></i>
-                <i class="ri-youtube-fill"></i>
-                <i class="ri-at-line"></i>
-               
-            </div>
-        </div>
-
-        <div class="ticket">
-            <div class="calendar-event">
-                <p class="day-calendar">SAT</p>
-                <p class="number-calendar">02</p>
-                <p class="date-calendar">MARCH 2024</p>
-                <hr class="line-calendar">
-                <p class="hour-calendar">7:00 PM</p>
-            </div>
-
-            <div class="button-buy-ticket-">
-                <button class="buy-ticket-button">Buy Ticket</button>
-            </div>
-        </div>
-
-        
-
+      <div class="imagen-event-description">
+        <img
+          src="/public/img/events/carlcox.jpeg"
+          alt=""
+          class="img-size-events"
+        />
       </div>
 
-   
+      <div class="description-event">
+        <div class="item-event-description">
+          <i class="ri-map-pin-line"></i>
+          <p class="text-description-event">Place:</p>
+          <p class="text-response-description-event">Parque Norte</p>
+        </div>
+
+        <div class="item-event-description">
+          <i class="ri-calendar-line"></i>
+          <p class="text-description-event">Date:</p>
+          <p class="text-response-description-event">02/M/2024</p>
+        </div>
+
+        <div class="item-event-description">
+          <i class="ri-time-line"></i>
+          <p class="text-description-event">Time:</p>
+          <p class="text-response-description-event">6:00 PM</p>
+        </div>
+
+        <div class="item-event-description">
+          <i class="ri-building-line"></i>
+          <p class="text-description-event">City:</p>
+          <p class="text-response-description-event">Medellin</p>
+        </div>
+
+        <div class="item-event-description">
+          <i class="ri-bookmark-line"></i>
+          <p class="text-description-event">Cat:</p>
+          <p class="text-response-description-event">Music</p>
+        </div>
+
+        <div class="item-event-description">
+          <i class="ri-user-shared-line"></i>
+          <p class="text-description-event">Age:</p>
+          <p class="text-response-description-event">+18</p>
+        </div>
+
+        <div class="item-event-description">
+          <i class="ri-wheelchair-line"></i>
+          <p class="text-description-event">Mov:</p>
+          <p class="text-response-description-event">No</p>
+        </div>
+
+        <div class="item-event-description">
+          <i class="ri-team-fill"></i>
+          <p class="text-description-event">Own:</p>
+          <p class="text-response-description-event">C group</p>
+        </div>
+
+        <div class="item-event-description">
+          <i class="ri-share-fill"></i>
+          <p class="text-description-event">Info:</p>
+          <i class="ri-facebook-circle-fill"></i>
+          <i class="ri-instagram-fill"></i>
+          <i class="ri-youtube-fill"></i>
+          <i class="ri-at-line"></i>
+        </div>
+      </div>
+
+      <div class="ticket">
+        <div class="calendar-event">
+          <p class="day-calendar">SAT</p>
+          <p class="number-calendar">02</p>
+          <p class="date-calendar">MARCH 2024</p>
+          <hr class="line-calendar" />
+          <p class="hour-calendar">7:00 PM</p>
+        </div>
+
+        <div class="button-buy-ticket-">
+          <button class="buy-ticket-button">Buy Ticket</button>
+        </div>
+      </div>
+    </div>
+    <!-- START FOOTER -->
+    <footer class="footer">
+      <!-- DINAMIC FOOTER -->
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- START COPYRIGHT -->
+    <p class="copy-rights">
+      <!-- <P> DINAMIC -->
+    </p>
+    <!-- END COPYRIGHT -->
+    <script src="/src/components/footer/footer.js"></script>
+    <script src="/src/components/loader/loader.js"></script>
+    <script src="/src/components/navbar/navbar.js"></script>
+    <script src="/src/components/login/login.js"></script>
   </body>
 </html>

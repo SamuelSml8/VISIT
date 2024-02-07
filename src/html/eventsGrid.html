@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EVENTS</title>
+    <title>Events | Visit</title>
     <!--  -->
     <link
       rel="stylesheet"
@@ -21,20 +21,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!--***** SWIPER CSS ***** By*JR*-->
+    <!-- SWIPER CSS-->
     <link
       href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
 
-    <!--***** STYLES CSS ***** By*JR*-->
+    <!-- STYLES CSS-->
     <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/components/loader/loader.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!--* SWEETALERT STYLES -->
+    <!-- SWEETALERT STYLES -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css"
@@ -46,190 +47,20 @@
     />
   </head>
   <body>
-    <!--***** START HEADER ***** By*JR*-->
+    <div class="load" id="load">
+      <!-- LOADER DINAMIC -->
+  </div>
+
     <header class="header" id="header">
-      <nav class="nav-bar">
-        <a href="/index.html" class="logo-nav">
-          <img src="/public/img/logo.png" alt id="logo-nav" />
-        </a>
-        <div class="menu-nav">
-          <ul class="list-nav">
-            <li class="item-nav">
-              <a
-                href="../foodDrink/foodDrink.html"
-                class="link-nav link-home-closed"
-              >
-                <i class="ri-home-fill"></i>
-                <span data-i18n="home">HOME</span>
-              </a>
-            </li>
-
-            <li class="item-nav">
-              <a href="#places" class="link-nav">
-                <i class="ri-road-map-line"></i>
-                <span>Places</span>
-              </a>
-            </li>
-
-            <li class="item-nav">
-              <a href="#hotels" class="link-nav">
-                <i class="ri-hotel-line"></i>
-                <span>Hotels</span>
-              </a>
-            </li>
-
-            <li class="item-nav">
-              <a href="#events" class="link-nav">
-                <i class="ri-calendar-event-line"></i>
-                <span>Events</span>
-              </a>
-            </li>
-
-            <li class="item-nav">
-              <a href="#food" class="link-nav">
-                <i class="ri-restaurant-line"></i>
-                <span data-i18n="food_drink">Food & Drink</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="actions-nav">
-          <!--***** BUTTON SEARCH ***** By*JR*-->
-          <i class="ri-search-line" search-button id="search-button"></i>
-
-          <!--***** BUTTON LOGIN ***** By*JR*-->
-          <i class="ri-user-line login-button" id="login-button"></i>
-
-          <!--***** BUTTON THEME ***** By*JR*-->
-          <div class="change-theme">
-            <i class="ri-moon-line" theme-change id="dark-btn"></i>
-            <i class="ri-sun-line hidden" id="light-btn"></i>
-          </div>
-
-          <!--***** BUTTON LANGUAGE ***** By*JR*-->
-
-          <select title="Seleccione su país">
-            <option value="es">Es</option>
-            <option value="us">En</option>
-            <!-- Agrega más opciones según tus necesidades -->
-          </select>
-
-          <!-- <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('es')"></i>
-        <i class="ri-english-input" language-button id="change-language" onclick="changeLanguage('en')" ></i> -->
-        </div>
-      </nav>
+      <!-- DINAMIC NAV -->
     </header>
 
-    <!--***** START SEARCH ***** By*JR*-->
-    <div class="search" id="search-content">
-      <form action class="form-search">
-        <i class="ri-search-line search-icon"></i>
-        <input
-          type="search"
-          placeholder="What are you lokking for?"
-          class="search-input"
-        />
-      </form>
-
-      <i class="ri-close-line search-close" id="search-close"></i>
-    </div>
-
-    <!--***** START LOGIN ***** By*JR*-->
     <div class="login grid" id="login-content">
-      <form action class="login-form grid">
-        <h3 class="login-title">Login</h3>
-        <div class="login-group grid">
-          <div>
-            <label for="login-email" class="login-label">Email</label>
-            <input
-              type="email"
-              placeholder="Write your email"
-              id="login-email"
-              class="login-input"
-            />
-          </div>
-
-          <div>
-            <label for="login-password" class="login-label">Password</label>
-            <input
-              type="password"
-              placeholder="Enter your password"
-              id="login-password"
-              class="login-input"
-            />
-          </div>
-        </div>
-
-        <div class="forgot">
-          <span class="login-signup">
-            You do not have an account? <a href="#" id="signUp">Sign up</a>
-          </span>
-
-          <a href="/src/html/forgotPass.html" class="login-forgot">
-            You forgot your password
-          </a>
-
-          <button type="submit" id="loginBtn" class="login-button button">
-            Login
-          </button>
-        </div>
-      </form>
-
-      <i class="ri-close-line login-close" id="login-close"></i>
+        <!-- DINAMIC LOGIN -->
     </div>
 
-    <!--* START SIGN UP -->
     <div class="login grid" id="signUp-content">
-      <form action class="login-form signUp-form grid">
-        <h3 class="login-title">Register</h3>
-        <div class="login-group grid">
-          <div>
-            <label for="login-email" class="login-label">Name</label>
-            <input
-              type="text"
-              placeholder="Write your name"
-              id="signUp-name"
-              class="login-input"
-            />
-          </div>
-          <div>
-            <label for="login-email" class="login-label">Email</label>
-            <input
-              type="email"
-              placeholder="Write your email"
-              id="signUp-email"
-              class="login-input"
-            />
-          </div>
-
-          <div>
-            <label for="login-password" class="login-label">Password</label>
-            <input
-              type="password"
-              placeholder="Create your password"
-              id="signUp-password"
-              class="login-input"
-            />
-          </div>
-        </div>
-
-        <div class="forgot">
-          <span class="login-signup">
-            You have an account? <a href="#" id="haveAccount">Login</a>
-          </span>
-
-          <a href="/src/html/forgotPass.html" class="login-forgot">
-            You forgot your password
-          </a>
-
-          <button type="submit" id="loginBtn" class="login-button button">
-            REGISTER
-          </button>
-        </div>
-      </form>
-
-      <i class="ri-close-line login-close" id="signUp-close"></i>
+        <!-- DINAMIC SIGNUP -->
     </div>
 
     <!-- GRID CONTAINER EVENTS  -->
@@ -240,7 +71,10 @@
           <img src="/public/img/events/colombiamoda.png" alt="" />
 
           <div class="button-card-event-grid">
-            <a href="/src/html/eventCard.html" class="get-started" id="getStarted"
+            <a
+              href="/src/html/eventCard.html"
+              class="get-started"
+              id="get_Started"
               >Get started <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
@@ -323,5 +157,8 @@
         </div>
       </div>
     </section>
+    <script src="/src/components/loader/loader.js"></script>
+    <script src="/src/components/navbar/navbar.js"></script>
+    <script src="/src/components/login/login.js"></script>
   </body>
 </html>

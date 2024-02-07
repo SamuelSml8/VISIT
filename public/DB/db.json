@@ -1543,7 +1543,7 @@
       "wifi": true,
       "bar": true,
       "pet_friendly": true,
-      "img_hotel": "../img/hotels/art.jpg",
+      "img_hotel": "./public/img/restaurants/Della Nonna/cremoso-de-epinaca-y.jpg",
       "id": "73d4"
     },
     {
@@ -1834,7 +1834,7 @@
       "restaurant_name": "La provincia",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/Della Nonna/cremoso-de-epinaca-y.jpg",
       "id": "ea96"
     },
     {
@@ -1842,7 +1842,7 @@
       "restaurant_name": "Rocotto",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/Della Nonna/pasta-corta.jpg",
       "id": "3fea"
     },
     {
@@ -1850,7 +1850,7 @@
       "restaurant_name": "Ancla Mare & Tierra",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/okus/okus2.jpg",
       "id": "1c69"
     },
     {
@@ -1858,7 +1858,7 @@
       "restaurant_name": "El cielo",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/madurando/caption1.jpg",
       "id": "2de2"
     },
     {
@@ -1866,7 +1866,7 @@
       "restaurant_name": "Mondongo's",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/madurando/caption2.jpg",
       "id": "060b"
     },
     {
@@ -1874,7 +1874,7 @@
       "restaurant_name": "Oregano y laurel",
       "avg_dish": 100000,
       "addres": "",
-      "img_restaurant": "./img/hotels/art.jpg",
+      "img_restaurant": "/public/img/restaurants/madurando/caption.jpg",
       "id": "26e5"
     }
   ],
@@ -1902,6 +1902,135 @@
       "title": "Best Events",
       "text": "the best experience in hotels",
       "id": "fcba"
+    }
+  ],
+  "places": [
+    {
+      "guatape": [
+        {
+          "id": 1,
+          "restaurante": "ANCLA mare & tierra",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res1.png",
+          "sitio": "https://www.instagram.com/anclamareyterra/"
+        },
+        {
+          "id": 2,
+          "restaurante": "LA BODEGUITA",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res2.png",
+          "sitio": "https://www.instagram.com/labodeguitaguatape/"
+        },
+        {
+          "id": 3,
+          "restaurante": "MONTANO",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res3.png",
+          "sitio": "https://www.instagram.com/montano.yogurt/"
+        }
+      ]
+    },
+
+    {
+      "venecia": [
+        {
+          "id": 1,
+          "restaurante": "BALCONES DE VENECIA",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res7.png",
+          "sitio": "https://www.instagram.com/balconesdevenecia/"
+        },
+        {
+          "id": 2,
+          "restaurante": "LA GRACIELA",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res8.png",
+          "sitio": "https://www.instagram.com/lagraciela_cafe/"
+        },
+        {
+          "id": 3,
+          "restaurante": "OREGANO Y LAUREL ",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res9.png",
+          "sitio": "https://www.instagram.com/oreganoylaurelvenecia/"
+        }
+      ]
+    },
+    {
+      "medellin": [
+        {
+          "id": 1,
+          "restaurante": "LA PROVINCIA",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res10.png",
+          "sitio": "https://www.instagram.com/laprovinciarestaurante/"
+        },
+        {
+          "id": 2,
+          "restaurante": "ROCOTTO",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res12.png",
+          "sitio": "https://www.instagram.com/rocotorestaurante/"
+        },
+        {
+          "id": 3,
+          "restaurante": "MONDONGO'S ",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res11.png",
+          "sitio": "https://www.instagram.com/mondongos/"
+        }
+      ]
+    },
+    {
+      "arboletes": [
+        {
+          "id": 1,
+          "restaurante": "MOMENTO FENIX",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res13.png",
+          "sitio": "https://www.instagram.com/momentofenix/"
+        },
+        {
+          "id": 2,
+          "restaurante": "EL MIRADOR",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res14.png",
+          "sitio": "https://www.instagram.com/hotelelmirador/"
+        },
+        {
+          "id": 3,
+          "restaurante": "EL BUEN GUSTO",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res15.png",
+          "sitio": "https://www.instagram.com/el.buen.gusto/"
+        }
+      ]
+    },
+
+    {
+      "concepcion": [
+        {
+          "id": 1,
+          "restaurante": "ARTESANAL",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res16.png",
+          "sitio": "https://www.instagram.com/sabeartesanal/"
+        },
+        {
+          "id": 2,
+          "restaurante": "AVELI",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res17.png",
+          "sitio": "https://www.instagram.com/aveli_cafe/"
+        },
+        {
+          "id": 3,
+          "restaurante": "LOS GOLONDROS",
+          "description": "Lorem ipsum dolor sit amet, consectetur",
+          "imagen": "/img/restaurantes/res18.png",
+          "sitio": "https://www.instagram.com/parrillabarlosgolondros/"
+        }
+      ]
     }
   ]
 }

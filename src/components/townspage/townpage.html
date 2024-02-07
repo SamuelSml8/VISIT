@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medellín</title>
     <link rel="stylesheet" href="./townpage.css" />
+    <link rel="stylesheet" href="../loader/loader.css" />
+    <link rel="shortcut icon" href="/public/img/visitIcon.svg" type="image/x-icon">
   </head>
   <body>
+    <div class="load" id="load">
+      <!-- LOADER DINAMIC -->
+    </div>
     <main>
       <ul class="slider">
         <li
@@ -20,7 +25,7 @@
               An oasis of progress amidst mountains, where each street tells a
               story of resilience and hope.
             </p>
-            <button>I WANT TO GO</button>
+            <a class="btn-go" href="../../html/placesMenu.html">I WANT TO GO</a >
           </div>
         </li>
         <li
@@ -34,7 +39,7 @@
               hills. A tapestry of history and modernity, where dreams take
               flight.
             </p>
-            <button>LET'S GO</button>
+            <a class="btn-go"  href="../../html/placesMenu.html">I WANT TO GO</a >
           </div>
         </li>
         <li
@@ -48,7 +53,7 @@
               converge. Amidst lush landscapes, a city pulsating with energy and
               opportunity.
             </p>
-            <button>I WANT TO GO</button>
+            <a class="btn-go"  href="../../html/placesMenu.html">I WANT TO GO</a >
           </div>
         </li>
         <li
@@ -62,7 +67,7 @@
               harmonize. Amid towering peaks, a mosaic of resilience and
               creativity unfolds.
             </p>
-            <button>I WANT TO GO</button>
+            <a class="btn-go"  href="../../html/placesMenu.html">I WANT TO GO</a >
           </div>
         </li>
         <li
@@ -76,7 +81,7 @@
               A haven of diversity and innovation, where every street breathes
               life.
             </p>
-            <button>I WANT TO GO</button>
+            <a class="btn-go"  href="../../html/placesMenu.html">I WANT TO GO</a >
           </div>
         </li>
         <li
@@ -90,18 +95,19 @@
               landscape. A sanctuary of passion and resilience, where dreams
               find wings to soar.
             </p>
-            <button>I WANT TO GO</button>
+            <a class="btn-go"  href="../../html/placesMenu.html">I WANT TO GO</a >
           </div>
         </li>
       </ul>
       <nav class="nav">
         <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
-        <a href="/index.html">
+        <a  href="/index.html">
           <img src="/public/img/visitIcon.png" alt="logoVisit" />
         </a>
         <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
       </nav>
     </main>
+    <script src="../loader/loader.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

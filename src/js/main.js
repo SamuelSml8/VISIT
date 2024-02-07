@@ -102,7 +102,7 @@ async function restaurantsRecomended() {
           <i  class="ri-heart-fill"></i>
         </div>
         <div class="item-body">
-          <h3>Nombre del restaurante</h3>
+          <h3>${restaurant_name}</h3>
           <div>
             <i class="ri-star-fill"></i>
             4.9

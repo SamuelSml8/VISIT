@@ -20,6 +20,12 @@
       "password": "admin123",
       "admin": true,
       "id": "ae1e"
+    },
+    {
+      "id": "4eeb",
+      "name": "hector",
+      "email": "test@asd.com",
+      "password": "12345"
     }
   ],
   "towns": [
@@ -1876,22 +1882,26 @@
     {
       "class_icon": "ri-hotel-line i-baner-services",
       "title": "Best Hotels",
-      "text": "the best experience in hotels"
+      "text": "the best experience in hotels",
+      "id": "26e7"
     },
     {
       "class_icon": "ri-map-pin-line i-baner-services",
       "title": "Best Places",
-      "text": "the best experience in hotels"
+      "text": "the best experience in hotels",
+      "id": "113f"
     },
     {
       "class_icon": "ri-restaurant-line i-baner-services",
       "title": "Best Restaurants",
-      "text": "the best experience in hotels"
+      "text": "the best experience in hotels",
+      "id": "07a6"
     },
     {
       "class_icon": "ri-calendar-event-line i-baner-services",
       "title": "Best Events",
-      "text": "the best experience in hotels"
+      "text": "the best experience in hotels",
+      "id": "fcba"
     }
   ],
   "places": [

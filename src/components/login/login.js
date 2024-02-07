@@ -117,6 +117,12 @@ const getStarted = document.querySelector("#getStarted");
 // SHOW LOGIN
 if (loginButton) {
   loginButton.addEventListener("click", (e) => {
+
+
+    const isLogin = JSON.parse(localStorage.getItem("isLogin"));
+    if (isLogin) {
+      return (window.location.href = "/src/html/profileDashboard.html");
+    }
     e.preventDefault();
     loginContent.classList.add("show-login");
   });
@@ -205,6 +211,7 @@ async function loginValidation() {
       passwordInput.value === user.password
     ) {
       isLogin = true;
+      localStorage.setItem("isLogin", JSON.stringify(isLogin));
       userName = name;
     }
   });
